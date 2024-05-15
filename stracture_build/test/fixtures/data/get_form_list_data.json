@@ -1,0 +1,21 @@
+{
+  "projectId": "2089700$$fTqUra",
+  "currentPageNo": "1",
+  "recordStartFrom": "0",
+  "recordBatchSize": "25",
+  "isWorkspace": "0",
+  "appType": "2",
+  "action_id": "100",
+  "listingType": "31",
+  "recordMsg": "no-records-available-location",
+  "sortOrder": "asc",
+  "sortField": "updated",
+  "sortFieldType": "timestamp",
+  "isRequiredTemplateData": "true",
+  "isFromSyncCall": "true",
+  "networkExecutionType": "NetworkExecutionType.SYNC",
+  "taskNumber":"-9007199254740989",
+  "isExcludeClosesOutForms":"true",
+  "folderId": "114086524$$QyRuoy",
+  "locationId": "177230"
+}

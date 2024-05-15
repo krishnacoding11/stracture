@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head manifest="manifest.appcache">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;">
+	<link type="text/css" rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/htmlform/common.css"><link type="text/css" rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/htmlform/site.task.css">
+	<script type="text/javascript">var path = '/data/user/0/com.asite.field/app_flutter/files/2130192/FormTypes/11103151/';</script>
+	<script type="text/javascript">
+		var isPrintView = false;
+		var currentViewName = "RES_VIEW";
+		require(['app', "json!"+path+"template.json!ingnoreBase"], function (app, designJson) {
+            console.log('design json', designJson);
+            DESIGN_JSON = angular.copy(designJson);
+			angular.element(document).ready(function () {
+				app('site.task');
+			});
+		})
+	</script>
+	
+</head>
+
+<body>
+	<div style="display:none;">
+		<input type="hidden" id="DS_FORMID" name="DS_FORMID" value="${DS_FORMID}" />
+		<input type="hidden" id="DS_ISDRAFT" name="DS_ISDRAFT" value="${DS_ISDRAFT}" />
+		<input type="hidden" id="DS_ISDRAFT_EDITORI" name="DS_ISDRAFT_EDITORI" value="${DS_ISDRAFT_EDITORI}" />
+		<input type="hidden" id="DS_WORKINGUSER" name="DS_WORKINGUSER" value="${DS_WORKINGUSER}" />
+		<input type="hidden" id="DS_WORKINGUSER_ID" name="DS_WORKINGUSER_ID" value="${DS_WORKINGUSER_ID}" />
+		<input type="hidden" id="DS_INCOMPLETE_ACTIONS" name="DS_INCOMPLETE_ACTIONS"
+			value="${DS_INCOMPLETE_ACTIONS}" />
+		<input type="hidden" id="DS_ALL_FORMSTATUS" name="DS_ALL_FORMSTATUS" value="${DS_ALL_FORMSTATUS}" />
+		<input type="hidden" id="DS_FORMSTATUS" name="DS_FORMSTATUS" value="${DS_FORMSTATUS}" />
+		<input type="hidden" id="DS_ORIGINATOR" name="DS_ORIGINATOR" value="${DS_ORIGINATOR}" />
+		<input type="hidden" id="DS_DATEOFISSUE" name="DS_DATEOFISSUE" value="${DS_DATEOFISSUE}" />
+		<input type="hidden" id="DS_ISDRAFT_FWD_MSG" name="DS_ISDRAFT_FWD_MSG" value="${DS_ISDRAFT_FWD_MSG}" />
+		<input type="hidden" id="DS_ALL_ACTIVE_FORM_STATUS" name="DS_ALL_ACTIVE_FORM_STATUS"
+			value="${DS_ALL_ACTIVE_FORM_STATUS}" />
+		<input type="hidden" id="DS_MSGDATE" name="DS_MSGDATE" value="${DS_MSGDATE}" />
+		<input type="hidden" id="DS_MSGCREATOR" name="DS_MSGCREATOR" value="${DS_MSGCREATOR}" />
+		<input type="hidden" id="DS_PROJORGANISATIONS" name="DS_PROJORGANISATIONS" value="${DS_PROJORGANISATIONS}" />
+		<input type="hidden" id="DS_PROJDISTGROUPS" name="DS_PROJDISTGROUPS" value="${DS_PROJDISTGROUPS}" />
+		<input type="hidden" id="DS_PROJUSERS_ALL_ROLES" name="DS_PROJUSERS_ALL_ROLES"
+			value="${DS_PROJUSERS_ALL_ROLES}" />
+		<input type="hidden" id="DS_PROJDISTUSERS" name="DS_PROJDISTUSERS" value="${DS_PROJDISTUSERS}" />
+		<input type="hidden" id="DS_FETCH_USER_DETAILS" name="DS_FETCH_USER_DETAILS"
+			value="${DS_FETCH_USER_DETAILS}" />
+		<input type="hidden" id="DS_FORMNAME" name="DS_FORMNAME" value="${DS_FORMNAME}" />
+		<input type="hidden" id="DS_WORKSPACE_ROLES" name="DS_WORKSPACE_ROLES" value="${DS_WORKSPACE_ROLES}" />
+		<input type="hidden" id="DS_PROJECTNAME" name="DS_PROJECTNAME" value="${DS_PROJECTNAME}" />
+		<input type="hidden" id="DS_GET_APP_ACTION_DETAILS" name="DS_GET_APP_ACTION_DETAILS" value="${DS_GET_APP_ACTION_DETAILS}" />
+		
+		<fixedfield>
+			ORI_FORMTITLE,DS_FORMID,DS_ISDRAFT,DS_ISDRAFT_EDITORI,DS_WORKINGUSER,DS_WORKINGUSER_ID,DS_INCOMPLETE_ACTIONS,DS_ALL_FORMSTATUS,DS_FORMSTATUS,DS_ORIGINATOR,DS_DATEOFISSUE,DS_ISDRAFT_FWD_MSG,DS_ALL_ACTIVE_FORM_STATUS,DS_MSGDATE,DS_MSGCREATOR,DS_PROJORGANISATIONS,DS_PROJDISTGROUPS,DS_PROJUSERS_ALL_ROLES,DS_PROJDISTUSERS,DS_FETCH_USER_DETAILS,DS_FORMNAME,DS_WORKSPACE_ROLES,DS_PROJECTNAME,DS_GET_APP_ACTION_DETAILS
+		</fixedfield>
+		<sp_fixedfield>
+			ORI_FORMTITLE,DS_FORMID,DS_ISDRAFT,DS_ISDRAFT_EDITORI,DS_WORKINGUSER,DS_WORKINGUSER_ID,DS_INCOMPLETE_ACTIONS,DS_ALL_FORMSTATUS,DS_FORMSTATUS,DS_ORIGINATOR,DS_DATEOFISSUE,DS_ISDRAFT_FWD_MSG,DS_ALL_ACTIVE_FORM_STATUS,DS_MSGDATE,DS_MSGCREATOR,DS_PROJORGANISATIONS,DS_PROJDISTGROUPS,DS_PROJUSERS_ALL_ROLES,DS_PROJDISTUSERS,DS_FETCH_USER_DETAILS,DS_FORMNAME,DS_WORKSPACE_ROLES,DS_PROJECTNAME,DS_GET_APP_ACTION_DETAILS
+		</sp_fixedfield>
+
+	</div>
+	<div class="form-container res-view defect-manager" ng-controller="FormController as form" ng-cloak>
+		<input type="hidden" class="json_data" value="${JSON_DATA}" />
+		<div class="main-wrapper">
+			<section ng-if="resMsgCustomFields.SHResponse == 'Yes'">
+				<section id="header-section" class="primary-header-bg light-gray-border">
+					<div class="inlineBlock width60 form-name">
+						<h3 class="inlineBlock">{{asiteSystemDataReadOnly._4_Form_Type_Data.DS_FORMNAME}}</h3>
+					</div>					
+					<div class="clear-both"></div>
+				</section>
+				<section class="padding-20 light-gray-border" id="defect-manager-section">
+					<div ng-if="asiteSystemDataReadOnly._5_Form_Data.Status_Data.DS_FORMSTATUS == 'Resolved'">
+						<div class="field-collumn">
+							<!-- <label>Status: </label> -->							
+						<span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['status']['label'][languageId] != '' 
+                        && DESIGN_JSON['status']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['status']['label'][languageId]"></span>
+						
+						<label ng-repeat="item in verifierStatus" class="radio-label-container">
+								<input type="radio"  name='group' ng-model="asiteSystemDataReadOnly._5_Form_Data.Status_Data.DS_ALL_FORMSTATUS" value={{item.Value}} required>{{item.Name}}
+							</label>
+						</div>
+						<div class="field-collumn">
+							<!-- <label>Comments : </label> -->							
+							<span class="bold"
+								ng-if="languageId!='' && DESIGN_JSON['Comments']['label'][languageId] != '' 
+								&& DESIGN_JSON['Comments']['label'][languageId] !=''"
+								ng-bind="DESIGN_JSON['Comments']['label'][languageId]"></span>
+							<div>
+								<textarea placeholder="Enter Comments" ng-model="resMsgCustomFields.Comments"
+								ng-keyup="delayedResize($event)" ng-keydown="restrictChar($event)" rows="1"
+								ng-cut="delayedResize($event)" ng-copy="delayedResize($event)"
+								ng-paste="delayedResize($event); restrictCharPaste($event)" required></textarea>
+							</div>
+						</div>
+					</div>
+					<div ng-if="asiteSystemDataReadOnly._5_Form_Data.Status_Data.DS_FORMSTATUS != 'Resolved'">
+						<div class="field-collumn">
+							<!-- <label>Status: </label> -->							
+							<span class="bold"
+								ng-if="languageId!='' && DESIGN_JSON['status']['label'][languageId] != '' 
+								&& DESIGN_JSON['status']['label'][languageId] !=''"
+								ng-bind="DESIGN_JSON['status']['label'][languageId]"></span>
+
+							<span ng-if="resolverStatus.length == 1">
+								<label ng-repeat="item in resolverStatus" class="radio-label-container">
+									<input type="text" ng-model="asiteSystemDataReadOnly._5_Form_Data.Status_Data.DS_ALL_FORMSTATUS" ng-init="asiteSystemDataReadOnly._5_Form_Data.Status_Data.DS_ALL_FORMSTATUS = item.Value" required ng-hide="true">{{item.Name}}
+								</label>
+							</span>
+							<span ng-if="resolverStatus.length > 1">
+								<label ng-repeat="item in resolverStatus" class="radio-label-container">
+									<input type="radio" name='group' ng-model="asiteSystemDataReadOnly._5_Form_Data.Status_Data.DS_ALL_FORMSTATUS" value={{item.Value}} required>{{item.Name}}
+								</label>
+							</span>
+						</div>
+						<div class="field-collumn not-Resolved">
+							<!-- <label>Comments : </label> -->							
+							<span class="bold"
+								ng-if="languageId!='' && DESIGN_JSON['Comments']['label'][languageId] != '' 
+								&& DESIGN_JSON['Comments']['label'][languageId] !=''"
+								ng-bind="DESIGN_JSON['Comments']['label'][languageId]"></span>
+							<div>
+								<textarea placeholder="Enter Comments" rows="1" ng-model="resMsgCustomFields.Comments"
+								ng-keyup="delayedResize($event)" ng-keydown="restrictChar($event)"
+								ng-cut="delayedResize($event)" ng-copy="delayedResize($event)"
+								ng-paste="delayedResize($event); restrictCharPaste($event)" required></textarea>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section ng-if="resMsgCustomFields.SHResponse !='Yes'">
+				<div>
+					<span class="bold" 
+                    if="${ !#strings.isEmpty(LANGUAGE_ID) and DESIGN_JSON['message3']['label'][LANGUAGE_ID] != null and !#strings.isEmpty(DESIGN_JSON['message3']['label'][LANGUAGE_ID]) }"
+                    text="${DESIGN_JSON['message3']['label'][LANGUAGE_ID]}"></span>
+					
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

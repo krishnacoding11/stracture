@@ -1,0 +1,4 @@
+{"statusStyleVO":[
+  {"FontEffect":"0#0#0#0","IsActive":true,"ProjectId":2116416,"FontColor":"#f0e6f0","StatusId":1004,"StatusName":"Approve","FontType":"PT Sans","StatusTypeId":"1","BackgroundColor":"#d633d6"},
+  {"FontEffect":"0#0#0#0","IsActive":true,"ProjectId":2116416,"FontColor":"#359e08","StatusId":3,"StatusName":"Closed","FontType":"PT Sans","StatusTypeId":"1","BackgroundColor":"#156fab"}
+]}

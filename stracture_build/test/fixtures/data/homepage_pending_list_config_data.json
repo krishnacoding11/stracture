@@ -1,0 +1,131 @@
+{
+  "userId": 2017529,
+  "projectId": "2116416$$I50zQS",
+  "createdDate": "2023-10-10 10:39:04.51",
+  "updatedDate": "2023-10-16 13:07:42.443",
+  "configJsonData": {
+    "defaultTabs": [
+      {
+        "id": "1",
+        "values": "Create New Task"
+      },
+      {
+        "id": "2",
+        "values": "New Tasks"
+      },
+      {
+        "id": "3",
+        "values": "Task Due Today"
+      },
+      {
+        "id": "4",
+        "values": "Task Due This Week"
+      },
+      {
+        "id": "5",
+        "values": "Overdue Tasks"
+      },
+      {
+        "id": "6",
+        "values": "Jump Back to Site"
+      },
+      {
+        "id": "7",
+        "values": "Create Site Form"
+      },
+      {
+        "id": "8",
+        "values": "Filter"
+      },
+      {
+        "id": "9",
+        "values": "CreateForm"
+      }
+    ],
+    "userProjectConfigTabsDetails": [
+      {
+        "id": "8",
+        "name": "Filtered Form",
+        "config": {}
+      },
+      {
+        "id": "1",
+        "name": "Create New Task",
+        "config": {}
+      },
+      {
+        "id": "2",
+        "name": "New Tasks",
+        "config": {}
+      },
+      {
+        "id": "3",
+        "name": "Task Due Today",
+        "config": {}
+      },
+      {
+        "id": "4",
+        "name": "Task Due This Week",
+        "config": {}
+      },
+      {
+        "id": "5",
+        "name": "Overdue Tasks",
+        "config": {}
+      },
+      {
+        "id": "6",
+        "name": "Jump Back to Site",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "Defect Form HTML",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10381138$$sGgIW1"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Edit ORI",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "11051650$$kDpfq7"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Construction Inspection Checklist",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10400814$$HYrXYF"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Defect Custom",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10701924$$naOEUU"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Disc",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10381140$$79wGuA"
+        }
+      },
+      {
+        "id": "9",
+        "name": "hierachy",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "11038704$$akMnBD"
+        }
+      }
+    ]
+  }
+}

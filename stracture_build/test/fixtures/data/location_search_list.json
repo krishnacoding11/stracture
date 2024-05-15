@@ -1,0 +1,42 @@
+{
+  "totalDocs": 4,
+  "recordBatchSize": 0,
+  "data": [
+    {
+      "id": "112895529$$HppX9Q#2116416$$yzxIbB",
+      "value": "!!PIN_ANY_APP_TYPE_20_9\\111_Chandresh_Site\\First Floor\\Salon",
+      "dataCenterId": 0,
+      "isSelected": false,
+      "imgId": -1,
+      "isActive": true
+    },
+    {
+      "id": "112988291$$tQQvpr#2116416$$yzxIbB",
+      "value": "!!PIN_ANY_APP_TYPE_20_9\\111_Chandresh_Site\\Second Floor\\Salon",
+      "dataCenterId": 0,
+      "isSelected": false,
+      "imgId": -1,
+      "isActive": true
+    },
+    {
+      "id": "113037207$$rvgh5Q#2116416$$yzxIbB",
+      "value": "!!PIN_ANY_APP_TYPE_20_9\\111_Chandresh_Site\\Third Floor\\Salon",
+      "dataCenterId": 0,
+      "isSelected": false,
+      "imgId": -1,
+      "isActive": true
+    },
+    {
+      "id": "107848989$$Q4pbHw#2116416$$yzxIbB",
+      "value": "!!PIN_ANY_APP_TYPE_20_9\\Site Task 8\\First Floor\\Salon",
+      "dataCenterId": 0,
+      "isSelected": false,
+      "imgId": -1,
+      "isActive": true
+    }
+  ],
+  "isSortRequired": true,
+  "isReviewEnableProjectSelected ": false,
+  "isAmessageProjectSelected": false,
+  "generateURI": true
+}

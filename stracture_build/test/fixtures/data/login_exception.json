@@ -1,0 +1,5 @@
+{
+   "_ERROR_CODE" : "216",
+   "ERROR_MESSAGE":"Invalid Password given for Authentication",
+   "ERROR_DESCRIPTION":"BAD_PASSWORD"
+}

@@ -1,0 +1,104 @@
+<script type="text/javascript">
+function ie_ver () {var ua = window.navigator.userAgent; var msie = ua.indexOf('MSIE '); if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){return true; } else{return false; } }
+
+</script>
+<html>
+<body>
+<pre id='file_name'>IMG_0002.jpeg</pre>
+<pre id='file_path'>/TemplateImages/inlinefiles/77e5e941-07e2-4ae3-8c5c-06a7e7716ee8/IMG_0002.jpeg</pre>
+<div id='file_size'></div>
+<pre id='file_content'>xdInlineFile:/TemplateImages/inlinefiles/77e5e941-07e2-4ae3-8c5c-06a7e7716ee8/IMG_0002.jpeg</pre>
+<form id="xdoc_service" name="xdoc_service" method="post" action="">
+    <div id="divForm"></div>
+    <input type="hidden" name="formId" id="formId" value=""/><input type="hidden" name="projectId"
+                                                                    id="projectId" value=""/>
+    <div id="dynamicDivForUserInfo" style="margin:0px;overflow:hidden;height:0px;width:1px;"></div>
+</form>
+<form id="infojet_xdoc_service" name="infojet_xdoc_service" method="post" action=""><input
+        type="hidden" name="session_time_out" id="session_time_out" value="600"/><input
+        type="hidden" name="start_time" id="start_time" value=""/><input type="hidden"
+                                                                         name="infojetServerVersion"
+                                                                         id="infojetServerVersion"
+                                                                         value=""/><input
+        type="hidden" name="xdoc_cache_enabled" id="xdoc_cache_enabled" value="1"/><input
+        type="hidden" name="callback_url" id="callback_url"
+        value="/adoddle/xsl/xdoc.jsp?ver=09082023103137"/></form>
+<script>document.getElementById('start_time').value = new Date().getTime();
+function fileUploaded(){
+var isIE = false;
+if( document.all ){
+isIE = true;
+}
+var path = null;
+var pathDiv = document.getElementById( 'file_path' );
+if( isIE ){
+path = pathDiv.innerText;
+}else{
+path = pathDiv.textContent;
+}
+var name = null;
+var nameDiv = document.getElementById( 'file_name' )
+if( isIE ){
+name = nameDiv.innerText;
+}else{
+name = nameDiv.textContent;
+}
+var size = null;
+var sizeDiv = document.getElementById( 'file_size' );
+if( isIE ){
+size = sizeDiv.innerText;
+}else{
+size = sizeDiv.textContent;
+}
+var content = null;
+var contentDiv = document.getElementById( 'file_content' );
+if( isIE ){
+content = contentDiv.innerText;
+}else{
+content = contentDiv.textContent;
+}
+var windowOpener = top.opener || parent; windowOpener.arrUploadedFile = { 'path':path, 'name':name, 'size':size, 'content':content };
+windowOpener.InfoJet_AttachFile_Window_Callback();window.close();
+}
+function pictureUploaded(){
+var isIE = false;
+if( document.all ){
+isIE = true;
+}
+var path = null;
+var pathDiv = document.getElementById( 'file_path' );
+if( isIE ){
+path = pathDiv.innerText;
+}else{
+path = pathDiv.textContent;
+}
+var content = null;
+var contentDiv = document.getElementById( 'file_content' );
+if( isIE ){
+content = contentDiv.innerText;
+}else{
+content = contentDiv.textContent;
+}
+var windowOpener = top.opener || parent; windowOpener.arrUploadedFile = { 'path':path, 'content':content };
+windowOpener.InfoJet_AttachFile_Window_Callback();window.close();
+}
+
+</script>
+<form id="xdoc_service" name="xdoc_service" method="post" action="">
+    <div id="divForm"></div>
+    <input type="hidden" name="formId" id="formId" value=""/><input type="hidden" name="projectId"
+                                                                    id="projectId" value=""/>
+    <div id="dynamicDivForUserInfo" style="margin:0px;overflow:hidden;height:0px;width:1px;"></div>
+</form>
+<form id="infojet_xdoc_service" name="infojet_xdoc_service" method="post" action=""><input
+        type="hidden" name="session_time_out" id="session_time_out" value="600"/><input
+        type="hidden" name="start_time" id="start_time" value=""/><input type="hidden"
+                                                                         name="infojetServerVersion"
+                                                                         id="infojetServerVersion"
+                                                                         value=""/><input
+        type="hidden" name="xdoc_cache_enabled" id="xdoc_cache_enabled" value="1"/><input
+        type="hidden" name="callback_url" id="callback_url"
+        value="/adoddle/xsl/xdoc.jsp?ver=09082023103137"/></form>
+<script>document.getElementById('start_time').value = new Date().getTime();fileUploaded();</script>
+</body>
+</html>

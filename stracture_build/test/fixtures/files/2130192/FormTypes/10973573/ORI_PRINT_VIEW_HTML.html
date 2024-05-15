@@ -1,0 +1,16 @@
+<style type="text/css">.qa-form{white-space:nowrap}.qa-form .input-container{margin-bottom:10px}.qa-form .input-container label{width:100px;font-weight:bold;float:left;margin-top:3px;padding-left:5px}.qa-form .input-container>div.clearfix{margin-bottom:4px}.qa-form .input-container .input-wrap{margin-left:120px}.qa-form .input-container .input-wrap span{margin-top:4px;display:inline-block}.qa-form .input-container .input-wrap input[type="text"]{width:250px}.qa-form .user-detail{text-align:right}</style>
+<div class="qa-form" style="white-space:nowrap">
+<div class="input-container clearfix" style="margin-bottom:10px">
+<b style="width:100px;font-weight:bold;display:inline-block;margin-top:3px;padding-left:5px">Form Title: </b><span th:text="${obj.myFields.ORI_FORMTITLE}" style="margin-top:4px;display:inline-block"></span>
+</div>
+
+<div class="input-container" th:each="qa,iterStat : ${obj.myFields.questions}" style="margin-bottom:10px">
+<div class="clearfix" style="margin-bottom:4px">
+<b style="width:100px;font-weight:bold;display:inline-block;margin-top:3px;padding-left:5px">Question <span th:text="${iterStat.count}"></span>.</b> <span th:text="${qa.question}" style="margin-top:4px;display:inline-block"></span>
+</div>
+<div class="clearfix" style="margin-bottom:4px">
+<b style="width:100px;font-weight:bold;display:inline-block;margin-top:3px;padding-left:5px">Answer <span th:text="${iterStat.count}"></span>.</b> <span th:text="${qa.answer}" style="margin-top:4px;display:inline-block"></span>
+</div>
+
+</div>
+</div>

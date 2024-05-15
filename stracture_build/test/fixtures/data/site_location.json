@@ -1,0 +1,281 @@
+[
+  {
+    "folder_title": "First Floor",
+    "permission_value": 1023,
+    "isActive": 1,
+    "folderPath": "KrupalField19.8UK\\21.0\\First Floor",
+    "folderId": "105083618$$2hfy9D",
+    "folderPublishPrivateRevPref": 0,
+    "clonedFolderId": 0,
+    "isPublic": false,
+    "projectId": "2089700$$MYN3bp",
+    "hasSubFolder": true,
+    "isFavourite": true,
+    "fetchRuleId": 0,
+    "includePublicSubFolder": false,
+    "parentFolderId": 0,
+    "childfolderTreeVOList": [],
+    "pfLocationTreeDetail": {
+      "locationId": 25016,
+      "siteId": 0,
+      "annotationId": "d94fe932-40b2-abd6-5500-2dc2dd7f7bd0",
+      "isSite": false,
+      "parentLocationId": 25015,
+      "docId": "11151109$$dO6Oud",
+      "revisionId": "8162567$$6GM4Ir",
+      "isFileUploaded": true,
+      "pageNumber": 0,
+      "isCalibrated": false,
+      "statusCountList": [
+        {
+          "statusId": 1001,
+          "statusName": "Open",
+          "statusTypeId": 0,
+          "statusCount": 49,
+          "bgColor": "#de474c",
+          "fontColor": "#000000",
+          "generateURI": true
+        },
+        {
+          "statusId": 1002,
+          "statusName": "Resolved",
+          "statusTypeId": 0,
+          "statusCount": 4,
+          "bgColor": "#6943de",
+          "fontColor": "#000000",
+          "generateURI": true
+        },
+        {
+          "statusId": 1003,
+          "statusName": "Verified",
+          "statusTypeId": 0,
+          "statusCount": 3,
+          "bgColor": "#30e67f",
+          "fontColor": "#000000",
+          "generateURI": true
+        }
+      ],
+      "generateURI": true
+    },
+    "isPFLocationTree": true,
+    "isWatching": false,
+    "permissionValue": 0,
+    "instanceGroupIds": "",
+    "ownerName": "Krupal Patel (5345)",
+    "isPlanSelected": false,
+    "isMandatoryAttribute": false,
+    "isShared": false,
+    "publisherId": "758244$$3K1wp6",
+    "imgModifiedDate": "2022-07-15 11:36:35.447",
+    "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_758244_thumbnail.jpg?v=1657881395000",
+    "orgName": "Asite Solutions",
+    "isSharedByOther": false,
+    "permissionTypeId": 0,
+    "generateURI": true
+  },
+  {
+    "folder_title": "Ground Floor",
+    "permission_value": 1023,
+    "isActive": 1,
+    "folderPath": "KrupalField19.8UK\\21.0\\Ground Floor",
+    "folderId": "107242784$$PMlWjU",
+    "folderPublishPrivateRevPref": 0,
+    "clonedFolderId": 0,
+    "isPublic": false,
+    "projectId": "2089700$$MYN3bp",
+    "hasSubFolder": true,
+    "isFavourite": false,
+    "fetchRuleId": 0,
+    "includePublicSubFolder": false,
+    "parentFolderId": 0,
+    "childfolderTreeVOList": [],
+    "pfLocationTreeDetail": {
+      "locationId": 25506,
+      "siteId": 0,
+      "isSite": false,
+      "parentLocationId": 25015,
+      "docId": "11289729$$yJydUU",
+      "revisionId": "0$$MZZVlO",
+      "isFileUploaded": true,
+      "pageNumber": 0,
+      "isCalibrated": false,
+      "statusCountList": [
+        {
+          "statusId": 1001,
+          "statusName": "Open",
+          "statusTypeId": 0,
+          "statusCount": 5,
+          "bgColor": "#de474c",
+          "fontColor": "#000000",
+          "generateURI": true
+        },
+        {
+          "statusId": 1002,
+          "statusName": "Resolved",
+          "statusTypeId": 0,
+          "statusCount": 1,
+          "bgColor": "#6943de",
+          "fontColor": "#000000",
+          "generateURI": true
+        },
+        {
+          "statusId": 1003,
+          "statusName": "Verified",
+          "statusTypeId": 0,
+          "statusCount": 1,
+          "bgColor": "#30e67f",
+          "fontColor": "#000000",
+          "generateURI": true
+        }
+      ],
+      "generateURI": true
+    },
+    "isPFLocationTree": true,
+    "isWatching": false,
+    "permissionValue": 0,
+    "instanceGroupIds": "",
+    "ownerName": "Krupal Patel (5345)",
+    "isPlanSelected": false,
+    "isMandatoryAttribute": false,
+    "isShared": false,
+    "publisherId": "758244$$3K1wp6",
+    "imgModifiedDate": "2022-07-15 11:36:35.447",
+    "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_758244_thumbnail.jpg?v=1657881395000",
+    "orgName": "Asite Solutions",
+    "isSharedByOther": false,
+    "permissionTypeId": 0,
+    "generateURI": true
+  },
+  {
+    "folder_title": "Second Floor",
+    "permission_value": 1023,
+    "isActive": 1,
+    "folderPath": "KrupalField19.8UK\\21.0\\Second Floor",
+    "folderId": "105197591$$lVMQQo",
+    "folderPublishPrivateRevPref": 0,
+    "clonedFolderId": 0,
+    "isPublic": false,
+    "projectId": "2089700$$MYN3bp",
+    "hasSubFolder": true,
+    "isFavourite": false,
+    "fetchRuleId": 0,
+    "includePublicSubFolder": false,
+    "parentFolderId": 0,
+    "childfolderTreeVOList": [],
+    "pfLocationTreeDetail": {
+      "locationId": 25036,
+      "siteId": 0,
+      "isSite": false,
+      "parentLocationId": 25015,
+      "docId": "11154893$$wyjalQ",
+      "revisionId": "8174019$$gjRbRb",
+      "isFileUploaded": true,
+      "pageNumber": 0,
+      "isCalibrated": false,
+      "statusCountList": [
+        {
+          "statusId": 1001,
+          "statusName": "Open",
+          "statusTypeId": 0,
+          "statusCount": 45,
+          "bgColor": "#de474c",
+          "fontColor": "#000000",
+          "generateURI": true
+        },
+        {
+          "statusId": 1002,
+          "statusName": "Resolved",
+          "statusTypeId": 0,
+          "statusCount": 5,
+          "bgColor": "#6943de",
+          "fontColor": "#000000",
+          "generateURI": true
+        },
+        {
+          "statusId": 1003,
+          "statusName": "Verified",
+          "statusTypeId": 0,
+          "statusCount": 3,
+          "bgColor": "#30e67f",
+          "fontColor": "#000000",
+          "generateURI": true
+        }
+      ],
+      "generateURI": true
+    },
+    "isPFLocationTree": true,
+    "isWatching": false,
+    "permissionValue": 0,
+    "instanceGroupIds": "",
+    "ownerName": "Krupal Patel (5345)",
+    "isPlanSelected": false,
+    "isMandatoryAttribute": false,
+    "isShared": false,
+    "publisherId": "758244$$3K1wp6",
+    "imgModifiedDate": "2022-07-15 11:36:35.447",
+    "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_758244_thumbnail.jpg?v=1657881395000",
+    "orgName": "Asite Solutions",
+    "isSharedByOther": false,
+    "permissionTypeId": 0,
+    "generateURI": true
+  },
+  {
+    "folder_title": "1_Chandresh_Site",
+    "permission_value": 1023,
+    "folderPath": "!!PIN_ANY_APP_TYPE_20_9\\1_Chandresh_Site",
+    "folderId": "112402460$$767ifE",
+    "projectId": "2116416$$G0XZtq",
+    "hasSubFolder": true,
+    "childfolderTreeVOList": [
+      {
+        "folder_title": "First Floor",
+        "permission_value": 1023,
+        "folderPath": "!!PIN_ANY_APP_TYPE_20_9\\1_Chandresh_Site\\First Floor",
+        "folderId": "112402462$$jmgk6Z",
+        "projectId": "2116416$$G0XZtq",
+        "hasSubFolder": true,
+        "childfolderTreeVOList": [
+          {
+            "folder_title": "Balcony",
+            "permission_value": 1023,
+            "folderPath": "!!PIN_ANY_APP_TYPE_20_9\\1_Chandresh_Site\\First Floor\\Balcony",
+            "folderId": "112402477$$cWhaBT",
+            "projectId": "2116416$$G0XZtq",
+            "hasSubFolder": false,
+            "childfolderTreeVOList": [],
+            "pfLocationTreeDetail": {
+              "locationId": 44126,
+              "parentLocationId": 44125,
+              "revisionId": "24015886$$3Wv7Z1",
+              "annotationId": "d41d2715-0c23-9809-691a-69b6afccdf69",
+              "locationCoordinates": "{\"x1\":1.48,\"y1\":787.56,\"x2\":612,\"y2\":306.97}",
+              "pageNumber": 1,
+              "isCalibrated": true,
+              "generateURI": true
+            }
+          }
+        ],
+        "pfLocationTreeDetail": {
+          "locationId": 44125,
+          "siteId": 0,
+          "isSite": false,
+          "parentLocationId": 44124,
+          "docId": "12125928$$g15q13",
+          "revisionId": "24015886$$3Wv7Z1",
+          "isFileUploaded": true,
+          "annotationId": "2872c214-9ae1-431d-2ebb-a6bdf27a41df",
+          "locationCoordinates": "{\"x1\":82.28,\"y1\":224.82000000000005,\"x2\":498.90999999999997,\"y2\":105.78999999999996}",
+          "pageNumber": 1,
+          "isCalibrated": true,
+          "generateURI": true
+        }
+      }
+    ],
+    "pfLocationTreeDetail": {
+      "locationId": 44124,
+      "parentLocationId": 0,
+      "revisionId": "0$$Jvpo9N",
+      "pageNumber": 0
+    }
+  }
+]

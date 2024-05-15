@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head manifest="manifest.appcache">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;">
+    <link type="text/css" rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/htmlform/common.css"><link type="text/css" rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/htmlform/site.task.css">
+    <script type="text/javascript">var path = '/data/user/0/com.asite.field/app_flutter/files/2130192/FormTypes/11103151/';</script>
+    <script type="text/javascript">
+        var isPrintView = false;
+        var currentViewName = "ORI_VIEW";
+        require(['app', "json!"+path+"template.json!ingnoreBase"], function (app, designJson) {
+            console.log('design json', designJson);
+            DESIGN_JSON = angular.copy(designJson);
+            angular.element(document).ready(function () {
+                app('site.task');
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div style="display:none;">
+        <input type="hidden" id="DS_FORMID" name="DS_FORMID" value="${DS_FORMID}" />
+        <input type="hidden" id="DS_ISDRAFT" name="DS_ISDRAFT" value="${DS_ISDRAFT}" />
+        <input type="hidden" id="DS_ISDRAFT_EDITORI" name="DS_ISDRAFT_EDITORI" value="${DS_ISDRAFT_EDITORI}" />
+        <input type="hidden" id="DS_WORKINGUSER" name="DS_WORKINGUSER" value="${DS_WORKINGUSER}" />
+        <input type="hidden" id="DS_WORKINGUSER_ID" name="DS_WORKINGUSER_ID" value="${DS_WORKINGUSER_ID}" />
+        <input type="hidden" id="DS_INCOMPLETE_ACTIONS" name="DS_INCOMPLETE_ACTIONS"
+            value="${DS_INCOMPLETE_ACTIONS}" />
+        <input type="hidden" id="DS_ALL_FORMSTATUS" name="DS_ALL_FORMSTATUS" value="${DS_ALL_FORMSTATUS}" />
+        <input type="hidden" id="DS_FORMSTATUS" name="DS_FORMSTATUS" value="${DS_FORMSTATUS}" />
+        <input type="hidden" id="DS_ORIGINATOR" name="DS_ORIGINATOR" value="${DS_ORIGINATOR}" />
+        <input type="hidden" id="DS_DATEOFISSUE" name="DS_DATEOFISSUE" value="${DS_DATEOFISSUE}" />
+        <input type="hidden" id="DS_ISDRAFT_FWD_MSG" name="DS_ISDRAFT_FWD_MSG" value="${DS_ISDRAFT_FWD_MSG}" />
+        <input type="hidden" id="DS_ALL_ACTIVE_FORM_STATUS" name="DS_ALL_ACTIVE_FORM_STATUS"
+            value="${DS_ALL_ACTIVE_FORM_STATUS}" />
+        <input type="hidden" id="DS_MSGDATE" name="DS_MSGDATE" value="${DS_MSGDATE}" />
+        <input type="hidden" id="DS_MSGCREATOR" name="DS_MSGCREATOR" value="${DS_MSGCREATOR}" />
+        <input type="hidden" id="DS_PROJORGANISATIONS" name="DS_PROJORGANISATIONS" value="${DS_PROJORGANISATIONS}" />
+        <input type="hidden" id="DS_PROJDISTGROUPS" name="DS_PROJDISTGROUPS" value="${DS_PROJDISTGROUPS}" />
+        <input type="hidden" id="DS_PROJUSERS_ALL_ROLES" name="DS_PROJUSERS_ALL_ROLES"
+            value="${DS_PROJUSERS_ALL_ROLES}" />
+        <input type="hidden" id="DS_PROJDISTUSERS" name="DS_PROJDISTUSERS" value="${DS_PROJDISTUSERS}" />
+        <input type="hidden" id="DS_FETCH_USER_DETAILS" name="DS_FETCH_USER_DETAILS"
+            value="${DS_FETCH_USER_DETAILS}" />
+        <input type="hidden" id="DS_FORMNAME" name="DS_FORMNAME" value="${DS_FORMNAME}" />
+        <input type="hidden" id="DS_WORKSPACE_ROLES" name="DS_WORKSPACE_ROLES" value="${DS_WORKSPACE_ROLES}" />
+        <input type="hidden" id="DS_PROJECTNAME" name="DS_PROJECTNAME" value="${DS_PROJECTNAME}" />
+        <input type="hidden" id="DS_ASI_SITE_getAllLocationByProject_PF" name="DS_ASI_SITE_getAllLocationByProject_PF"
+            value="${DS_ASI_SITE_getAllLocationByProject_PF}" />
+        <input type="hidden" id="DS_ASI_SITE_getDefectTypesForProjects_pf"
+            name="DS_ASI_SITE_getDefectTypesForProjects_pf" value="${DS_ASI_SITE_getDefectTypesForProjects_pf}" />
+        <input type="hidden" id="DS_ASI_SITE_GET_RECENT_DEFECTS" name="DS_ASI_SITE_GET_RECENT_DEFECTS"
+            value="${DS_ASI_SITE_GET_RECENT_DEFECTS}" />
+        <input type="hidden" id="DS_ASI_Configurable_Attributes" name="DS_ASI_Configurable_Attributes"
+            value="${DS_ASI_Configurable_Attributes}" />
+
+
+
+        <fixedfield>
+            ORI_FORMTITLE,DS_FORMID,DS_ISDRAFT,DS_ISDRAFT_EDITORI,DS_WORKINGUSER,DS_WORKINGUSER_ID,DS_INCOMPLETE_ACTIONS,DS_ALL_FORMSTATUS,DS_FORMSTATUS,DS_ORIGINATOR,DS_DATEOFISSUE,DS_ISDRAFT_FWD_MSG,DS_ALL_ACTIVE_FORM_STATUS,DS_MSGDATE,DS_MSGCREATOR,DS_PROJORGANISATIONS,DS_PROJDISTGROUPS,DS_PROJUSERS_ALL_ROLES,DS_PROJDISTUSERS,DS_FETCH_USER_DETAILS,DS_FORMNAME,DS_WORKSPACE_ROLES,DS_PROJECTNAME,DS_ASI_SITE_getAllLocationByProject_PF,DS_ASI_SITE_getDefectTypesForProjects_pf,DS_ASI_SITE_GET_RECENT_DEFECTS,DS_ASI_Configurable_Attributes
+        </fixedfield>
+        <sp_fixedfield>
+            ORI_FORMTITLE,DS_FORMID,DS_ISDRAFT,DS_ISDRAFT_EDITORI,DS_WORKINGUSER,DS_WORKINGUSER_ID,DS_INCOMPLETE_ACTIONS,DS_ALL_FORMSTATUS,DS_FORMSTATUS,DS_ORIGINATOR,DS_DATEOFISSUE,DS_ISDRAFT_FWD_MSG,DS_ALL_ACTIVE_FORM_STATUS,DS_MSGDATE,DS_MSGCREATOR,DS_PROJORGANISATIONS,DS_PROJDISTGROUPS,DS_PROJUSERS_ALL_ROLES,DS_PROJDISTUSERS,DS_FETCH_USER_DETAILS,DS_FORMNAME,DS_WORKSPACE_ROLES,DS_PROJECTNAME,DS_ASI_SITE_getAllLocationByProject_PF,DS_ASI_SITE_getDefectTypesForProjects_pf,DS_ASI_SITE_GET_RECENT_DEFECTS,DS_ASI_Configurable_Attributes
+        </sp_fixedfield>
+
+    </div>
+    <div class="form-container ori-view defect-manager" ng-controller="FormController as form" ng-cloak>
+        <input type="hidden" class="json_data" value="${JSON_DATA}" />
+        <div class="main-wrapper">
+            <section class="padding-20" ng-if="oriMsgCustomFields.CurrStage == '1'">
+                <div class="field-collumn">
+                    <!-- <label>Recently Created Defects</label> -->                   
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['recently-created-site-task']['label'][languageId] != '' 
+                        && DESIGN_JSON['recently-created-site-task']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['recently-created-site-task']['label'][languageId]"></span>
+
+                    <div class="recent-defdropdown-wrapper">
+                        <div class="recent-defdropdown-cont">
+                            <button type="button" name="" id="selectedRecentDefect"
+                                ng-click="OpenRecentDropdown();">{{recentdefectCaption}}
+                                <span class="caret"></span>
+                            </button>
+                            <div class="recent-def-dropdown">
+                                <div class="defect-recent-item"
+                                    ng-repeat="recentDefect in recentDefectsList track by $index"
+                                    ng-click="selectRecenteDefect(recentDefect.defectId, recentDefect.defectName)">
+                                    <div class="defName labelBold">
+                                        {{recentDefect.defectName}}
+                                    </div>
+                                    <div class="line-2">
+                                        <span class="def-type">
+                                            {{recentDefect.defectType}}
+                                        </span>
+                                        <span class="def-location">
+                                            {{recentDefect.defectLocation}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-def-dropdown-overlay" ng-click="closeRecentDropdown();"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="header-section" class="primary-header-bg light-gray-border">
+                <div class="inlineBlock width60 form-name">
+                    <h3 class="inlineBlock">{{asiteSystemDataReadOnly._4_Form_Type_Data.DS_FORMNAME}}</h3>
+                </div>                
+                <div class="clear-both"></div>
+            </section>
+            <section class="padding-20 light-gray-border" id="defect-manager-section">
+                <div class="field-collumn">
+                    <!-- <label>Task Type: </label> -->                    
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['TaskType']['label'][languageId] != '' 
+                        && DESIGN_JSON['TaskType']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['TaskType']['label'][languageId]"></span>
+                    <div>
+                        <item-selection itemdisabled="oriMsgCustomFields.CurrStage != '1'" class="d-block"
+                            list="filterDropdownList.reportByList" selection="oriMsgCustomFields.TaskType"
+                            defaulttext="Select Task Type..." search="true" checkcodekey="displayValue" required="true">
+                        </item-selection>                        
+                    </div>
+                </div>
+                <div class="field-collumn">
+                    <!-- <label>Department: </label> -->                    
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['DefectTyoe']['label'][languageId] != '' 
+                        && DESIGN_JSON['DefectTyoe']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['DefectTyoe']['label'][languageId]"></span>
+                    <div>
+                        <item-selection itemdisabled="oriMsgCustomFields.CurrStage != '1'" class="d-block"
+                            list="issueType" selection="oriMsgCustomFields.DefectTyoe"
+                            on-selection-change="onDefectTypeChange(oriMsgCustomFields.DefectTyoe)"
+                            defaulttext="Select Workpackage..." search="true" checkcodekey="displayValue"
+                            required="true"></item-selection>
+                    </div>
+                </div>
+                <div class="field-collumn">
+                    <!-- <label>Subject: </label> -->                    
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['ORI_FORMTITLE']['label'][languageId] != '' 
+                        && DESIGN_JSON['ORI_FORMTITLE']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['ORI_FORMTITLE']['label'][languageId]"></span>
+                    <div>
+                        <input maxlength="100" type="text" placeholder="Enter Title"
+                            ng-model="oriMsgCustomFields.ORI_FORMTITLE" ng-keydown="restrictCharCustom($event)"
+                            ng-paste="restrictCharPasteCustom($event)" ng-disabled="oriMsgCustomFields.CurrStage != '1'"
+                            required>
+                    </div>
+                </div>
+                <div class="field-collumn">
+                    <!-- <label>Description: </label> -->                    
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['Defect_Description']['label'][languageId] != '' 
+                        && DESIGN_JSON['Defect_Description']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['Defect_Description']['label'][languageId]"></span>
+                    <div>
+                        <div>
+                            <textarea maxlength="5000" rows="1" placeholder="Enter Description"
+                                ng-model="oriMsgCustomFields.Defect_Description"
+                                ng-paste="restrictCharPasteCustom($event);" ng-cut="delayedResize($event)"
+                                ng-keyup="delayedResize($event)" ng-keydown="restrictCharCustom($event)"></textarea>                            
+                        </div>
+                    </div>
+                </div>
+                <div>                                        
+                    <div class="field-collumn inlineBlock half-on-desk">
+                        <!-- <label>Start Date: </label> -->
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['StartDateDisplay']['label'][languageId] != '' 
+                        && DESIGN_JSON['StartDateDisplay']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['StartDateDisplay']['label'][languageId]"></span>
+                        <div>
+                            <datepicker date-change="onStartDateChange()" disable="oriMsgCustomFields.CurrStage != '1'" date-required="true" date-format="yy-mm-dd" date-min-limit="-1" date-view-format="dd-M-y" date-set="oriMsgCustomFields.StartDate" min-year-limit="2000"></datepicker>
+                        </div>
+                    </div>
+                    <div class="field-collumn inlineBlock half-on-desk floatRight">
+                        <!-- <label>Expected Due Day(s): </label> -->     
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['ExpectedFinishDays']['label'][languageId] != '' 
+                        && DESIGN_JSON['ExpectedFinishDays']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['ExpectedFinishDays']['label'][languageId]"></span>
+                    <div class="position-relative exp-due-date-wrapper">
+                        <input type="text" placeholder="Days" ng-disabled="oriMsgCustomFields.CurrStage != '1'"
+                            maxlength="4" ng-model="oriMsgCustomFields.ExpectedFinishDays"
+                            ng-keydown="restrictCharOnlyNumber($event)" ng-paste="restrictCharOnlyNumber($event)"
+                            ng-change="validateExpDueDays()" required>
+                        <span id="expdueDateInfoIcon" class="info-icon"><i class="fa fa-info"></i>
+                        </span>
+                        <div id="expdueDateInfo">
+                            <p><span if="${ !#strings.isEmpty(LANGUAGE_ID) and DESIGN_JSON['message1']['label'][LANGUAGE_ID] != null and !#strings.isEmpty(DESIGN_JSON['message1']['label'][LANGUAGE_ID]) }"
+                                    text="${DESIGN_JSON['message1']['label'][LANGUAGE_ID]}"></span></p>
+                            <p><span if="${ !#strings.isEmpty(LANGUAGE_ID) and DESIGN_JSON['message2']['label'][LANGUAGE_ID] != null and !#strings.isEmpty(DESIGN_JSON['message2']['label'][LANGUAGE_ID]) }"
+                                    text="${DESIGN_JSON['message2']['label'][LANGUAGE_ID]}"></span></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="field-collumn ">
+                    <!-- <label>Assign To: </label> -->                    
+                        <span class="bold"
+                        ng-if="languageId!='' && DESIGN_JSON['AssignedToUser']['label'][languageId] != '' 
+                        && DESIGN_JSON['AssignedToUser']['label'][languageId] !=''"
+                        ng-bind="DESIGN_JSON['AssignedToUser']['label'][languageId]"></span>
+                    <div>
+                        <item-selection itemdisabled="oriMsgCustomFields.CurrStage != '1'" id="assign-dropdown"
+                            class="d-block assigned-to-selection" list="UsersTODistList"
+                            selection="oriMsgCustomFields.AssignedToUsersGroup.AssignedToUsers.AssignedToUser"
+                            on-selection-change="" defaulttext="Select User..." search="true" checkcodekey="code"
+                            required="true"></item-selection>
+                    </div>
+                </div>                
+                <div class="clear-both"></div>
+            </section>
+        </div>        
+    </div>    
+</body>
+
+</html>

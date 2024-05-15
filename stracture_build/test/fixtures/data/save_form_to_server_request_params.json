@@ -1,0 +1,211 @@
+{
+  "locationId": 185415,
+  "coordinates": {
+    "x1": 1823.8329794973426,
+    "y1": 1381.5015341275168,
+    "x2": 1833.8329794973426,
+    "y2": 1391.5015341275168
+  },
+  "annotationId": "d9a19cde-f56b-4d48-841e-6d04fb82b203-1691494037181",
+  "isFromMapView": true,
+  "isCalibrated": true,
+  "page_number": 1,
+  "formSelectRadiobutton": "1_2089700_11129195",
+  "formTypeId": 11129195,
+  "instanceGroupId": 10443853,
+  "templateType": 2,
+  "appBuilderId": "ASI-SITE",
+  "revisionId": 27083705,
+  "offlineFormId": 1691494037203,
+  "isUploadAttachmentInTemp": false,
+  "formCreationDate": "2023-08-08 16:57:17",
+  "offlineFormDataJson": {
+    "myFields": {
+      "FORM_CUSTOM_FIELDS": {
+        "ORI_MSG_Custom_Fields": {
+          "ORI_FORMTITLE": "Testing for UT",
+          "ORI_USERREF": "",
+          "DefectTyoe": "Computer",
+          "TaskType": "Acquisition Tasks",
+          "DefectDescription": "",
+          "Location": "185415|Bank section|Test_Hardik>Arman Complex>Bank section",
+          "LocationName": "Test_Hardik>Arman Complex>Bank section",
+          "StartDate": "2023-08-08",
+          "StartDateDisplay": "08-Aug-2023",
+          "ExpectedFinishDate": "",
+          "OriginatorId": "2017529 | Mayur Raval m., Asite Solutions Ltd # Mayur Raval m., Asite Solutions Ltd",
+          "ActualFinishDate": "",
+          "Recent_Defects": "",
+          "AssignedToUsersGroup": {
+            "AssignedToUsers": {
+              "AssignedToUser": "1906556#hardik113 asite, Asite Solutions Ltd"
+            }
+          },
+          "CurrStage": "1",
+          "PF_Location_Detail": "185415|27083705|{\"x1\":1617.83,\"y1\":1743.25,\"x2\":2673.34,\"y2\":1126.15}|1",
+          "Defect_Description": "",
+          "Username": "",
+          "Organization": "Asite Solutions Ltd",
+          "ExpectedFinishDays": "5",
+          "DistributionDays": "0",
+          "LastResponder_For_AssignedTo": "1906556",
+          "LastResponder_For_Originator": "2017529",
+          "FormCreationDate": "",
+          "Assigned": "hardik113 asite, Asite Solutions Ltd",
+          "attachements": [
+            {
+              "attachedDocs": ""
+            }
+          ],
+          "DS_Logo": "images/asite.gif",
+          "isCalibrated": true
+        },
+        "RES_MSG_Custom_Fields": {
+          "Comments": "",
+          "ShowHideFlag": "Yes",
+          "SHResponse": "Yes"
+        },
+        "CREATE_FWD_RES": {
+          "Can_Reply": ""
+        },
+        "DS_AUTONUMBER": {
+          "DS_FORMAUTONO_CREATE": "",
+          "DS_SEQ_LENGTH": "",
+          "DS_FORMAUTONO_ADD": "",
+          "DS_GET_APP_ACTION_DETAILS": ""
+        },
+        "DS_DATASOURCE": {
+          "DS_ASI_SITE_getAllLocationByProject_PF": "",
+          "DS_Response_PARAM": "#Comments#DS_ALL_FORMSTATUS",
+          "DS_Get_All_Responses": "",
+          "DS_ASI_SITE_getDefectTypesForProjects_pf": "",
+          "DS_FETCH_HOLIIDAY_CALENDAR_SUMMARY": "",
+          "DS_Holiday_Calender_Param": "",
+          "DS_CALL_METHOD": "1",
+          "DS_ASI_SITE_GET_RECENT_DEFECTS": "",
+          "DS_CHECK_FORM_PERMISSION_USER": "",
+          "DS_ASI_Configurable_Attributes": ""
+        }
+      },
+      "Asite_System_Data_Read_Only": {
+        "_1_User_Data": {
+          "DS_WORKINGUSER": "Mayur Raval m., Asite Solutions Ltd",
+          "DS_WORKINGUSERROLE": "",
+          "DS_WORKINGUSER_ID": "",
+          "DS_WORKINGUSER_ALL_ROLES": ""
+        },
+        "_2_Printing_Data": {
+          "DS_PRINTEDBY": "",
+          "DS_PRINTEDON": ""
+        },
+        "_3_Project_Data": {
+          "DS_PROJECTNAME": "KrupalField19.8UK",
+          "DS_CLIENT": ""
+        },
+        "_4_Form_Type_Data": {
+          "DS_FORMNAME": "Site Tasks",
+          "DS_FORMGROUPCODE": "STS",
+          "DS_FORMAUTONO": ""
+        },
+        "_5_Form_Data": {
+          "DS_FORMID": "",
+          "DS_ORIGINATOR": "",
+          "DS_DATEOFISSUE": "",
+          "DS_DISTRIBUTION": "",
+          "DS_CONTROLLERNAME": "",
+          "DS_ATTRIBUTES": "",
+          "DS_MAXFORMNO": "",
+          "DS_MAXORGFORMNO": "",
+          "DS_ISDRAFT": "NO",
+          "DS_ISDRAFT_RES": "",
+          "DS_FORMAUTONO_PREFIX": "",
+          "DS_FORMCONTENT": "",
+          "DS_FORMCONTENT1": "",
+          "DS_FORMCONTENT2": "",
+          "DS_FORMCONTENT3": "",
+          "DS_ISDRAFT_RES_MSG": "NO",
+          "DS_ISDRAFT_FWD_MSG": "NO",
+          "Status_Data": {
+            "DS_FORMSTATUS": "",
+            "DS_CLOSEDUEDATE": "",
+            "DS_APPROVEDBY": "",
+            "DS_APPROVEDON": "",
+            "DS_CLOSE_DUE_DATE": "",
+            "DS_ALL_FORMSTATUS": "1001 # Open",
+            "DS_ALL_ACTIVE_FORM_STATUS": ""
+          }
+        },
+        "_6_Form_MSG_Data": {
+          "DS_MSGID": "",
+          "DS_MSGCREATOR": "",
+          "DS_MSGDATE": "",
+          "DS_MSGSTATUS": "",
+          "DS_MSGRELEASEDATE": "",
+          "ORI_MSG_Data": {
+            "DS_DOC_ASSOCIATIONS_ORI": "",
+            "DS_FORM_ASSOCIATIONS_ORI": "",
+            "DS_ATTACHMENTS_ORI": ""
+          }
+        }
+      },
+      "Asite_System_Data_Read_Write": {
+        "ORI_MSG_Fields": {
+          "SP_ORI_VIEW": "DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ASI_SITE_getAllLocationByProject_PF,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_ASI_SITE_getDefectTypesForProjects_pf, DS_FETCH_HOLIIDAY_CALENDAR_SUMMARY,DS_ASI_SITE_GET_RECENT_DEFECTS,DS_ASI_Configurable_Attributes",
+          "SP_ORI_PRINT_VIEW": "DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_Response_PARAM,DS_Get_All_Responses,DS_DATEOFISSUE,DS_CHECK_FORM_PERMISSION_USER",
+          "SP_FORM_PRINT_VIEW": "DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_Response_PARAM,DS_Get_All_Responses,DS_DATEOFISSUE,DS_CHECK_FORM_PERMISSION_USER",
+          "SP_RES_VIEW": "DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_GET_APP_ACTION_DETAILS",
+          "SP_RES_PRINT_VIEW": "DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_MSGDATE,DS_DATEOFISSUE,DS_CHECK_FORM_PERMISSION_USER,DS_Get_All_Responses"
+        },
+        "DS_PROJORGANISATIONS": "",
+        "DS_PROJUSERS": "",
+        "DS_PROJDISTGROUPS": "",
+        "DS_AUTODISTRIBUTE": "401",
+        "DS_INCOMPLETE_ACTIONS": "",
+        "DS_PROJORGANISATIONS_ID": "",
+        "DS_PROJUSERS_ALL_ROLES": "",
+        "Auto_Distribute_Group": {
+          "Auto_Distribute_Users": [
+            {
+              "DS_PROJDISTUSERS": "1906556",
+              "DS_FORMACTIONS": "3#Respond",
+              "DS_ACTIONDUEDATE": "5"
+            }
+          ]
+        }
+      },
+      "attachments": [],
+      "selectedControllerUserId": ""
+    }
+  },
+  "isDraft": false,
+  "offlineFormCreatedDateInMS": 1691494058624,
+  "assocLocationSelection": {
+    "locationId": 185415,
+    "projectId": "2089700",
+    "folderId": "115847177"
+  },
+  "CreateDateInMS": 1691494058624,
+  "offlineMessageId": 1691494058624,
+  "hasAttachement": true,
+  "appType": 2,
+  "template_type_id": 2,
+  "save_draft": 0,
+  "dist_list": {
+    "selectedDistGroups": "",
+    "selectedDistUsers": [],
+    "selectedDistOrgs": [],
+    "selectedDistRoles": [],
+    "prePopulatedDistGroups": ""
+  },
+  "respondBy": "",
+  "formAction": "create",
+  "msg_type_id": 1,
+  "msg_type_code": "ORI",
+  "isFromApps": true,
+  "isFromAndroidApp": true,
+  "applicationId": 3,
+  "project_id": 2089700,
+  "projectIds": 2089700,
+  "checkHashing": false,
+  "taskNumber": -9007199254740990
+}

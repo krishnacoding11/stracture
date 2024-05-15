@@ -1,0 +1,59 @@
+{
+          "msg": "Success",
+          "response": {
+          "root": {
+                "errorDesc": "Sucess",
+                 "locPercentage": {
+                     "1519638": 0,
+                      "1519649": 0,
+                       "1519637": 0,
+                       "1519648": 0,
+                       "1519636": 0,
+                      "1519647": 0,
+                         "1519635": 0,
+                         "1519657": 0,
+                         "1519646": 0,
+                        "1519656": 0,
+                       "1519645": 0,
+                        "1519655": 0,
+                         "1519644": 0,
+                        "1519654": 0,
+                        "1519643": 0,
+                      "1519653": 0,
+                         "1519642": 0,
+                       "1519652": 0,
+                        "1519641": 0,
+                         "1519651": 0,
+                       "1519640": 0,
+                      "1519650": 0,
+                        "Plan": 0,
+                       "1519639": 0
+                   },
+                    "deliverableActivities": [
+                       {
+                            "activitySeq": 2,
+                              "deliverableActivityId": "6199789$$cesgzZ",
+                             "statusColor": "#F24043",
+                           "qiActivityId": "6825$$iI0Ixd",
+                                "qiLocationId": "1519635$$lR16G0",
+                              "link": "",
+                               "creationDate": "2023-05-04 11:56:00.56",
+                               "updatedById": "1906453$$Wx5EF1",
+                           "generateURI": true,
+                                "folderId": "0$$PWI7k2",
+                                "isAssociationRequired": true,
+                              "qiStatusId": "1$$grChJg",
+                                "updationDate": "2023-05-15 14:03:57.467",
+                              "statusName": "Not Started",
+                               "isAccess": false,
+                                "activityType": 0,
+                                "createdById": "1906453$$Wx5EF1",
+                                "isWorking": true
+                         }
+                    ],
+                 "errorCode": 0
+             }
+        },
+         "errorCode": "0",
+         "isSuccess": true
+   }

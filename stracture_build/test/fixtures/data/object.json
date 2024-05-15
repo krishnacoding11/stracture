@@ -1,0 +1,22 @@
+{
+  "projectId" : "2143261",
+  "appTypeId" : "2",
+  "formSelectRadiobutton" : "1_2143261_10796416",
+  "appBuilderCode" : "ASI-SITE",
+  "projectName" : null,
+  "msgId" : null,
+  "formId" : null,
+  "formTypeID" : "10796416",
+  "formTypeName" : "Site Tasks",
+  "instanceGroupId" : "10796416",
+  "isFromWhere" : null,
+  "formTypeId" : "10796416",
+  "templateType" : 2,
+  "appBuilderId" : "ASI-SITE",
+  "offlineFormId" : 1690453246620,
+  "isUploadAttachmentInTemp" : true,
+  "formCreationDate" : "2023-07-27 15:50:46",
+  "locationId" : "",
+  "url" : "file:///data/user/0/com.asite.field/app_flutter/database/HTML5Form/createFormHTML.html",
+  "name" : "Site Tasks"
+}

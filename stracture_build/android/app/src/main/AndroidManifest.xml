@@ -1,0 +1,900 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.asite.field">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-sdk tools:overrideLibrary="com.arthenica.ffmpegkit.flutter, com.arthenica.ffmpegkit" />
+    <application
+        android:label="Field"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <meta-data
+                android:name="firebase_messaging_auto_init_enabled"
+                android:value="false" />
+            <meta-data
+                android:name="firebase_analytics_collection_enabled"
+                android:value="false" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!-- LIVE URL Starts -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="adoddle.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddle.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleak.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddle.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleak.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portal.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddled.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddled.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddled.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qr.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrb.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrd.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <!-- LIVE URL Ends -->
+
+                <!-- QA URL Starts -->
+                <data
+                    android:host="adoddleak.qa.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleak.qa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleak.qa.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalak.qa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portal.qa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqa.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqaak.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqaak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqa.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqaak.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalqaak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalqa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="wwwqa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqab.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqab.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleqab.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrqa.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrqab.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <!-- QA URL Ends -->
+
+                <!-- Stg URL Start -->
+                <data
+                    android:host="adoddlestg.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestg.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestg.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestg.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestgak.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestgak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestg.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestgak.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalstgak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalstg.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalstg.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="portalstg.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="portalstg.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="portalstg.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="wwwstg.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestgb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestgb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlestgb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrstg.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrstg.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="qrstg.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrstg.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="qrstg.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="qrstgb.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <!-- Stg URL End -->
+
+
+                <!-- MTA URL Starts -->
+                <data
+                    android:host="adoddleusgov.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgov.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovak.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgov.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovak.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalusgovak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalusgov.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovd.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovd.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovak.qa.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovak.qa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovd.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovak.qa.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalusgovak.qa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalusgov.qa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqa.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqaak.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqaak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqa.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqaak.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalusgovqaak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalusgovqa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="wwwqa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqab.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqab.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleusgovqab.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrusgov.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <!-- MTA URL Ends -->
+
+
+                <!-- UAE URL Starts -->
+                <data
+                    android:host="adoddleuae.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuae.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuae.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuae.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeak.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuae.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeak.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluaeak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluae.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluae.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluae.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluae.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluae.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaed.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaed.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeak.qa.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeak.qa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaed.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeak.qa.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluaeak.qa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluae.qa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqa.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqaak.asite.com"
+                    android:pathPrefix="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqaak.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqa.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqaak.asite.com"
+                    android:pathPrefix="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluaeqaak.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portaluaeqa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="wwwqa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqab.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqab.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleuaeqab.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qruae.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qruae.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="qruae.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="qruae.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qruae.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <!-- UAE URL Ends -->
+
+                <!-- SB URL Start -->
+                <data
+                    android:host="adoddlesb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlesb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlesb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlesb.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlesb.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalsb.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="portalsb.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalsb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalsb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="portalsb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="qrsb.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="qrsb.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrsb.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrsb.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="qrsb.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <!-- SB URL End -->
+
+                <!-- KSA URL Start -->
+                <data
+                    android:host="adoddleksa.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleksa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleksa.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleksa.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleksa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalksa.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="portalksa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalksa.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalksa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="portalksa.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="qrksa.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="qrksa.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrksa.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrksa.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="qrksa.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <!-- KSA URL End -->
+
+                <!-- H URL Start -->
+                <data
+                    android:host="adoddleh.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleh.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleh.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleh.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddleh.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalh.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="portalh.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalh.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalh.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="portalh.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="qrh.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="qrh.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrh.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrh.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="qrh.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <!-- H URL End -->
+
+                <!-- HK URL Start -->
+                <data
+                    android:host="adoddlehk.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlehk.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlehk.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlehk.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="adoddlehk.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalhk.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="portalhk.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="portalhk.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="portalhk.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="portalhk.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <data
+                    android:host="qrhk.asite.com"
+                    android:pathPrefix="/qrcode"
+                    android:scheme="https" />
+                <data
+                    android:host="qrhk.asite.com"
+                    android:path="/lnk"
+                    android:scheme="https" />
+                <data
+                    android:host="qrhk.asite.com"
+                    android:pathPrefix="/exchange"
+                    android:scheme="https" />
+                <data
+                    android:host="qrhk.asite.com"
+                    android:path="/da/notification"
+                    android:scheme="https" />
+                <data
+                    android:host="qrhk.asite.com"
+                    android:path="/adoddlepublic"
+                    android:scheme="https" />
+                <!-- HK URL End -->
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        <service
+            android:name="com.dexterous.flutterlocalnotifications.ForegroundService"
+            android:exported="false"
+            android:stopWithTask="false"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.asite.field.flutter_inappwebview.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            xmlns:tools="http://schemas.android.com/tools"
+            android:name="com.pdftron.pdfnet.PDFNetInitializer"
+            android:authorities="${applicationId}.pdftron-pdfnet"
+            tools:node="remove" />
+        <provider
+            xmlns:tools="http://schemas.android.com/tools"
+            android:name="com.pdftron.pdf.utils.PDFTronToolsInitializer"
+            android:authorities="${applicationId}.pdftron-tools"
+            tools:node="remove" />
+    </application>
+</manifest>

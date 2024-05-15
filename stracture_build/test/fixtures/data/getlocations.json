@@ -1,0 +1,40 @@
+[
+  {
+    "permission_value": 0,
+    "isActive": 1,
+    "parentFolderId": 110997340,
+    "lastSyncStatus": 1,
+    "isPublic": false,
+    "hasSubFolder": true,
+    "isFavourite": false,
+    "isMarkOffline": true,
+    "canRemoveOffline": true,
+    "folder_title": "01 Vijay_Test",
+    "baseFilePath": "Site Quality Demo\\01 Vijay_Test",
+    "folderPath": "Site Quality Demo\\01 Vijay_Test",
+    "folderId": "115096348",
+    "projectId": "2130192",
+    "folderPublishPrivateRevPref": 0,
+    "clonedFolderId": 0,
+    "fetchRuleId": 0,
+    "includePublicSubFolder": false,
+    "isPFLocationTree": true,
+    "generateURI": true,
+    "childfolderTreeVOList": [],
+    "pfLocationTreeDetail": {
+      "locationId": 183678,
+      "siteId": 25384,
+      "parentLocationId": 0,
+      "pageNumber": 0,
+      "isSite": false,
+      "isFileUploaded": false,
+      "isCalibrated": false,
+      "docId": "0",
+      "revisionId": "0",
+      "annotationId": "",
+      "locationCoordinates": null,
+      "statusCountList": [],
+      "generateURI": true
+    }
+  }
+]

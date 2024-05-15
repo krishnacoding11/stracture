@@ -1,0 +1,152 @@
+{
+    "FORM_CUSTOM_FIELDS": {
+       "ORI_MSG_Custom_Fields": {
+          "ORI_FORMTITLE": "",
+          "ORI_USERREF": "",
+          "Todays_Date": "",
+          "DefectTyoe": "",
+          "TaskType":"",
+          "DefectDescription": "",
+          "Location": "",
+          "LocationName": "",
+          "StartDate": "",
+          "StartDateDisplay": "",
+          "ExpectedFinishDate": "",
+          "OriginatorId": "",
+          "ActualFinishDate": "",
+          "Recent_Defects":"",
+          "AssignedToUsersGroup": {
+             "AssignedToUsers": {
+                "AssignedToUser": ""
+             }
+          },
+          "CurrStage": "",
+          "PF_Location_Detail": "",
+          "Defect_Description": "",
+          "Username": "",
+          "Organization": "",
+          "ExpectedFinishDays": "",
+          "DistributionDays": "0",
+          "LastResponder_For_AssignedTo": "",
+          "LastResponder_For_Originator": "",
+          "FormCreationDate": "",
+          "Assigned": "",
+          "attachements": [{"attachedDocs" : ""}]
+       },
+       "RES_MSG_Custom_Fields": {
+          "Comments": "",
+          "ShowHideFlag": "Yes",
+          "SHResponse": "Yes"
+       },
+       "CREATE_FWD_RES": {
+          "Can_Reply": ""
+       },
+       "DS_AUTONUMBER": {
+          "DS_FORMAUTONO_CREATE": "",
+          "DS_SEQ_LENGTH": "",
+          "DS_FORMAUTONO_ADD": "",
+          "DS_GET_APP_ACTION_DETAILS": ""
+       },
+       "DS_DATASOURCE": {
+          "DS_ASI_SITE_getAllLocationByProject_PF": "",
+          "DS_Response_PARAM": "#Comments#DS_ALL_FORMSTATUS",
+          "DS_Get_All_Responses": "",
+          "DS_ASI_SITE_getDefectTypesForProjects_pf": "",
+          "DS_FETCH_HOLIIDAY_CALENDAR_SUMMARY": "",
+          "DS_Holiday_Calender_Param": "",
+          "DS_CALL_METHOD": "1",
+          "DS_ASI_SITE_GET_RECENT_DEFECTS":"",
+          "DS_CHECK_FORM_PERMISSION_USER":"",
+          "DS_ASI_Configurable_Attributes":""
+       }
+    },
+    "Asite_System_Data_Read_Only": {
+       "_1_User_Data": {
+          "DS_WORKINGUSER": "",
+          "DS_WORKINGUSERROLE": "",
+          "DS_WORKINGUSER_ID": "",
+          "DS_WORKINGUSER_ALL_ROLES": ""
+       },
+       "_2_Printing_Data": {
+          "DS_PRINTEDBY": "",
+          "DS_PRINTEDON": ""
+       },
+       "_3_Project_Data": {
+          "DS_PROJECTNAME": "",
+          "DS_CLIENT": ""
+       },
+       "_4_Form_Type_Data": {
+          "DS_FORMNAME": "",
+          "DS_FORMGROUPCODE": "",
+          "DS_FORMAUTONO": ""
+       },
+       "_5_Form_Data": {
+          "DS_FORMID": "",
+          "DS_ORIGINATOR": "",
+          "DS_DATEOFISSUE": "",
+          "DS_DISTRIBUTION": "",
+          "DS_CONTROLLERNAME": "",
+          "DS_ATTRIBUTES": "",
+          "DS_MAXFORMNO": "",
+          "DS_MAXORGFORMNO": "",
+          "DS_ISDRAFT": "",
+          "DS_ISDRAFT_RES": "",
+          "DS_FORMAUTONO_PREFIX": "",
+          "DS_FORMCONTENT": "",
+          "DS_FORMCONTENT1": "",
+          "DS_FORMCONTENT2": "",
+          "DS_FORMCONTENT3": "",
+          "DS_ISDRAFT_RES_MSG": "",
+          "DS_ISDRAFT_FWD_MSG": "",
+          "Status_Data": {
+             "DS_FORMSTATUS": "",
+             "DS_CLOSEDUEDATE": "",
+             "DS_APPROVEDBY": "",
+             "DS_APPROVEDON": "",
+             "DS_CLOSE_DUE_DATE": "",
+             "DS_ALL_FORMSTATUS": "",
+             "DS_ALL_ACTIVE_FORM_STATUS": ""
+          }
+       },
+       "_6_Form_MSG_Data": {
+          "DS_MSGID": "",
+          "DS_MSGCREATOR": "",
+          "DS_MSGDATE": "",
+          "DS_MSGSTATUS": "",
+          "DS_MSGRELEASEDATE": "",
+          "ORI_MSG_Data": {
+             "DS_DOC_ASSOCIATIONS_ORI": "",
+             "DS_FORM_ASSOCIATIONS_ORI": "",
+             "DS_ATTACHMENTS_ORI": ""
+          }
+       }
+    },
+    "Asite_System_Data_Read_Write": {
+       "ORI_MSG_Fields": {
+          "SP_ORI_VIEW": "DS_Get_All_Responses,DS_ALL_STATUS_WithCloseout,DS_SNG_AUS_GET_RECENT_DEFECTS,DS_SNG_GET_RECENT_DEFECTS,DS_SNG_AUS_GETALLLOCATIONBYPROJECT_PF,DS_getAllLocationByProject_PF,DS_ALDR_SITE_GET_RECENT_DEFECTS,DS_DOC_ASSOCIATIONS_ALL,DS_DOC_ATTACHMENTS_ALL,DS_GET_MSG_DISTRIBUTION_LIST,DS_ISDRAFT_RES_MSG,DS_DATEOFISSUE,DS_ORIGINATOR,DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ASI_SITE_getAllLocationByProject_PF,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_ASI_SITE_getDefectTypesForProjects_pf, DS_FETCH_HOLIIDAY_CALENDAR_SUMMARY,DS_ASI_SITE_GET_RECENT_DEFECTS,DS_ASI_Configurable_Attributes",
+          "SP_ORI_PRINT_VIEW": "DS_getAllLocationByProject_PF,DS_ALDR_SITE_GET_RECENT_DEFECTS,DS_DOC_ASSOCIATIONS_ALL,DS_DOC_ATTACHMENTS_ALL,DS_GET_MSG_DISTRIBUTION_LIST,DS_ISDRAFT_RES_MSG,DS_DATEOFISSUE,DS_ORIGINATOR,DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_Response_PARAM,DS_Get_All_Responses,DS_DATEOFISSUE,DS_CHECK_FORM_PERMISSION_USER",
+          "SP_FORM_PRINT_VIEW": "DS_getAllLocationByProject_PF,DS_ALDR_SITE_GET_RECENT_DEFECTS,DS_DOC_ASSOCIATIONS_ALL,DS_DOC_ATTACHMENTS_ALL,DS_GET_MSG_DISTRIBUTION_LIST,DS_ISDRAFT_RES_MSG,DS_DATEOFISSUE,DS_ORIGINATOR,DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_Response_PARAM,DS_Get_All_Responses,DS_DATEOFISSUE,DS_CHECK_FORM_PERMISSION_USER",
+          "SP_RES_VIEW": "DS_getAllLocationByProject_PF,DS_ALDR_SITE_GET_RECENT_DEFECTS,DS_DOC_ASSOCIATIONS_ALL,DS_DOC_ATTACHMENTS_ALL,DS_GET_MSG_DISTRIBUTION_LIST,DS_ISDRAFT_RES_MSG,DS_DATEOFISSUE,DS_ORIGINATOR,DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_GET_APP_ACTION_DETAILS",
+          "SP_RES_PRINT_VIEW": "DS_getAllLocationByProject_PF,DS_ALDR_SITE_GET_RECENT_DEFECTS,DS_DOC_ASSOCIATIONS_ALL,DS_DOC_ATTACHMENTS_ALL,DS_GET_MSG_DISTRIBUTION_LIST,DS_ISDRAFT_RES_MSG,DS_DATEOFISSUE,DS_ORIGINATOR,DS_PRINTEDBY,DS_FORMID,DS_ISDRAFT,DS_CLOSE_DUE_DATE,DS_PRINTEDON,ORI_FORMTITLE,ORI_USERREF,DS_ALL_FORMSTATUS,DS_FORMNAME,DS_ALL_ACTIVE_FORM_STATUS,DS_WORKINGUSER_ID,DS_AUTODISTRIBUTE,DS_FORMSTATUS,DS_PROJDISTUSERS,DS_FORMACTIONS,DS_ACTIONDUEDATE,DS_INCOMPLETE_ACTIONS,DS_PROJUSERS_ALL_ROLES,DS_MSGDATE,DS_DATEOFISSUE,DS_CHECK_FORM_PERMISSION_USER",
+          "CA_ORI_VIEW": "State##City",
+          "CA_ORI_VIEW_HTML": "State##City",
+          "CA_ORI_PRINT_VIEW": "State##City",
+          "CA_ORI_PRINT_VIEW_HTML": "State##City",
+          "attributeSetId": "118281"
+       },
+       "DS_PROJORGANISATIONS": "",
+       "DS_PROJUSERS": "",
+       "DS_PROJDISTGROUPS": "",
+       "DS_AUTODISTRIBUTE": "",
+       "DS_INCOMPLETE_ACTIONS": "",
+       "DS_PROJORGANISATIONS_ID": "",
+       "DS_PROJUSERS_ALL_ROLES": "",
+       "Auto_Distribute_Group": {
+          "Auto_Distribute_Users": [{
+             "DS_PROJDISTUSERS": "",
+             "DS_FORMACTIONS": "",
+             "DS_ACTIONDUEDATE": ""
+          }]
+       }
+    }
+ }

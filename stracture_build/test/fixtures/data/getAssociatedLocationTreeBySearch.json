@@ -1,0 +1,16 @@
+{
+  "totalDocs": 1,
+  "recordBatchSize": 0,
+  "data": [
+    {
+      "id": "115096357#2130192",
+      "value": "Site Quality Demo\\01 Vijay_Test\\Plan-1\\Basement",
+      "dataCenterId": 0,
+      "isSelected": false,
+      "imgId": -1,
+      "isActive": true
+    }
+  ],
+  "isSortRequired": true,
+  "generateURI": true
+}

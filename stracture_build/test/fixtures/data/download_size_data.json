@@ -1,0 +1,71 @@
+[
+  {
+    "2130192": [
+      {
+        "-1": {
+          "pdfAndXfdfSize": 1651716,
+          "formTemplateSize": 789029,
+          "totalSize": 104762212,
+          "countOfLocations": 47,
+          "totalFormXmlSize": 4256765,
+          "attachmentsSize": 67896652,
+          "associationsSize": 30957079,
+          "countOfForms": 790
+        }
+      }
+    ]
+  },
+  {
+    "2116416": [
+      {
+        "-1": {
+          "pdfAndXfdfSize": 293857629,
+          "formTemplateSize": 2534298,
+          "totalSize": 1585824351856,
+          "countOfLocations": 1004,
+          "totalFormXmlSize": 28249291,
+          "attachmentsSize": 5871163796,
+          "associationsSize": 9664972802,
+          "countOfForms": 4947
+        }
+      }
+    ]
+  },
+  {
+    "2130192": [
+      {
+        "12345": {
+          "pdfAndXfdfSize": 1651716,
+          "formTemplateSize": 789029,
+          "totalSize": 1047622,
+          "countOfLocations": 47,
+          "totalFormXmlSize": 4256765,
+          "attachmentsSize": 67896652,
+          "associationsSize": 30957079,
+          "countOfForms": 790
+        },
+        "67890": {
+          "pdfAndXfdfSize": 1651716,
+          "formTemplateSize": 789029,
+          "totalSize": 104762,
+          "countOfLocations": 47,
+          "totalFormXmlSize": 4256765,
+          "attachmentsSize": 67896652,
+          "associationsSize": 30957079,
+          "countOfForms": 790
+        }
+      }
+    ]
+  },
+  {
+    "pdfAndXfdfSize": 1651716,
+    "formTemplateSize": 789029,
+    "totalSize": 104762212,
+    "countOfLocations": 47,
+    "totalFormXmlSize": 4256765,
+    "attachmentsSize": 67896652,
+    "associationsSize": 30957079,
+    "countOfForms": 790
+  }
+]
+

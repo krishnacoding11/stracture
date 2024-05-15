@@ -1,0 +1,185 @@
+{
+	"lastName": "Banethia (5327)",
+	"curPassword": "",
+	"jobTitle": "C++ Developer",
+	"phoneId": 960234,
+	"languageId": "en_GB",
+	"marketingPref": false,
+	"timeZone": "Europe/Lisbon",
+	"newPassword": "",
+	"isUserImageExist": false,
+	"screenName": "sbanethia$$000KX1",
+	"passwordMinLength": 9,
+	"phoneNo": "532785243",
+	"firstName": "Saurabh",
+	"emailAddress": "sbanethia@asite.com",
+	"jsonTimZones": [
+		{
+			"timeZone": "(UTC -11:00)Samoa Standard Time",
+			"id": "Pacific/Midway"
+		},
+		{
+			"timeZone": "(UTC -10:00)Hawaii Standard Time",
+			"id": "Pacific/Honolulu"
+		},
+		{
+			"timeZone": "(UTC -09:00)Alaska Standard Time",
+			"id": "America/Anchorage"
+		},
+		{
+			"timeZone": "(UTC -08:00)Pacific Standard Time",
+			"id": "America/Los_Angeles"
+		},
+		{
+			"timeZone": "(UTC -07:00)Mountain Standard Time",
+			"id": "America/Denver"
+		},
+		{
+			"timeZone": "(UTC -06:00)Central Standard Time",
+			"id": "America/Chicago"
+		},
+		{
+			"timeZone": "(UTC -05:00)Eastern Standard Time",
+			"id": "America/New_York"
+		},
+		{
+			"timeZone": "(UTC -04:00)Atlantic Standard Time",
+			"id": "America/Puerto_Rico"
+		},
+		{
+			"timeZone": "(UTC -03:30)Newfoundland Standard Time",
+			"id": "America/St_Johns"
+		},
+		{
+			"timeZone": "(UTC -03:00)Brasilia Time",
+			"id": "America/Sao_Paulo"
+		},
+		{
+			"timeZone": "(UTC -02:00)Fernando de Noronha Time",
+			"id": "America/Noronha"
+		},
+		{
+			"timeZone": "(UTC -01:00)Azores Time",
+			"id": "Atlantic/Azores"
+		},
+		{
+			"timeZone": "(UTC )Western European Time",
+			"id": "Europe/Lisbon"
+		},
+		{
+			"timeZone": "(UTC +01:00)Central European Time",
+			"id": "Europe/Paris"
+		},
+		{
+			"timeZone": "(UTC +03:00)Eastern European Time",
+			"id": "Europe/Istanbul"
+		},
+		{
+			"timeZone": "(UTC +02:00)Israel Standard Time",
+			"id": "Asia/Jerusalem"
+		},
+		{
+			"timeZone": "(UTC +03:00)Arabia Standard Time",
+			"id": "Asia/Baghdad"
+		},
+		{
+			"timeZone": "(UTC +03:30)Iran Standard Time",
+			"id": "Asia/Tehran"
+		},
+		{
+			"timeZone": "(UTC +04:00)Gulf Standard Time",
+			"id": "Asia/Dubai"
+		},
+		{
+			"timeZone": "(UTC +04:30)Afghanistan Time",
+			"id": "Asia/Kabul"
+		},
+		{
+			"timeZone": "(UTC +05:00)Pakistan Time",
+			"id": "Asia/Karachi"
+		},
+		{
+			"timeZone": "(UTC +05:30)India Standard Time",
+			"id": "Asia/Calcutta"
+		},
+		{
+			"timeZone": "(UTC +05:45)Nepal Time",
+			"id": "Asia/Katmandu"
+		},
+		{
+			"timeZone": "(UTC +06:00)Bangladesh Time",
+			"id": "Asia/Dhaka"
+		},
+		{
+			"timeZone": "(UTC +06:30)Myanmar Time",
+			"id": "Asia/Rangoon"
+		},
+		{
+			"timeZone": "(UTC +07:00)Indochina Time",
+			"id": "Asia/Saigon"
+		},
+		{
+			"timeZone": "(UTC +08:00)China Standard Time",
+			"id": "Asia/Shanghai"
+		},
+		{
+			"timeZone": "(UTC +09:00)Japan Standard Time",
+			"id": "Asia/Tokyo"
+		},
+		{
+			"timeZone": "(UTC +09:00)Korea Standard Time",
+			"id": "Asia/Seoul"
+		},
+		{
+			"timeZone": "(UTC +08:00)Australian Western Standard Time",
+			"id": "Australia/Perth"
+		},
+		{
+			"timeZone": "(UTC +09:30)Australian Central Standard Time (South Australia)",
+			"id": "Australia/Adelaide"
+		},
+		{
+			"timeZone": "(UTC +09:30)Australian Central Standard Time (Northern Territory)",
+			"id": "Australia/Darwin"
+		},
+		{
+			"timeZone": "(UTC +10:00)Australian Eastern Standard Time (Queensland)",
+			"id": "Australia/Brisbane"
+		},
+		{
+			"timeZone": "(UTC +10:00)Australian Eastern Standard Time (New South Wales)",
+			"id": "Australia/Canberra"
+		},
+		{
+			"timeZone": "(UTC +10:00)Australian Eastern Standard Time (Tasmania)",
+			"id": "Australia/Hobart"
+		},
+		{
+			"timeZone": "(UTC +10:00)Australian Eastern Standard Time (Victoria)",
+			"id": "Australia/Melbourne"
+		},
+		{
+			"timeZone": "(UTC +10:00)Australian Eastern Standard Time (New South Wales)",
+			"id": "Australia/Sydney"
+		},
+		{
+			"timeZone": "(UTC +11:00)Solomon Is. Time",
+			"id": "Pacific/Guadalcanal"
+		},
+		{
+			"timeZone": "(UTC +12:00)New Zealand Standard Time",
+			"id": "Pacific/Auckland"
+		},
+		{
+			"timeZone": "(UTC +13:00)Phoenix Is. Time",
+			"id": "Pacific/Enderbury"
+		},
+		{
+			"timeZone": "(UTC +14:00)Line Is. Time",
+			"id": "Pacific/Kiritimati"
+		}
+	],
+	"secondaryEmailAddress": "",
+	"confirmPassword": "",
+	"middleName": ""
+}

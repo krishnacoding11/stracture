@@ -1,0 +1,81 @@
+{
+  "BIMProjectModelVO":{
+    "ifcObject":{
+      "name":"0109 D",
+      "ifcObjects":[
+        {
+          "name":"1",
+          "ifcObjects":[
+            {
+              "name":"v1 - 03-Aug-2022 15:36 IST",
+              "fileName":"00_2022_vivek mishra\\08 August\\03-08-2022\\Duplex\\2018_Architecture Design1.ifc",
+              "revId":"24496163$$HiXPLE",
+              "isMerged":false,
+              "disciplineId":0,
+              "is_link":false,
+              "filesize":18002952,
+              "folderId":"112718098$$CaYXmO",
+              "fileLocation":"project_2134298/collabspace/folders/112714581/112718097/112718098/24496163.ifc",
+              "is_last_uploaded":false,
+              "bimIssueNumber":1,
+              "hsf_checksum":"",
+              "nativeFileName":"",
+              "bimIssueNumberModel":3,
+              "isDocAssociated":false,
+              "docTitle":"1",
+              "publisherName":"Vivek Mishra",
+              "orgName":"Asite Solutions"
+            }
+          ],
+          "docId":"12205848$$bzWcD0",
+          "disciplineId":0
+        },
+        {
+          "name":"Architecture Design",
+          "ifcObjects":[
+            {
+              "name":"v2 - 01-Sep-2022 10:32 IST",
+              "fileName":"00_2022_vivek mishra\\09_September\\01-09-2022\\Architecture Design.ifc",
+              "revId":"25157302$$3khpZq",
+              "isMerged":true,
+              "disciplineId":1,
+              "is_link":false,
+              "filesize":9753056,
+              "folderId":"112749548$$gMKY6S",
+              "fileLocation":"project_2134298/collabspace/folders/112749547/112749548/25157302.ifc",
+              "is_last_uploaded":false,
+              "bimIssueNumber":1,
+              "hsf_checksum":"",
+              "nativeFileName":"",
+              "bimIssueNumberModel":1,
+              "isDocAssociated":true,
+              "docTitle":"Architecture Design",
+              "publisherName":"Vivek Mishra",
+              "orgName":"Asite Solutions"
+            },
+            {
+              "name":"v1 - 01-Sep-2022 10:28 IST",
+              "fileName":"00_2022_vivek mishra\\09_September\\01-09-2022\\Architecture Design.ifc",
+              "revId":"25157266$$ZJfc4Q",
+              "isMerged":true,
+              "disciplineId":1,
+              "is_link":false,
+              "filesize":10417512,
+              "folderId":"112749548$$gMKY6S",
+              "fileLocation":"project_2134298/collabspace/folders/112749547/112749548/25157266.ifc",
+              "is_last_uploaded":false,
+              "bimIssueNumber":2,
+              "hsf_checksum":"",
+              "nativeFileName":"",
+              "bimIssueNumberModel":2,
+              "isDocAssociated":false,
+              "docTitle":"Architecture Design",
+              "publisherName":"Vivek Mishra",
+              "orgName":"Asite Solutions"
+            }
+          ],
+          "docId":"12236101$$SmkNAd",
+          "disciplineId":0
+        },
+        }
+}

@@ -1,0 +1,13 @@
+{
+  "118281": [
+    {
+      "childAttributeName": "City",
+      "parentAttributeName": "State",
+      "parentChildRelation": {
+        "Gujarat": "Ahmadabad#Bhuj#Rajkot",
+        "Ladakh": "Kargil#Leh",
+        "Maharashtra": "Mumbai#Nagpur"
+      }
+    }
+  ]
+}

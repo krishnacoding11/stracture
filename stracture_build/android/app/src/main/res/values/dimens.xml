@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pin_half_width">20.0dp</dimen>
+    <dimen name="pin_half_width_rect">17.0dp</dimen>
+    <dimen name="corner_thickness">2dp</dimen>
+    <dimen name="default_pin_font_size">7sp</dimen>
+    <dimen name="three_char_pin_font_size">8sp</dimen>
+    <dimen name="four_char_pin_font_size">7sp</dimen>
+</resources>

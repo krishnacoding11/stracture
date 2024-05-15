@@ -1,0 +1,204 @@
+{
+  "userId": 2017529,
+  "projectId": "2116416$$JP55BH",
+  "configJsonData": {
+    "defaultTabs": [
+      {
+        "id": "1",
+        "values": "Create New Task"
+      },
+      {
+        "id": "2",
+        "values": "New Tasks"
+      },
+      {
+        "id": "3",
+        "values": "Task Due Today"
+      },
+      {
+        "id": "4",
+        "values": "Task Due This Week"
+      },
+      {
+        "id": "5",
+        "values": "Overdue Tasks"
+      },
+      {
+        "id": "6",
+        "values": "Jump Back to Site"
+      },
+      {
+        "id": "7",
+        "values": "Create Site Form"
+      },
+      {
+        "id": "8",
+        "values": "Filter"
+      },
+      {
+        "id": "9",
+        "values": "CreateForm"
+      }
+    ],
+    "userProjectConfigTabsDetails": [
+      {
+        "id": "2",
+        "name": "New Tasks",
+        "config": {}
+      },
+      {
+        "id": "7",
+        "name": "Create Site Form",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "Defect Custom",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10701924$$EpREFf"
+        }
+      },
+      {
+        "id": "5",
+        "name": "Overdue Tasks",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "Edit ORI",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "11051650$$eTuCen"
+        }
+      },
+      {
+        "id": "6",
+        "name": "Jump Back to Site",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "C HTML",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10390542$$1e8oZd"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Construction Inspection Checklist",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10400814$$TFK9Co"
+        }
+      },
+      {
+        "id": "9",
+        "name": "H&S",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10381413$$R0E2Pt"
+        }
+      },
+      {
+        "id": "1",
+        "name": "Create Site Task",
+        "config": {}
+      },
+      {
+        "id": "4",
+        "name": "Task Due This Week",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "Site Tasks V3",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10703023$$3nDbuv"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Defect Form HTML",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10381138$$9jqwJ4"
+        }
+      },
+      {
+        "id": "3",
+        "name": "Task Due Today",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "HR",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10381412$$JQ9JbD"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Disc",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10381140$$KFeT2w"
+        }
+      },
+      {
+        "id": "9",
+        "name": "html_form_Shubham",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10381142$$l9AORp"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Site Tasks",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10546696$$dLBZ7N"
+        }
+      },
+      {
+        "id": "8",
+        "name": "Filtered Form",
+        "config": {
+          "766": {
+            "start_date": "Oct 14, 2023"
+          }
+        }
+      },
+      {
+        "id": "9",
+        "name": "Inline attachment",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10583899$$LpTEkR"
+        }
+      },
+      {
+        "id": "8",
+        "name": "Filtered Form",
+        "config": {
+          "860": [
+            {
+              "id": "Defect Form HTML",
+              "value": "Defect Form HTML",
+              "dataCenterId": 0,
+              "isSelected": true,
+              "imgId": -1,
+              "isActive": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "createdDate": "2023-10-27 06:09:29.007",
+  "updatedDate": "2023-10-30 12:16:50.727"
+}

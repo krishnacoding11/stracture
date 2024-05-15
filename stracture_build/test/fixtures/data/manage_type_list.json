@@ -1,0 +1,94 @@
+{
+  "distData": {
+    "userList": [
+      {
+        "userID": "3722$$46jm1N",
+        "orgID": 3,
+        "projectID": "0$$ZQZZEA",
+        "orgName": "Asite Solutions",
+        "userName": "Denis Antony (5253)",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 0,
+        "emailId": "dantony@asite.com",
+        "fname": "Denis",
+        "lname": "Antony (5253)",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_3722_thumbnail.jpg?v=1674033285000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "generateURI": true
+      },
+      {
+        "userID": "514806$$ThSqhQ",
+        "orgID": 3,
+        "projectID": "0$$ZQZZEA",
+        "orgName": "Asite Solutions",
+        "userName": "Dhaval Vekaria (5226)",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 0,
+        "emailId": "dvekaria@asite.com",
+        "fname": "Dhaval",
+        "lname": "Vekaria (5226)",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_514806_thumbnail.jpg?v=1656996305000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "generateURI": true
+      }
+    ],
+    "orgList": [
+      {
+        "orgID": 333018,
+        "orgName": "!!!!Ashish Test 130520091!!",
+        "hashedOrgId": "333018$$cQmSAy",
+        "userCount": 25,
+        "dataCenterId": 1,
+        "address": "IN",
+        "orgImageName": "companyLogo/333018.jpg",
+        "orgVisibility": 0,
+        "countryId": 0,
+        "dynamicVariable": false,
+        "generateURI": true
+      },
+      {
+        "orgID": 5151785,
+        "orgName": "Asite 207 companies Ltd",
+        "hashedOrgId": "5151785$$KwYJAR",
+        "userCount": 2,
+        "dataCenterId": 0,
+        "address": "IN",
+        "orgImageName": "companyLogo/5151785.jpg",
+        "orgVisibility": 0,
+        "countryId": 0,
+        "dynamicVariable": false,
+        "generateURI": true
+      }
+    ],
+    "defTypeJson": [
+      {
+        "id": "218898",
+        "name": "Architectural",
+        "isDeactive": false,
+        "projectId": "2116416$$w15HZa",
+        "generateURI": true
+      },
+      {
+        "id": "218900",
+        "name": "Civil",
+        "isDeactive": false,
+        "projectId": "2116416$$w15HZa",
+        "generateURI": true
+      }
+    ]
+  }
+}

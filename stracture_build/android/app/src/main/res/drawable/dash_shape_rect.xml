@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- The color will be changed to what the color swatch is. White is default. -->
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="@dimen/padding_xxsmall"
+        android:color="@color/red"
+        android:dashWidth="@dimen/padding_xxsmall"
+        android:dashGap="@dimen/padding_xxsmall" />
+</shape>

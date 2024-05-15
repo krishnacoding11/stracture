@@ -1,0 +1,248 @@
+{
+  "userId": 2017529,
+  "projectId": "2089700$$O9zNNz",
+  "createdDate": "2023-10-10 10:43:10.45",
+  "updatedDate": "2023-10-16 11:04:26.747",
+  "configJsonData": {
+    "defaultTabs": [
+      {
+        "id": "1",
+        "values": "Create New Task"
+      },
+      {
+        "id": "2",
+        "values": "New Tasks"
+      },
+      {
+        "id": "3",
+        "values": "Task Due Today"
+      },
+      {
+        "id": "4",
+        "values": "Task Due This Week"
+      },
+      {
+        "id": "5",
+        "values": "Overdue Tasks"
+      },
+      {
+        "id": "6",
+        "values": "Jump Back to Site"
+      },
+      {
+        "id": "7",
+        "values": "Create Site Form"
+      },
+      {
+        "id": "8",
+        "values": "Filter"
+      },
+      {
+        "id": "9",
+        "values": "CreateForm"
+      }
+    ],
+    "userProjectConfigTabsDetails": [
+      {
+        "id": "1",
+        "name": "Create New Task",
+        "config": {}
+      },
+      {
+        "id": "2",
+        "name": "New Tasks",
+        "config": {}
+      },
+      {
+        "id": "3",
+        "name": "Task Due Today",
+        "config": {}
+      },
+      {
+        "id": "4",
+        "name": "Task Due This Week",
+        "config": {}
+      },
+      {
+        "id": "5",
+        "name": "Overdue Tasks",
+        "config": {}
+      },
+      {
+        "id": "6",
+        "name": "Jump Back to Site",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "Defect form",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10121200$$VQMLmp"
+        }
+      },
+      {
+        "id": "7",
+        "name": "Create Site Form",
+        "config": {}
+      },
+      {
+        "id": "8",
+        "name": "Custom filter",
+        "config": {}
+      },
+      {
+        "id": "9",
+        "name": "hb test site button",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10986354$$UKZ5aP"
+        }
+      },
+      {
+        "id": "9",
+        "name": "B13 - Plastering Checklist",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10597859$$0LaIvG"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Embedded Email All Users",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10392553$$ERcLBZ"
+        }
+      },
+      {
+        "id": "9",
+        "name": "HTML",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10381111$$rvY8lJ"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Environmental Field Inspection",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10452584$$QUbSRw"
+        }
+      },
+      {
+        "id": "9",
+        "name": "ADODDLEFLD-3013",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "11297249$$Q5aRpR"
+        }
+      },
+      {
+        "id": "9",
+        "name": "H&S",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10475435$$GTcM91"
+        }
+      },
+      {
+        "id": "9",
+        "name": "HB HTML 123",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10796407$$rrDQyz"
+        }
+      },
+      {
+        "id": "9",
+        "name": "HB hierarchy",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "11157035$$es6zVp"
+        }
+      },
+      {
+        "id": "9",
+        "name": "KP Edit and Forward",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10881091$$Xmnt62"
+        }
+      },
+      {
+        "id": "9",
+        "name": "K28_Plumbing Installation Checklist Rev 00",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10593438$$VOYsQC"
+        }
+      },
+      {
+        "id": "9",
+        "name": "KP HTML",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10499904$$325Kva"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Inline attachment",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10675818$$P0tTx7"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Lock Out Tag Out Log",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10680407$$6MHxEs"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Multi RC NO",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "11298008$$zylBNZ"
+        }
+      },
+      {
+        "id": "9",
+        "name": "QC-025 - Facing Brickwork Stud Walls12345678912345",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10500289$$ehQTBc"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Refusal of work",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10705243$$lvRUQu"
+        }
+      },
+      {
+        "id": "9",
+        "name": "QC-028 - Terracota Cladding",
+        "config": {
+          "templatetype": 2,
+          "instanceGroupId": "10590883$$ZDKgq1"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Fields",
+        "config": {
+          "templatetype": 1,
+          "instanceGroupId": "10682185$$OEAg3B"
+        }
+      }
+    ]
+  }
+}

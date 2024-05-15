@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link type="image/x-icon" rel="shortcut icon" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/logo_small.png">
+	<base href=".">
+	<title>View Project Form</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" id="viewport_meta"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+
+	<link rel="stylesheet" type="text/css" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/viewer.bundle.css" />
+	<link rel="stylesheet" type="text/css" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/newui/dest/common.css" />
+	<link rel="stylesheet" type="text/css" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/newui/dest/view-form.css" />
+	<link rel="stylesheet" type="text/css" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/newui/branding/asite.css">
+
+	<script>
+		var marketPlaceServiceURL = ".";
+		var marketPlaceApiKey = "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIuYXNpdGUuY29tIiwiaXNzIjoiQXNpdGUifQ.Qbap2a7wy5OZHZ-0XuBFXiTS2CcWodfZOBy1oPR2BTD6HTj4bjo-iIICFec0z7KvPUZRKCKsqP0RVOL_3AnfQg";
+		var adoddleAppEngineURL = ".";
+		var adoddleShopBaseUrl = ".";
+		var objConfigData = {};
+		window.isOfflineMode = true;
+		window.offlineFormView = true;
+		function offlineBootstrapCallBack(){
+			angular.element(document).ready(function() { 
+				angular.bootstrap(document, ['adoddle']); 
+			});
+		}
+	</script>
+
+	<!-- <script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/bundle/preViewFormBundle.js?ver=20766"></script> -->
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/bundle/preViewFormBundle.js"></script>
+	<script type="text/javascript">
+
+		// for registration after for html append
+		window.ProviderObject = {};
+		angular.module("adoddle", ['ui.bootstrap', 'ui.sortable', 'ngclipboard', 'ui-notification', 'angularFileUpload', 'pascalprecht.translate', 'textAngular', 'ngSanitize', 'angularSpectrumColorpicker', 'ui.bootstrap.datetimepicker'], function ($provide, $compileProvider, $controllerProvider, $filterProvider, $translateProvider, $httpProvider) {
+			ProviderObject = {
+				$provide: $provide,
+				$compileProvider: $compileProvider,
+				$controllerProvider: $controllerProvider,
+				$filterProvider: $filterProvider,
+				$translateProvider: $translateProvider
+			};
+
+			$httpProvider.defaults.withCredentials = true;
+		});
+
+		var removeToobarOptions = function (taOptions) {
+			var toolsToRemove = ["pre", "quote", "html", "insertVideo", "wordcount", "charcount"];
+			if (taOptions.toolbar && taOptions.toolbar.length) {
+				for (var i = 0; i < toolsToRemove.length; i++) {
+					for (var j = 0; j < taOptions.toolbar.length; j++) {
+						var index = taOptions.toolbar[j].indexOf(toolsToRemove[i]);
+						if (index > -1) {
+							taOptions.toolbar[j].splice(index, 1);
+						}
+					}
+				}
+			}
+		};
+
+		angular.module("adoddle").config(['$provide', function ($provide) {
+			$provide.decorator('taOptions', ['taRegisterTool', '$delegate', function (taRegisterTool, taOptions) {
+				removeToobarOptions(taOptions);
+				taRegisterTool('backgroundColor', {
+					display: "<div spectrum-colorpicker ng-model='color' on-change='!!color && action(color)' format='\"hex\"' options='options'></div>",
+					action: function (color) {
+						var me = this;
+						if (!this.$editor().wrapSelection) {
+							setTimeout(function () {
+								me.action(color);
+							}, 100)
+						} else {
+							return this.$editor().wrapSelection('backColor', color);
+						}
+					},
+					options: {
+						replacerClassName: 'fa fa-paint-brush',
+						showButtons: false
+					},
+					color: "#fff"
+				});
+				taRegisterTool('fontColor', {
+					display: "<spectrum-colorpicker trigger-id='{{trigger}}' ng-model='color' on-change='!!color && action(color)' format='\"hex\"' options='options'></spectrum-colorpicker>",
+					action: function (color) {
+						var me = this;
+						if (!this.$editor().wrapSelection) {
+							setTimeout(function () {
+								me.action(color);
+							}, 100)
+						} else {
+							return this.$editor().wrapSelection('foreColor', color);
+						}
+					},
+					options: {
+						replacerClassName: 'fa fa-font',
+						showButtons: false
+					},
+					color: "#000"
+				});
+
+				taOptions.toolbar[1].push('backgroundColor', 'fontColor');
+				return taOptions;
+			}]);
+		}]);
+
+		(function () {
+			
+			objConfigData = JSON.parse("{}");
+			angular.module("adoddle").constant("myConfig", objConfigData);
+
+			window.baseUrl = '.';
+			window.USP = objConfigData.USP;
+			window.staticContentVersion = "";
+			window.applicationId = 3;
+			window.INIT_JSP_GLOBAL = {
+				 "expoContext": "",
+				 "USER_DC_JSON": [
+					{
+						"id": 1,
+						"suffix": ""
+					},
+					{
+						"id": 2,
+						"suffix": "b"
+					}
+				],
+				"CONTENT_ACCELERATION_JSON": [
+					{
+						"id": 0,
+						"suffix": ""
+					},
+					{
+						"id": 1,
+						"suffix": "ak"
+					},
+					{
+						"id": 2,
+						"suffix": "ca2"
+					}
+				],
+				"formatsForJqueryCalender": {
+					"en_GB": "dd-M-yy",
+					"fr_FR": "d M yy",
+					"es_ES": "dd-M-yy",
+					"ru_RU": "dd.mm.yy",
+					"en_AU": "dd/mm/yy",
+					"en_CA": "d-M-yy",
+					"en_US": "M d, yy",
+					"zh_CN": "yy-m-d",
+					"de_DE": "dd.mm.yy",
+					"ga_IE": "d M yy",
+					"en_ZA": "dd M yy",
+					"ja_JP": "yy/mm/dd",
+					"ar_SA": "dd/mm/yy",
+					"en_IE": "dd-M-yy",
+					"it_IT": "dd-M-yy",
+					"nl_NL": "d-M-yy",
+					"cs_CZ": "d.mm.yy",
+					"tr_TR": "dd.M.yy"
+				}
+			};
+			window.contextpath = "/";
+			
+
+			var isAssocOpoen = false;
+			window.addEventListener('message', function (e) {
+				if (typeof e.data !== 'string') { return; }
+				var data = e.data.split(':');
+				var iframe = document.getElementById('reply-frame');
+				if (data[0] == 'sizing') {
+					if (!isAssocOpoen)
+						iframe.style.height = Math.max(data[1], 700) + 'px';
+				} else if (data[0] == 'replyassocopen') {
+					if (data[1] == 'open') {
+						iframe.style.height = window.innerHeight + 'px';
+						$('html, body').css({ overflow: 'hidden', height: '100%' });
+						isAssocOpoen = true;
+					} else {
+						$('html, body').css({ overflow: '', height: '' });
+						isAssocOpoen = false;
+					}
+				}
+			}, false);
+
+			angular.element(function () {			// on document ready
+				angular.element('#page-progress').addClass('done');
+			});
+		})();
+
+		function closehelpbar() {
+			$("#help-content").removeClass("open").addClass("close");
+		}
+	</script>
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+        <p class="browserupgrade">You are either using an outdated browser version or running your browser in compatibility mode. Please disable compatibility view within IE if you are running IE9 or higher version.</p>
+	<![endif]-->
+	<div id="page-progress" class="page-progress">
+		<div class="progress"></div>
+	</div>
+	<div id="form-view-page" ng-controller="FormViewController as mainCtrl" class="mobile">
+		<div style="display: none;">
+			<calendar-panel date-format="'dd/mm/yy'" date-set="gloabldate"></calendar-panel>
+		</div>
+		<div class="page-wrapper">
+			<div class="reply-wrapper" id="reply-frame-container"></div>
+			<div class="main-header clearfix">
+				<div class="mobile-more-opt display-inline-block pull-right" id="mobile-more-opt">
+					<button class="btn btn-default plane-view-btn" ng-show="assocLocation.canNavigatePlanView" ng-click="navigateToPlanView()">
+						<i class="fa adoddle-icon i-plan-view"></i>
+					</button>
+					<div class="dropdown display-inline-block" id="mobile-more-opt" uib-dropdown>
+						<button class="btn btn-default dropdown-toggle" uib-dropdown-toggle type="button">
+							<i class="fa fa-ellipsis-v"></i>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
+							<li>
+								<!-- {{'form-details'|offlineLang}} -->
+								<custom-common-dropdown dd-name="form-thread" dd-title="{{'form-details'| offlineLang}}" dialog="true"
+									icon="fa-bars" target-btn="mobile-more-opt" btn-id="mob-form-thread-btn"
+									btn-text="'form-threads'" auto-close="outsideClick" append-to="right-content">
+									<form-thread on-assoclocationready="onAssocLocationReady(data)"></form-thread>
+								</custom-common-dropdown>
+							</li>
+							<li>
+								<custom-common-dropdown dd-name="assoc-attach" dialog="true" icon="fa-paperclip"
+									target-btn="mobile-more-opt" dd-title="{{'attachments-associations'| offlineLang}}" 
+									btn-text="'attachments-associations'" auto-close="outsideClick"
+									append-to="right-content">
+									<form-attach-assoc></form-attach-assoc>
+								</custom-common-dropdown>
+							</li>
+							<li>
+								<custom-common-dropdown dd-name="status-change" ng-if="priv.canChangeStatus"
+									dialog="true" caret=true icon="fa-pencil-square-o"  btn-id="offline-status-btn"
+									dd-title="{{'status-change'| offlineLang}}" btn-text="mainThread.offlineStatus"
+									auto-close="outsideClick" append-to="right-content">
+									<form-status-change opt="mainThread" status-data="statusData"></form-status-change>
+								</custom-common-dropdown>
+								<button class="btn btn-default" type="button" tabindex="-1"
+									ng-if="!priv.canChangeStatus && mainThread.status" disabled>
+									<i class="fa fa-pencil-square-o" aria-hidden="true"></i>{{'status'| offlineLang}}:
+									<span>{{mainThread.status}}</span>
+								</button>
+							</li>
+							<li>
+								<custom-common-dropdown dd-name="form-info" dialog="true" icon="fa-file-text-o"
+									dd-title="{{'form-details'| offlineLang}}" target-btn="mobile-more-opt" btn-id="mob-form-info-btn"
+									btn-text="'form-details'" auto-close="outsideClick" append-to="right-content">
+									<form-info></form-info>
+								</custom-common-dropdown>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<button class="btn btn-default dropdown-toggle pull-left go-back" ng-if="!hideBackButton" uib-dropdown-toggle type="button"
+					ng-click="goBackMobile($event);">
+					<i class="fa fa-arrow-left" aria-hidden="true"></i>
+				</button>
+
+				<h1 class="view-header">
+					<span id="view-header-title"></span>
+				</h1>
+			</div>
+
+			<div class="main-section">
+				<div id="right-content" class="right-content"></div>
+				<msg-detail></msg-detail>
+			</div>
+		</div>
+		<div id="divCallBackFields" style="height: 0px;">&#160;</div>
+		<div id="dynamicDivForUserInfo" style="margin:0px;overflow:hidden;height:1px;width:1px;"></div>
+	</div>
+
+	<div id="fileViewPort" class="modal close fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		aria-hidden="true" style="width: auto;">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		</div>
+		<div class="modal-body">
+			<iframe id="MsgWindow" name="MsgWindow"
+				style="width:100%; height:100%; border: none; background: white;"></iframe>
+		</div>
+	</div>
+
+	<div class="help-content close" id="help-content"></div>
+
+	<script type="text/ng-template" id="formAttachAssoc.html">
+		<span class="title-actions" ng-hide="errorFile.length">
+			<select ng-model="search.parentMsgCode" ng-if="threadList.length > 1" ng-disabled="$ctrl.xhr" ng-change="msgCodeChange(search)">
+				<option value="">{{'all'| offlineLang}}</option>
+				<option ng-repeat="thread in threadList track by thread.msgId" ng-value="thread.msgCode">{{thread.msgCode}}</option>
+			</select>		
+			<button type="button" class="btn btn-default btn-xs button-reload" ng-disabled="$ctrl.xhr && $ctrl.xhr.abort"  ng-click="$ctrl.refresh($event)">
+				<i class="fa fa-rotate-right"></i>
+			</button>
+		</span>
+		<div class="assoc-panel-wrapper" ng-class="{loading: $ctrl.xhr, failed: ($ctrl.xhr.status && $ctrl.xhr.status != -1)}">
+			<div class="tabset-container tabset-offline-container">
+				<uib-tabset active="search.type">
+					<uib-tab index="3" select="typeChange()" ng-if="listing.attachments.data.length">
+						<uib-tab-heading>{{'attachments'| offlineLang}}
+						<span class="badge bg-red">{{listing.attachments.data.length}}</span>
+						<div ng-if="viewSwitch" class="view-switch-btns">
+							<button class="btn btn-default" type="button" ng-class="{active: activeViewType == ViewType.LIST}"
+								ng-if="activeViewType == ViewType.THUMB" ng-click="changeView(ViewType.LIST)"
+								title="List view">
+							<i class="fa fa-th-list"></i>
+							</button>
+							<button class="btn btn-default" type="button" ng-class="{active: activeViewType == ViewType.THUMB}"
+								ng-if="activeViewType == ViewType.LIST" ng-click="changeView(ViewType.THUMB)"
+								title="Thumb view">
+							<i class="fa fa-th"></i>
+							</button>
+						</div>
+						</uib-tab-heading>
+						<table-listing
+							ng-if="activeViewType == ViewType.LIST"
+							inifinite-scroll="false"
+							selected-data=assoc.attachments.selection
+							pager="false"
+							rpp="false"
+							customizable="true"
+							breadcrumb="false"
+							record-counter="false"
+							on-selection-change="loadAssocListing(item)"
+							list-data="listing.attachments"
+							list-type="activeViewType">
+						</table-listing>
+						<div id="assocThumb" style="height: inherit;" class="assoc-thumb-view"></div>
+					</uib-tab>
+					<uib-tab index="0" select="typeChange()" ng-if="listing.files.data.length">
+						<uib-tab-heading>{{'files'| offlineLang}} <span class="badge bg-red">{{listing.files.data.length}}</span></uib-tab-heading>
+						<table-listing
+							inifinite-scroll="false"
+							selected-data=assoc.files.selection
+							pager="false"
+							   rpp="false"
+							   customizable="true"
+							   breadcrumb="false"
+							   record-counter="false"
+							   on-selection-change="loadAssocListing(item)"
+							list-data="listing.files">
+						</table-listing>
+					</uib-tab>
+					<uib-tab index="1" select="typeChange()" ng-if="listing.discussions.data.length">
+						<uib-tab-heading>{{'discussions'| offlineLang}} <span class="badge bg-red">{{listing.discussions.data.length}}</span></uib-tab-heading>
+						<table-listing
+							inifinite-scroll="false"
+							selected-data=assoc.discussions.selection
+							pager="false"
+							   rpp="false"
+							   customizable="true"
+							   breadcrumb="false"
+							   record-counter="false"
+							   on-selection-change="loadAssocListing(item)"
+							list-data="listing.discussions">
+						</table-listing>
+					</uib-tab>
+					<uib-tab index="2" select="typeChange()" ng-if="listing.apps.data.length">
+						<uib-tab-heading>{{'apps'| offlineLang}} <span class="badge bg-red">{{listing.apps.data.length}}</span></uib-tab-heading>
+						<table-listing
+							inifinite-scroll="false"
+							selected-data=assoc.apps.selection
+							pager="false"
+							   rpp="false"
+							   customizable="true"
+							   breadcrumb="false"
+							   record-counter="false"
+							   on-selection-change="loadAssocListing(item)"
+							list-data="listing.apps">
+						</table-listing>
+					</uib-tab>
+					<uib-tab index="6" select="typeChange()" ng-if="listing.refs.data.length">
+						<uib-tab-heading>{{'form_ref'| offlineLang}} <span class="badge bg-red">{{listing.refs.data.length}}</span></uib-tab-heading>
+						<table-listing
+							inifinite-scroll="false"
+							selected-data=assoc.refs.selection
+							pager="false"
+							   rpp="false"
+							   customizable="true"
+							   breadcrumb="false"
+							   record-counter="false"
+							   on-selection-change="loadAssocListing(item)"
+							list-data="listing.refs">
+						</table-listing>
+					</uib-tab>
+					<uib-tab index="7" select="typeChange()" ng-if="assocViews.length">
+						<uib-tab-heading>{{'views'| offlineLang}} <span class="badge bg-red">{{assocViews.length}}</span></uib-tab-heading>
+						<div class="table-grid">
+							<div class="ghead">
+								<ul class="grow">
+									<li class="gtype">{{'type'| offlineLang}}</li>
+									<li class="gfname">{{'viewName'| offlineLang}} </li>
+									<li class="gfname">{{'modelName'| offlineLang}} </li>
+									<li class="gfname">{{'project-name'| offlineLang}} </li>
+									<li class="guser">{{'originator'| offlineLang}} </li>
+									<li class="gdate">{{'created-date'| offlineLang}} </li>
+								</ul>
+							</div>
+							<div class="gbody">
+								<div ng-repeat="item in assocViews track by $index">
+									<ul class="grow">
+										<li class="gtype" title="{{item.modelTypeName}}"><img height="16" width="16" ng-src="{{'/images/' + item.modelTypeImage}}" onerror="this.onerror=null;this.src='/images/filetype/noicon.gif'" /></li>
+										<li class="gfname"><a href="javascript:void(0)">{{item.viewName}}</a></li>
+										<li class="gfname"><a href="javascript:void(0)">{{item.modelName}}</a></li>
+										<li class="gfname">{{item.projectName}}</li>
+										<li class="guser">
+											<img height="20" width="20" class="user-img" src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png" /> 
+											<span>{{item.creatorByImages.split('#')[1]}}</span>
+										</li>
+										<li class="gdate" title="{{item.createdDate.split('#')[1]}}">{{item.createdDate.split('#')[0]}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</uib-tab>
+					<uib-tab index="8" select="typeChange()" ng-if="assocLists.length">
+						<uib-tab-heading>{{'lists'| offlineLang}}  <span class="badge bg-red">{{assocLists.length}}</span></uib-tab-heading>
+						<div class="table-grid">
+							<div class="ghead">
+								<ul class="grow">	
+									<li class="gtype">{{'type'| offlineLang}} </li>							
+									<li class="gfname">{{'listName'| offlineLang}} </li>
+									<li class="gfname">{{'modelName'| offlineLang}} </li>
+									<li class="gfname">{{'project-name'| offlineLang}} </li>
+									<li class="guser">{{'originator'| offlineLang}} </li>
+									<li class="gdate">{{'created-date'| offlineLang}} </li>
+								</ul>								
+							</div>
+							<div class="gbody">
+								<div ng-repeat="item in assocLists track by $index">
+									<ul class="grow">								
+										<li class="gtype" title="{{item.modelTypeName}}"><img height="16" width="16" ng-src="{{'./images/' + item.modelTypeImage}}" onerror="this.onerror=null;this.src='./images/filetype/noicon.gif'" /></li>								
+										<li class="gfname"><a href="javascript:void(0)">{{item.listName}}</a></li>
+										<li class="gfname"><a href="javascript:void(0)">{{item.modelName}}</a></li>
+										<li class="gfname">{{item.projectName}}</li>
+										<li class="guser">
+											<img height="20" width="20" class="user-img" src="//data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png" /> 
+											<span>{{item.creatorByImages.split('#')[1]}}</span>
+										</li>
+										<li class="gdate" title="{{item.createdDate.split('#')[1]}}">{{item.createdDate.split('#')[0]}}</li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</uib-tab> 
+				</uib-tabset>
+				<p class="no-record" ng-if="!listing.attachments.data.length && !listing.files.data.length && !listing.discussions.data.length && !listing.apps.data.length && !listing.refs.data.length && !assocViews.length && !assocLists.length">{{'no-match-found'| offlineLang}}</p>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="formThread.html">
+			<span class="title-actions">
+				<button class="btn btn-default btn-xs button-reload" ng-disabled="$ctrl.xhr && $ctrl.xhr.abort" ng-click="$ctrl.refresh()">
+					<i class="fa fa-rotate-right"></i>
+				</button>
+			</span>
+			<span id="thread-unread-count" class="badge thread-unread-count" ng-show="unreadCount">{{unreadCount}}</span>
+			<div class="form-details">
+				<div ng-if="::mainThread.userRefCode && mainThread.userRefCode != 'N/A'"><strong>{{'user_ref'| offlineLang}}:</strong> <span>{{::mainThread.userRefCode}}</span></div>
+				<div ng-if="::mainThread.firstName"><strong>{{'originator'| offlineLang}}:</strong> <span>{{::(mainThread.firstName + ' ' + mainThread.lastName + ', ' + mainThread.orgName)}}</span></div>
+				<div ng-if="::mainThread.responseRequestBy && mainThread.responseRequestBy != 'N/A'"><strong>{{'expected-close-date'| offlineLang}}:</strong> <span>{{::mainThread.responseRequestBy.replace('#', ', ')}}</span></div>
+				<div ng-if="::mainThread.controllerName && mainThread.controllerName != 'N/A'"><strong>{{'controller'| offlineLang}}:</strong> <span>{{::mainThread.controllerName}}</span></div>
+			</div>
+			<ul class="thread-list dd-list" ng-class="{loading: $ctrl.xhr, failed: ($ctrl.xhr.status && $ctrl.xhr.status != -1)}">
+				<li class="dd-item" ng-repeat="thread in formData track by thread.msgId" ng-class="{draft: thread.isDraft, active: $ctrl.activeMsgId == thread.msgId, unread: thread.noOfActions}" ng-style="::{marginLeft: (((thread.indent + 1) * 15) + 'px')}">
+					<b><i class="parent-line" ng-style="::{height: (thread.distance + 'px')}"></i></b>
+					<a href="javascript:void(0)" ng-click="$ctrl.threadClick($event, thread)">
+						<img alt="image" class="pull-left img-circle" src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png" title="{{::thread.originatorDisplayName}}"/>
+						<div class="thread-body">
+							<span class="pull-right">{{::(thread.duration == "0" ? "" : thread.duration)}}</span>
+							<div class="text-ellipsis" title="{{thread.originatorDisplayName}}"><span>{{::thread.msgCode}}</span>: <span>{{::thread.title}}</span></div>
+							<div><strong>To: </strong><span ng-if="::thread.sentNames && thread.sentNames.length">{{::thread.sentNames[0]}} <span ng-if="thread.sentNames.length > 1">& <strong title="{{::thread.sentNames.join(',\n')}}">{{::thread.sentNames.length - 1}}+</strong></span></span></div>
+							<form-action-list ng-if="!isProjectArchived" position="true" actions="mainThread.allActions" form-detail="mainThread" active-msg="thread" action-fn-map="$ctrl.actionFnMap"></form-action-list>
+							<span href="javascript:void(0);" ng-if="::thread.msgHasAssocAttach" ng-click="onAttachCLick(thread)" class="assoc-link btn btn-default"><i class="fa fa-paperclip"></i></span>
+							<span>{{::thread.msgCreatedDate.replace('#',', ')}}</span>
+						</div>
+					</a>
+				</li>
+			</ul>	
+
+			<div class="component-wrapper" auto-close="::$ctrl.autoClose" ng-class="{open: isOpen}"> <button type="button" class="btn btn-default button-toggle" ng-click="$ctrl.btnToggle()" title="Form Details" id="mob-form-thread-btn" ng-hide="::(!$ctrl.icon &amp;&amp; !$ctrl.btnText)"> <!-- ngIf: ::$ctrl.icon --><i ng-if="::$ctrl.icon" class="fa ng-scope fa-bars" ng-class="::$ctrl.icon"></i><!-- end ngIf: ::$ctrl.icon --> <span ng-bind="$ctrl.btnText" class="ng-binding">)">{{'form-threads'| offlineLang}}</span> <!-- ngIf: ::$ctrl.caret --> <span id="thread-unread-count" class="badge thread-unread-count ng-binding ng-hide" ng-show="unreadCount" title="Form Details (Incomplete Tasks: 0)">0</span></button></div>
+			
+	</script>
+
+	<script type="text/ng-template" id="msgDetail.html">
+		<div class="form-content" id="form-holder">
+			<div class="thread-header">
+				<ul class="pager attach-assoc" ng-show="!!msgDetail">
+					<li ng-click="openAssocAttach('Attachments');"  ng-if="msgDetail.assocCount.attach_count"  ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}" class="assoc-attach-attachments">
+						<a href="javascript:void(0)">{{'attachments'| offlineLang}} <span class="badge bg-red">{{msgDetail.assocCount.attach_count}}</span></a>
+					</li>
+					<li ng-click="openAssocAttach('Files');" ng-if="msgDetail.assocCount.assoc_doc_count || msgDetail.assocCount.ref_file_count"  ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}" class="assoc-attach-files">
+						<a href="javascript:void(0)">{{'files'| offlineLang}}  
+							<span class="badge bg-red">{{msgDetail.assocCount.assoc_doc_count || msgDetail.assocCount.ref_file_count}}</span>
+						</a>
+					</li>
+					<li ng-click="openAssocAttach('Discussions');" ng-if="msgDetail.assocCount.assoc_discussion_count || msgDetail.assocCount.ref_discussion_count"  ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}"  class="assoc-attach-discussions">
+						<a href="javascript:void(0)">{{'discussions'| offlineLang}} 
+							<span class="badge bg-red">{{msgDetail.assocCount.assoc_discussion_count || msgDetail.assocCount.ref_discussion_count}}</span>
+						</a>
+					</li>
+					<li ng-click="openAssocAttach('Apps');"  ng-if="msgDetail.assocCount.assoc_form_count"  ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}"   class="assoc-attach-apps">
+						<a href="javascript:void(0)">{{'apps'| offlineLang}}  <span class="badge bg-red">{{msgDetail.assocCount.assoc_form_count}}</span></a>
+					</li>
+					<li ng-click="openAssocAttach('References');" ng-if="msgDetail.assocCount.ref_form_count"  ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}"  class="assoc-attach-formref">
+						<a href="javascript:void(0)">{{'form_ref'| offlineLang}}  <span class="badge bg-red">{{msgDetail.assocCount.ref_form_count}}</span></a>
+					</li>
+					<li ng-click="openAssocAttach('Views');" ng-if="msgDetail.assocCount.assoc_views_count" class="assoc-attach-views" ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}" >
+						<a href="javascript:void(0)">{{'views'| offlineLang}}  <span class="badge bg-red">{{msgDetail.assocCount.assoc_views_count}}</span></a>
+					</li>
+					<li ng-click="openAssocAttach('Lists');" ng-if="msgDetail.assocCount.objectList_count" class="assoc-attach-lists" ng-class="{'assoc-disable-link': msgDetail.assocCount.disableLink}" >
+						<a href="javascript:void(0)">{{'lists'| offlineLang}}  <span class="badge bg-red">{{msgDetail.assocCount.objectList_count}}</span></a>
+					</li>
+				</ul>
+				<div class="action-btn-container">
+					<div class="dropdown dist-users pull-left" uib-dropdown auto-close="'outsideClick'" ng-show="isMobile" ng-if="msgDetail.sent && msgDetail.sent.length">
+						<button class="btn btn-default dropdown-toggle" type="button" uib-dropdown-toggle ng-disabled="msgDetail.sent.length < 2" title="{{msgDetail.sent[0].split('#')[1]}}">
+								{{'to'| offlineLang}}: <span>{{msgDetail.sent[0].split('#')[0]}}</span>
+							<span class="caret" ng-if="msgDetail.sent.length > 1"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu role="menu" aria-labelledby="single-button" ng-class="{'dropdown-menu-left': isMobile}" ng-if="msgDetail.sent.length > 1">
+							<li ng-repeat="u in msgDetail.sent track by $index"><a href="javascript:void(0)">{{u.replace('#', ', ')}}</a></li>
+						</ul>
+					</div>
+					<div uib-dropdown class="dropdown pull-left project-filter attach-assoc-mobile-ver" 
+						 ng-if="(msgDetail.assocCount.attach_count || msgDetail.assocCount.assoc_doc_count || msgDetail.assocCount.ref_file_count 
+						 || msgDetail.assocCount.assoc_discussion_count || msgDetail.assocCount.ref_discussion_count 
+						 || msgDetail.assocCount.assoc_form_count || msgDetail.assocCount.ref_form_count)">
+                        <button uib-dropdown-toggle class="btn btn-default dropdown-toggle" type="button">
+								{{'attach-and-assoc'| offlineLang}} <span class="caret"></span>
+                        </button>
+                        <ul uib-dropdown-menu class="dropdown-menu dropdown-menu-right" ng-class="{'dropdown-menu-left': isMobile}">
+                           <li ng-click="openAssocAttach('Attachments');" ng-if="msgDetail.assocCount.attach_count">
+								<a href="javascript:void(0)">{{'attachments'| offlineLang}} <span class="badge bg-red">{{msgDetail.assocCount.attach_count}}</span></a>
+							</li>
+							<li ng-click="openAssocAttach('Files');" ng-if="msgDetail.assocCount.assoc_doc_count || msgDetail.assocCount.ref_file_count">
+								<a href="javascript:void(0)">{{'files'| offlineLang}} 
+									<span class="badge bg-red">{{msgDetail.assocCount.assoc_doc_count || msgDetail.assocCount.ref_file_count}}</span>
+								</a>
+							</li>
+							<li ng-click="openAssocAttach('Discussions');" ng-if="msgDetail.assocCount.assoc_discussion_count || msgDetail.assocCount.ref_discussion_count">
+								<a href="javascript:void(0)">{{'discussions'| offlineLang}} 
+									<span class="badge bg-red">{{msgDetail.assocCount.assoc_discussion_count || msgDetail.assocCount.ref_discussion_count}}</span>
+								</a>
+							</li>
+							<li ng-click="openAssocAttach('Apps');" ng-if="msgDetail.assocCount.assoc_form_count">
+								<a href="javascript:void(0)">{{'apps'| offlineLang}} <span class="badge bg-red">{{msgDetail.assocCount.assoc_form_count}}</span></a>
+							</li>
+							<li ng-click="openAssocAttach('References');" ng-if="msgDetail.assocCount.ref_form_count">
+								<a href="javascript:void(0)">{{'form_ref'| offlineLang}} <span class="badge bg-red">{{msgDetail.assocCount.ref_form_count}}</span></a>
+							</li>
+                    	</ul>
+                    </div>
+					<div class="action-btn-wrapper">
+						<div class="dropdown pull-left action-dd" uib-dropdown ng-if="msgThread && priv.canEdit" ng-hide="msgDetail.allowViewRes === 'false'">
+							<button class="btn btn-default dropdown-toggle" uib-dropdown-toggle type="button" id="form-action-btn">{{'action'| offlineLang}} 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu ng-class="{'dropdown-menu-left': isMobile}">
+								<li ng-if="priv.canDistribute || canDist()"><a href="javascript:void(0)" ng-click="distribute()"><i class="fa fa-send"></i> {{'distribution'| offlineLang}}</a></li>
+								
+								<li ng-if="priv.canEditDraft"><a href="javascript:void(0)" ng-click="editDraft()"><i class="fa fa-edit"></i> {{msgThread && msgThread.isEditFormOffline ? ('edit'| offlineLang) : ('edit-draft'| offlineLang)}}</a></li>
+								<li ng-if="priv.canEditORI"><a href="javascript:void(0)" ng-click="editORI()"><i class="fa fa-edit"></i> {{'edit-ori'| offlineLang}}</a></li>
+								<li ng-if="priv.canForward">
+									<a href="javascript:void(0)" ng-click="editAndDistribute()">
+										<i class="fa fa-mail-forward"></i> {{'edit-and-distribute'| offlineLang}}
+									</a>
+								</li>
+								
+								<li ng-if="priv.canReply"><a href="javascript:void(0)" ng-click="reply()"><i class="fa fa-reply"></i> {{'reply'| offlineLang}}</a></li>
+								<li ng-if="priv.canReplyAll"><a href="javascript:void(0)" ng-click="reply('all')"><i class="fa fa-reply-all"></i> {{'reply-all'| offlineLang}}</a></li>
+							</ul>
+						</div>
+						<custom-common-dropdown dd-name="edit-ori-draft-confirm" dd-title="{{'edit-ori'| offlineLang}}" 
+							target-btn="form-action-btn" dialog="true" auto-close="outsideClick">
+							<div class="exist-draft-msg"> 
+								{{'saved-draft-already-exists-would-you-like-to-proceed'| offlineLang}}
+								<strong>{{'note-colon'| offlineLang}}:</strong> {{'the-saved-draft-will-be-discarded-if-you-create-a-new-edit'| offlineLang}}
+							</div>
+							<div class="exist-draft-action">
+								<button type="button" class="btn btn-danger" ng-click="openOriDraft()">{{'edit-using-saved-draft'| offlineLang}}</button>
+								<button type="button" class="btn btn-danger pull-right" ng-click="createNewOri()">{{'create-new-edit'| offlineLang}}</button>
+							</div>
+						</custom-common-dropdown>
+						<custom-common-dropdown ng-if="priv.canDistribute || canDist(true)" dd-name="form-distribution" 
+							dd-title="Distribution" 
+							target-btn="form-action-btn" append-to="right-content" dialog="true" dockable="true" 
+							expandable="true" auto-close="outsideClick">
+								<div class="dist-wrapper">
+									<form-dist param="msgThread"></form-dist>
+									<form-dist-history ng-if="priv.canAccessAuditInfo" param="msgThread"></form-dist-history>
+								</div>
+						</custom-common-dropdown>
+					</div>
+				</div>
+				<a href="javascript:void(0)" class="display-inline-block img-container" ng-show="!!msgDetail">
+					<img alt="image" ng-show="msgDetail.originator_user_id" class="img-circle" src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png"/>
+				</a>
+				<div class="thread-details display-inline-block" ng-show="!!msgDetail">
+					<strong user-id="{{msgDetail.originator_user_id || msgDetail.originatorUserId}}" class="text-ellipsis">{{msgDetail.msgOriginator}}</strong>
+					<div>					
+						<span>{{msgDetail.updated.replace('#', ', ')}}</span>
+						
+						<span class="direct-link" ng-if="msgDetail.notificationLinkURL" ng-class="{open: msgDetail.directLinkOpen}">
+							<a href="javascript:void(0)" title="{{msgDetail.notificationLinkURL}}" ng-click="openDirectLink(msgDetail);">
+								<i class="fa fa-link"></i> {{'doc-notification-link'| offlineLang}}
+							</a>
+							<div class="input-group direct-link-popover">
+								<input class="form-control" id="directLink" ng-value="msgDetail.notificationLinkURL" readonly title="{{msgDetail.notificationLinkURL}}" />
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button" ngclipboard data-clipboard-target="#directLink" 
+									ngclipboard-success="onCopySuccess(e);" ngclipboard-error="onCopyError(e);">
+										<span>{{'copy'| offlineLang}}</span><span>{{'apps'| offlineLang}}</span>
+									</button>
+								</span>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="left-content" ng-class="{loading: $ctrl.xhr, failed: ($ctrl.xhr.status && $ctrl.xhr.status != -1)}">
+				<div class="left-wrapper" id="leftWrapper">
+					<div class="formScrollWrap" id="formWrapper"></div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="formInfo.html">
+		<div class="attr-details p-5-10">
+			<div class="avatar">
+				<img alt="image" ng-if="msgDetailData.publisherImgUrl" class="pull-left img-circle" src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png" title="{{mainThread.firstName + ' ' + mainThread.lastName + ', ' + mainThread.orgName}}" />
+				<img alt="image" ng-if="!msgDetailData.publisherImgUrl" class="pull-left img-circle" src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png" title="{{mainThread.firstName + ' ' + mainThread.lastName + ', ' + mainThread.orgName}}" />        
+			</div>
+			<div class="avatar-details">
+				<strong >{{mainThread.firstName + ' ' + mainThread.lastName + ', ' + mainThread.orgName}}</strong>
+				<p style="margin: 5px 0 5px;">{{mainThread.formCreationDate.replace('T', ', ')}}</p>
+				<span class="direct-link" ng-if="msgDetailData.notificationLinkURL">
+					<div class="input-group direct-link-popover">
+						<input class="form-control" id="directLinkInfo" ng-value="msgDetailData.notificationLinkURL" readonly title="{{msgDetailData.notificationLinkURL}}" />
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" ngclipboard data-clipboard-target="#directLinkInfo" ngclipboard-success="onCopySuccess(e);" ngclipboard-error="onCopyError(e);" ng-click="copyToClipBoard(e, msgDetailData.notificationLinkURL);">
+								<span>{{'copy-link'| offlineLang}}</span><span>{{'copied'| offlineLang}}</span>
+							</button>
+						</span>
+					</div>
+				</span>      
+				<div class="example">
+					<table class="table table-layout-fixed">
+						<tbody>
+							<tr>
+								<th>{{'form-id'| offlineLang}}</th>
+								<td>{{::mainThread.code}}</td>
+							</tr>
+							<tr>
+								<th>{{'user-ref'| offlineLang}}</th>
+								<td>{{::mainThread.userRefCode}}</td>
+							</tr>
+							<tr>
+								<th>{{'path'| offlineLang}}</th>
+								<td>{{mainThread.projectName +'\\'+ mainThread.formTypeName }}</td>
+							</tr>
+							<tr ng-if="::mainThread.title">
+								<th>{{'title'| offlineLang}}</th>
+								<td>{{::mainThread.title}}</td>
+							</tr>
+							<tr ng-if="::mainThread.status">
+								<th>{{'status'| offlineLang}}</th>
+								<td>{{::mainThread.status}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="formActionList.html">
+		<div class="btn-group action-list-component" dropdown-append-to-body ng-show="actionLists.length && !isProjectArchived" uib-dropdown is-open="actionDropdown.isopen" on-toggle="onToggle(open);" auto-close="outsideClick">
+			<button type="button" class="btn btn-default" title="{{(topAction.resourceCode || '') + ((!topAction.remarks || topAction.remarks == 'null') ? '' : (': ' + topAction.remarks))}}" 
+			ng-click="actionClick(topAction, true)"
+			ng-disabled="actionLists.length == 1 && actionLists[0].actionStatus != 0">
+				<span>{{topAction.actionName}}</span> {{(topAction.actionTime && topAction.actionStatus == 0 ? ('(' + topAction.actionTime + ')') : '')}}</span>
+				<i ng-if="topAction.actionStatus != 0" class="fa" ng-class="{'fa-check': topAction.actionStatus == 1, 'fa-trash-o': topAction.actionStatus == 2, 'fa-edit': topAction.actionStatus == 3, 'fa-ban': topAction.actionStatus == 0 && !topAction.isActive}"></i>
+			</button>
+			<button class="btn btn-default" uib-dropdown-toggle  ng-if="actionLists.length > 1">
+				<span ng-if="topAction.incompleteCount > 1">{{'+' + (topAction.incompleteCount - 1)}}</span>
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right action-list-dropdown" uib-dropdown-menu ng-class="{saving: $ctrl.xhr}"
+			ng-hide="actionLists.length == 1 && (actionLists[0].actionStatus != 0 || (actionLists[0].actionId != appActionMap.FOR_ACKNOWLEDGEMENT && actionLists[0].actionId != appActionMap.FOR_ACTION && actionLists[0].actionId != appActionMap.RELEASE_RESPONSE))">
+				<li ng-repeat="action in actionLists | orderBy:'actionStatus'" ng-class="{opened: action.open}">
+					<a href="javascript:void(0)" ng-if="action.isActive && (action.actionStatus == 0 || action.actionStatus == 1)"
+					ng-hide="actionLists.length == 1 && action.actionStatus == 0"
+					ng-class="{completed: action.actionStatus == 1, active: action.open}" 
+					ng-click="actionClick(action)" class="{{action.color}}"
+					title="{{((!action.remarks || action.remarks == 'null') ? '' : action.remarks)}}">
+						<span><span>{{action.resourceCode}} : </span><span>{{action.actionName}}</span></span>
+						<span ng-hide="action.actionStatus">{{action.actionTime}}</span>
+						<i class="fa fa-check" ng-show="action.actionStatus"></i>
+					</a>
+					<div ng-if="action.actionId == appActionMap.FOR_ACTION || action.actionId == appActionMap.FOR_ACKNOWLEDGEMENT" ng-show="action.open" class="action-details-dropdown">
+						<div class="clearfix">
+							<textarea ng-if="action.actionId == appActionMap.FOR_ACTION" class="form-control" placeholder="Remark" ng-model="action.reason" maxlength="500" ng-keyup="forActOrAckComplete($event, action)"></textarea>
+							<button type="button" class="btn btn-inverse pull-right" ng-click="cancelAction(action)">{{'cancel'| offlineLang}}</button>
+							<button id="btn-create-dash" type="button" class="btn btn-danger pull-right" ng-click="forActOrAckComplete($event, action)" ng-disabled="$ctrl.xhr || action.saving">{{ ($ctrl.xhr || action.saving) ? ('completing'|offlineLang) + "...": ('complete'|offlineLang) }}</button>
+							<div ng-if="action.actionId == appActionMap.FOR_ACKNOWLEDGEMENT">{{'discard-draft-msg'| offlineLang}}</div>
+							<div ng-if="action.actionId == appActionMap.FOR_ACTION"><span>{{ (500 - (action.reason || "").length) }}</span> / 500</div>
+						</div>
+					</div>
+					<div ng-if="action.actionId == appActionMap.RELEASE_RESPONSE" ng-show="action.open" class="action-details-dropdown">
+						<div class="clearfix">
+							<p>{{'release-response-to-originator'| offlineLang}}</p>
+							<button type="button" class="btn btn-inverse pull-right" ng-click="cancelAction(action)">{{'cancel'| offlineLang}}</button>
+							<button type="button" class="btn btn-danger" ng-click="releaseResp($event, action, 28)" ng-disabled="$ctrl.xhr || action.saving">{{'yes'| offlineLang}}</button>
+							<button type="button" class="btn btn-danger" ng-click="releaseResp($event, action, 29)" ng-disabled="$ctrl.xhr || action.saving">{{'no'| offlineLang}}</button>
+						</div>
+					</div>
+					<a href="javascript:void(0)" ng-if="action.actionStatus == 2" class="cleared" title="{{((!action.remarks || action.remarks == 'null') ? '' : action.remarks)}}">
+						<span><span>{{action.resourceCode}} : </span><span>{{action.actionName}}</span></span>
+						<i class="fa fa-trash-o"></i>
+					</a>
+					<a href="javascript:void(0)" ng-if="action.actionStatus == 3" class="delegated" title="{{((!action.remarks || action.remarks == 'null') ? '' : action.remarks)}}">
+						<span><span>{{action.resourceCode}} : </span><span>{{action.actionName}}</span></span>
+						<i class="fa fa-edit"></i>
+					</a>
+					<a href="javascript:void(0)" ng-if="action.actionStatus == 0 && !action.isActive" class="deactivated" title="{{((!action.remarks || action.remarks == 'null') ? '' : action.remarks)}}">
+						<span><span>{{action.resourceCode}} : </span><span>{{action.actionName}}</span></span>
+						<i class="fa fa-ban"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="formStatusChange.html">
+		<form class="form-horizontal change-status-form" ng-class="{loading: $ctrl.xhr, failed: ($ctrl.xhr.status && $ctrl.xhr.status != -1 || statusData.denied)}">
+			<div class="form-control-container" ng-class="{saving: $ctrl.submit}">
+				<div class="form-group">
+					<strong class="old-status text-ellipsis" title="{{defStatus.statusName}}">{{defStatus.statusName}}</strong>
+					<span class="to">{{'to'| offlineLang}}</span>
+					<div class="new-status-wrap">
+						<select ng-model="status" ng-options="status.statusName for status in statues" class="form-control new-status"></select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="mandatory">{{'reason'| offlineLang}}</label>
+					<textarea class="form-control" ng-model="newStatusReason" placeholder="Message"></textarea>
+				</div>
+				<div class="form-group">
+					<label><input type="checkbox" ng-model="notifyAllUsers" ng-true-value="'on'" ng-false-value="'off'" class="checkbox"> {{'notify-users-in-distribution-list'| offlineLang}}</label>
+				</div>
+			</div>
+			<div class="form-footer clearfix">
+				<button type="button" class="btn btn-inverse pull-right" ng-click="cancel()">{{'close'| offlineLang}}</button>
+				<button type="submit" id="btn-status-change" class="btn btn-danger pull-left" ng-disabled="$ctrl.submit || !status || status.statusID == 0 ||  status.statusName == defStatus.statusName || !newStatusReason" ng-click="submit()">{{ $ctrl.submit ? ('saving...'|offlineLang) : ('save'|offlineLang) }}</button>
+			</div>
+		</form>
+		<ul class="status-history-list dd-list" ng-show="statusData.statusHistory && statusData.statusHistory.length">
+			<li class="dd-item" ng-repeat="sh in statusData.statusHistory track by $index">
+				<div>
+					<img alt="image" class="pull-left img-circle" ng-src="{{user_pic_url + sh.userID}}" title="{{sh.organisationName}}" onerror="this.onerror=null;this.src='/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png'" />
+					<div class="status-history-body">
+						<span class="pull-right">{{::(sh.actionDuration == 0 ? "" : thread.actionDuration)}}</span>
+						<b title="{{sh.organisationName}}" user-id="{{sh.userID}}"><a href="javascript:void(0)">{{sh.username}}</a></b> <span>{{sh.description}}</span><br />
+						<div class="text-ellipsis" title="{{sh.remark}}"><b>{{'reason-for-change'| offlineLang}} : </b><span>{{sh.remark}}</span></div>
+						<span>{{sh.action_date.replace('#', ', ')}}</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</script>
+
+	<script type="text/ng-template" id="tableListing.html">
+		<div class="listingContainer" ng-class="::{noTop: !$ctrl.breadcrumb && !$ctrl.customizable && !$ctrl.rpp && !$ctrl.recordCounter}">
+		<div class="filter-wrap clearfix">
+			<div ng-if="::$ctrl.customizable" class="dropdown pull-right customize-dd" uib-dropdown is-open="customization.isopen" auto-close="outsideClick">
+				<button class="btn btn-default dropdown-toggle" ng-disabled="!listingData.listingType || $ctrl.listType == ViewType.THUMB" type="button" uib-dropdown-toggle>
+						{{'customise'| offlineLang}} <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-menu" uib-dropdown-menu>
+					<span>
+						<label class="listboxHeaderSpan">{{'available-fields'| offlineLang}}</label>
+						<select class="form-control" multiple ng-multiple="true"
+						ng-model="customization.leftSelected" ng-options="column.colDisplayName for column in customization.availableField"></select>
+						<button type="button" class="btn btn-default" ng-click="moveRight()"
+						ng-disabled="!customization.leftSelected.length">
+							<span class="fa fa-chevron-right"/>
+						</button>
+						<button type="button" class="btn btn-default" ng-click="moveLeft()"
+						ng-disabled="!customization.rightSelected.length">
+							<span class="fa fa-chevron-left"/>
+						</button>
+					</span>
+					<span>
+						<label class="listboxHeaderSpan">{{'selected-fields'| offlineLang}}</label>
+						<select id="selectedField" class="form-control" multiple ng-multiple="true" ng-model="customization.rightSelected" ng-options="column.colDisplayName disable when column.colType == 'checkbox' for column in customization.selectedField"></select>
+						<button type="button" class="btn btn-default" ng-click="moveUp()" ng-disabled="!customization.rightSelected.length">
+							<span class="fa fa-chevron-up"/>
+						</button>
+						<button type="button" class="btn btn-default" ng-click="moveDown()" ng-disabled="!customization.rightSelected.length">
+							<span class="fa fa-chevron-down"/>
+						</button>
+					</span>
+					<div>
+						<button type="button" class="btn btn-inverse pull-right" ng-click="closeConfig()">{{'close'| offlineLang}}</button>
+						<button type="button" class="btn btn-danger" ng-click="submitConfig()">{{'update'| offlineLang}}</button>
+					</div>
+				</div>
+			</div>
+			<div ng-if="::$ctrl.rpp" class="dropdown pull-right rpp-dd" uib-dropdown>
+				<button class="btn btn-default dropdown-toggle" ng-disabled="!listingData.listingType" type="button" uib-dropdown-toggle>
+					{{'show'| offlineLang}}: <span>{{listingData.recordBatchSize}}</span> <i class="fa fa-caret-down"></i>
+				</button>
+				<ul class="dropdown-menu" uib-dropdown-menu>
+					<li ng-class="{active: listingData.recordBatchSize == 10}"><a href="javascript:void(0)" ng-click="changeRpp(10)">10</a></li>
+					<li ng-class="{active: listingData.recordBatchSize == 25}"><a href="javascript:void(0)" ng-click="changeRpp(25)">25</a></li>
+					<li ng-class="{active: listingData.recordBatchSize == 50}"><a href="javascript:void(0)" ng-click="changeRpp(50)">50</a></li>
+					<li ng-class="{active: listingData.recordBatchSize == 100}"><a href="javascript:void(0)" ng-click="changeRpp(100)">100</a></li>
+					<li ng-class="{active: listingData.recordBatchSize == 250}"><a href="javascript:void(0)" ng-click="changeRpp(250)">250</a></li>
+				</ul>
+			</div>
+			<ol class="breadcrumb text-ellipsis" ng-if="$ctrl.breadcrumb || $ctrl.recordCounter">
+				<li>
+					<b ng-if="::$ctrl.breadcrumb">{{listingData.path || 'Adoddle'}}</b>
+					<span ng-if="$ctrl.recordCounter && listingData.recEndfrom && listingData.recEndfrom && listingData.totalDocs" class="record-counter">({{'showing'| offlineLang}} <span>{{listingData.recstartfrom + 1}}</span> - <span>{{listingData.recEndfrom}}</span> {{'o-f'| offlineLang}} <span>{{listingData.totalDocs}}</span>)</span>
+				</li>
+			</ol>
+		</div>
+		<div class="table-grid"  ng-show="$ctrl.listType == ViewType.LIST">
+			<div class="ghead" ng-show="listingData.allItem.length">
+				<ul ui-sortable="sortableOptions" ng-model="listingData.itemHeader">
+					<li ng-repeat="itemH in listingData.itemHeader | orderBy:'userIndex' track by itemH.userIndex" 
+						uindex="{{$index}}"
+						ng-style="{'width': itemH.widthOfColumn}" 
+						ng-class="{'sortable': itemH.colType != 'checkbox', 'text-center': (['checkbox', 'img'].indexOf(itemH.colType) > -1)}" 
+						ng-click="headerCellClick($event, itemH)">
+						<a ng-if="itemH.fieldName == 'removeAssocflag'" href="javascript:void(0)" title="Remove"><i class="fa fa-trash"></i></a>
+						<input ng-if="itemH.colType == 'checkbox'" type="checkbox" ng-model="listingData.checkAll" ng-click="checkall()" />
+						<img ng-if="itemH.colType == 'img' && itemH.imgName" src="./images/icons/{{itemH.imgName}}" height=16 width=16 />
+						<b ng-if="itemH.colType == 'img' && !itemH.imgName">{{itemH.colDisplayName.substr(0,1)}}</b>
+						<b ng-if="['checkbox', 'img'].indexOf(itemH.colType) == -1">{{itemH.colDisplayName}}</b>
+						<i ng-if="itemH.order" class="fa" ng-class="{'fa-chevron-up': (itemH.order == 'asc'), 'fa-chevron-down': (itemH.order == 'desc')}"></i>
+						<div ng-if="['checkbox', 'img'].indexOf(itemH.colType) == -1" class="resize" ng-mousedown="resizeColumn($event, itemH, $index)"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="gbody">
+				<div class="list-item-container"></div>
+				<p class="text-center" ng-if="((!listingData.allItem.length && !listingData.noRecordMsg) || (listingData.allItem.length && listingData.itemBody.length != listingData.allItem.length))">Loading...</p>
+				<p ng-if="!listingData.allItem.length && listingData.noRecordMsg" class="no-record text-center">
+					<img src="./images/icons/adoodle_norecord.png" /><br><span>{{listingData.noRecordMsg}}</span>
+				</p>
+			</div>
+		</div>
+		<div class="thumbnail-wrapper"  ng-show="$ctrl.listType == ViewType.THUMB">			
+			<ul class="thumbnail-item-container"></ul>	
+		</div>
+		<div class="pagerDom" ng-if="listingData.itemBody.length && $ctrl.pager">
+			<ul class="pagination justify-content-center">
+				<li ng-class="{disabled: listingData.currentPage == 1}">
+					<a href="javascript:void(0)" ng-click="prevPage()"><i class="fa fa-chevron-left"></i></a>
+				</li>
+				<li ng-repeat="n in range()"
+					ng-class="{active: n == listingData.currentPage}">
+					<a href="javascript:void(0)" ng-click="setPage(n)">{{n}}</a>
+				</li>
+				<li ng-class="{disabled: listingData.currentPage == totalPages()}">
+					<a href="javascript:void(0)" ng-click="nextPage()"><i class="fa fa-chevron-right"></i></a>
+				</li>
+			</ul>    
+		</div>
+	</div> 
+	</script>
+
+	<script type="text/ng-template" id="formDist.html">
+		<div class="dist-form-wrapper" ng-show="!noAccessList.length">
+			<div ng-class="{saving: $ctrl.submit}">
+				<dist-select dist-data="distSelectData" selection="distFormData.selection" dist-status="distStatus" controller="/adoddle/dist" validation-action-id="26"></dist-select>
+				<span ng-if="error.to" class="error"><i class="fa fa-warning"></i> {{'requiredDate'| offlineLang}}</span>
+				<div class="form-group">
+					<input type="text" name="subject" class="form-control" placeholder="{{'subject'| offlineLang}}" ng-model="distFormData.subject" />
+					<span ng-if="distFormData.subject && !error.re.test(distFormData.subject)" class="error"><i class="fa fa-warning"></i> {{'special-character-validation'| offlineLang}}</span>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<button class="btn pull-right" type="button" ng-click="cancelDistribution()">{{'close'| offlineLang}}</button>
+				<button class="btn btn-danger" type="button" ng-click="submitDistribution()" ng-disabled="!isValid() || $ctrl.submit">{{$ctrl.submit ? ('distributing...'|offlineLang) : ('distribute'|offlineLang) }}</button>
+			</div>
+		</div>
+
+		<div ng-if="noAccessList.length">
+			<p>{{'no-access-on-form-msg'| offlineLang}}</p>
+			<div class="table-grid overflow-auto">
+				<div class="ghead">
+					<ul class="grow">
+						<li class="gint">{{'no'| offlineLang}}</li>
+						<li class="gpuser">{{'recipients'| offlineLang}}</li>
+						<li class="gfname">{{'form-name'| offlineLang}}</li>
+					</ul>
+				</div>
+				<div class="gbody">
+					<div ng-repeat="item in noAccessList track by $index">
+						<ul class="grow">
+							<li class="gint"><span>{{$index + 1}}</span></li>
+							<li class="gpuser">
+								<span>{{item.userName}}</span>
+							</li>
+							<li class="greason"><span title="{{item.formTypeName}}">{{item.formTypeName}}</span></li>			
+						</ul>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<p>{{'continue-to-remaining-users-form'| offlineLang}}</p>
+			<div class="p-8-0 clearfix">
+				<button type="button" class="btn btn-inverse pull-right" ng-click="cancelNoAccess($event)">{{'cancel'| offlineLang}}</button>
+				<button type="submit" class="btn btn-danger pull-left" ng-click="continueNoAccess($event)">{{'continue'| offlineLang}}</button>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="distSelect.html">
+		<div class="dist-component">
+			<div ng-click="onHandleClick($event)" class="dropdown-toggle" ng-class="{inactive: $ctrl.inactive}">
+				<ul>
+					<li ng-repeat="i in getSelection() track by $index" ng-if="i.checked" class="dist-item" ng-click="onSelectionClick($event, i)" ng-class="{active: i.active, hover: i.isClick}">
+						<strong ng-if="i.prefix">{{i.prefix}}</strong>
+						<span>{{i.tagText}}</span>
+						<span ng-show="!i.preventAction && i.action">{{'(' + i.action.actionNameAbbrev + (i.due.date ? ' | ' : '') + getDays(i) + ')'}}</span>
+						<span ng-hide="$ctrl.inactive" class="remove-tag" ng-click="remove($event, i)"><i class="fa fa-close"></i></span>
+						<div class="item-detail" ng-click="$event.stopPropagation();">
+							<div ng-if="i.isClick && i.listType == 'dist-group-list' && i.users.length" class="table-grid">
+								<div class="ghead">
+									<ul class="grow">
+										<li class="gstatus">{{'user'| offlineLang}}</li>
+										<li class="gstatus">{{'action'| offlineLang}}</li>
+										<li class="gdatedays">{{'action-time'| offlineLang}}</li>
+										<li class="gtype">{{'email'| offlineLang}}</li>
+									</ul>
+								</div>
+								<div class="gbody">
+									<ul class="grow" ng-repeat="u in ::i.users track by $index">
+										<li class="gstatus" title="{{::u.item.userName}}">{{::u.item.userName}}</li>
+										<li class="gstatus">{{::u.action.actionName}}</li>
+										<li class="gdatedays">{{::(u.due.date ? (u.due.date.substr(0, u.due.date.lastIndexOf(' ')) + ' - ' + u.due.days) : '--')}}</li>
+										<li class="gtype"><span ng-class="::{checked: u.item.email == 'true'}"><i class="fa fa-envelope"></i></span></li>
+									</ul>
+								</div>
+							</div>
+							<div ng-if="i.isClick && i.listType == 'user-list'" class="text-center">
+								<a class="emailNoti" ng-class="{checked: i.email.checked, disabled: i.email.disabled}" ng-click="toogleEmail(i)" href="javascript:void(0)" ><i class="fa fa-envelope"></i></a>
+								<div class="img-wrapper">
+									<img ng-src="{{::user_pic_url+i.item.userID}}" width="90px" height="90px" class="img-circle" onerror="this.onerror=null;this.src='/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png'">
+								</div>
+								<h4 class="text-ellipsis" title="{{::i.item.userName}}">{{::i.item.userName}}</h4>
+								<p class="text-ellipsis" title="{{::i.item.orgName}}">{{::i.item.orgName}}</p>
+								<p class="text-ellipsis" title="{{::i.item.emailId}}">{{::i.item.emailId}}</p>
+								<div class="bottom-action" ng-if="::distData.actionList && !i.preventAction">
+									<select ng-model="i.action" ng-options="action as action.actionName for action in ::distData.actionList | actionFilter:i:distData:access track by action.actionID" ng-change="onActionChange(i)"></select>
+									<calendar-panel date-format="date.format" date-view-format="'p'" date-typer="false" date-min-limit="0" date-set="i.due.date" date-alignment="right"></calendar-panel>
+								</div>
+							</div>
+							<div ng-if="i.isClick && i.listType == 'role-list'" class="text-center">
+								<h4 class="text-ellipsis" title="{{::i.item.name}}">{{::i.item.name}}</h4>
+								<div class="bottom-action" ng-if="::distData.actionList">
+									<select ng-model="i.action" ng-options="action as action.actionName for action in ::distData.actionList | actionFilter:i:distData:access track by action.actionID" ng-change="onActionChange(i)"></select>
+									<calendar-panel date-format="date.format" date-view-format="'p'" date-typer="false" date-min-limit="0" date-set="i.due.date" date-alignment="right"></calendar-panel>
+								</div>
+							</div>
+							<div ng-if="i.isClick && i.listType == 'org-list'" class="text-center">
+								<div class="img-wrapper">
+									<img ng-src="{{::i.item.orgImageName}}" width="90px" height="90px" class="img-circle" onerror="this.onerror=null;this.src='/data/user/0/com.asite.field/app_flutter/database/HTML5Form/images/avatar.png'">
+								</div>
+								<h4 class="text-ellipsis" title="{{::i.item.orgName}}">{{::i.item.orgName}}</h4>
+								<p class="text-ellipsis" title="{{::i.item.address}}">{{::i.item.address}}</p>
+								<div class="bottom-action" ng-if="::distData.actionList">
+									<select ng-model="i.action" ng-options="action as action.actionName for action in ::distData.actionList track by action.actionID" ng-change="onActionChange(i)"></select>
+									<calendar-panel date-format="date.format" date-view-format="'p'" date-typer="false" date-min-limit="0" date-set="i.due.date" date-alignment="right"></calendar-panel>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<input ng-readonly="$ctrl.inactive" type="text" class="dist-inpt" name="distto" placeholder="{{'to'| offlineLang}}" ng-click="onInputClick($event)" ng-model="search.text" ng-keyup="onKeyup($event)" />
+			</div>
+			<div uib-dropdown is-open="distDropdown.isopen" on-toggle="onToggle(open)" auto-close="disabled">
+				<div uib-dropdown-menu>
+					<div class="bulk-apply-section clearfix">
+						<a href="javascript:void(0)" ng-click="clearSelection()">{{'clear'| offlineLang}}</a>
+						<a href="javascript:void(0)" ng-click="closeDropdown()">{{'close'| offlineLang}}</a>
+						<span class="dist-filter" ng-if="::distData.actionList">
+							<select ng-model="bulk.action" ng-options="action as action.actionName for action in ::distData.actionList track by action.actionID"></select>
+							<i class="fa fa-arrow-down" ng-click="applyActionToAll(bulk)"></i>
+							<calendar-panel date-format="date.format" date-view-format="'p'" date-typer="false" date-min-limit="0" date-set="bulk.due.date" date-alignment="right"></calendar-panel>
+							<i class="fa fa-arrow-down" ng-click="applyDateToAll(bulk)"></i>
+							<a href="javascript:void(0)" ng-class="{checked: bulk.email.checked}" ng-click="toogleBulkEmail(bulk)"><i class="fa fa-envelope"></i></a>
+						</span>
+					</div>
+					<div class="list-wrapper">
+						<ul ng-repeat="c in results track by $index" ng-if="c.children.length" class="{{c.listType}}">
+							<li ng-if="!filter || filter.length"><span>{{::c.text}}</span><a href="javascript:void(0)" ng-click="showAll(c)">{{c.all ? ('showLess'|offlineLang) : ('showAll'|offlineLang)}}</a></li>
+							<li ng-repeat="i in filter = (c.filter = (c.children | filter:search | limitTo:c.limit))">
+								<div ng-class="{focus: i.focus}" class="clearfix" ng-click="onListItemClick(i)">
+									<span ng-if="c.listType != 'dist-group-list' && i.action && i.checked && !i.preventAction" class="dist-filter">
+										<select ng-model="i.action" ng-options="action as action.actionName for action in ::distData.actionList | actionFilter:i:distData:access track by action.actionID" ng-change="onActionChange(i)"></select>
+										<calendar-panel date-format="date.format" date-view-format="'p'" date-typer="false" date-min-limit="0" date-set="i.due.date" date-alignment="right"></calendar-panel>
+										<a ng-if="::(c.listType == 'user-list')" ng-class="{checked: i.email.checked, disabled: i.email.disabled}" ng-click="toogleEmail(i)" href="javascript:void(0)" ><i class="fa fa-envelope"></i></a>
+									</span>
+									<a ng-if="i.users && i.users.length" href="javascript:void(0);" class="expand-icon" ng-click="expand(i)" title="{{!i.expanded ? 'Expand' : 'Collapse'}}" ng-class="{'expanded': i.expanded || i.expanding}"><i class="fa" ng-class="{'fa-caret-down': i.expanded, 'fa-caret-right': !i.expanded && !i.expanding, 'fa-refresh fa-spin fa-3x fa-fw': i.expanding}"></i></a>
+									<a href="javascript:void(0);" ng-if="::$ctrl.allowDuplicate" class="clone-icon" title="Add Clone" ng-click="addDuplicate(i, c)"><i class="fa fa-user-plus"></i></a>
+									<label ng-click="onLabelClick($event)"><input type="checkbox" ng-model="i.checked" ng-disabled="i.expanded || i.expanding" /> <span>{{::i.text}}</span></label>
+								</div>
+								<ul class="childList" ng-if="i.expanded && i.users && i.users.length">
+									<li ng-repeat="gi in i.users track by $index">
+										<div ng-class="{focus: gi.focus}" class="clearfix" ng-click="onListItemClick(gi)">
+											<span ng-if="gi.action && gi.checked" class="dist-filter">
+												<select ng-model="gi.action" ng-options="action as action.actionName for action in ::distData.actionList | actionFilter:gi:distData:access track by action.actionID" ng-change="onActionChange(gi)"></select>
+												<calendar-panel date-format="date.format" date-view-format="'p'" date-typer="false" date-min-limit="0" date-set="gi.due.date" date-alignment="right"></calendar-panel>
+												<a href="javascript:void(0)" ng-class="{checked: gi.email.checked, disabled: gi.email.disabled}" ng-click="toogleEmail(gi)" ><i class="fa fa-envelope"></i></a>
+											</span>
+											<label ng-click="onLabelClick($event)"><input type="checkbox" ng-model="gi.checked" ng-disabled="gi.invalid" /> <span>{{::gi.text}}</span></label>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<p ng-if="isReordAvail()" class="no-record">{{'no-match-found'| offlineLang}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="fileType.html">
+		<div class="dropdown pull-left ng-scope" uib-dropdown>
+			<a href="javascript:void(0)" uib-dropdown-toggle class="dropdown-toggle">
+				<img height="16" width="16" ng-src="{{'./images/' + $ctrl.conf.fileType}}"/>
+			</a>
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="formDistHistory.html">
+		<div ng-if="distHistory.length" class="table-grid">
+			<p>{{'previously-dist-user-list'| offlineLang}}</p>
+			<div class="dist-history-wrapper">
+				<div class="ghead">
+					<ul class="grow">
+						<li class="gdate">{{'form-code'| offlineLang}}</li>
+						<li class="gfname">{{'assigned-by'| offlineLang}}</li>
+						<li class="gdate">{{'assigned-date'| offlineLang}}</li>
+						<li class="gfname">{{'recipient'| offlineLang}}</li>
+						<li class="gstatus">{{'recipient-action'| offlineLang}}</li>
+						<li class="gdate">{{'action-due'| offlineLang}}</li>
+						<li class="gstatus">{{'action_status'| offlineLang}}</li>
+					</ul>
+				</div>
+				<div class="gbody">
+					<ul class="grow" ng-repeat="item in distHistory track by $index">
+						<li class="gdate">{{item.strMsgId}}</li>
+						<li class="gfname">{{item.distributorFullDisplayName}}</li>
+						<li class="gdate">{{(item.distributionTime || "--").split('#')[0]}}</li>
+						<li class="gfname">{{item.recipientFullDisplayName}}</li>
+						<li class="gstatus">{{item.recipientActionReqd}}</li>
+						<li class="gdate">{{(item.recipientActionDueTime || "--").split('#')[0]}}</li>
+						<li class="gstatus">{{item.action_status}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<link rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/ng-upload/styles.css">
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/ng-upload/runtime.js" defer></script>
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/ng-upload/polyfills-es5.js" nomodule defer></script>
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/ng-upload/polyfills.js" defer></script>
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/ng-upload/main.js" defer></script>
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/bundle/postViewFormBundle1.js?ver=20766"></script>
+
+
+	<link type="text/css" rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/htmlform/angular-datepicker.css" />
+	<link type="text/css" rel="stylesheet" href="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/css/htmlform/common.css" />
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/htmlform/lib/requirejs/require.js"></script>
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/htmlform/main1.js"></script>
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/reportFromApp.js" charset="UTF-8"></script>
+
+	<script src="/data/user/0/com.asite.field/app_flutter/database/HTML5Form/scripts/jSignature.min.js?ver=20766"></script>
+	<adoddle-cfile-upload></adoddle-cfile-upload>
+</body>
+
+</html>

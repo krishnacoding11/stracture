@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="pin_half_width">15.0dp</dimen>
+    <dimen name="pin_half_width_rect">12.0dp</dimen>
+    <dimen name="default_pin_font_size">9sp</dimen>
+    <dimen name="three_char_pin_font_size">10sp</dimen>
+    <dimen name="four_char_pin_font_size">9sp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+{
+  "projectPlanDetailsVO": {
+    "projectID": "2116416$$gLDn3m",
+    "planID": "5390",
+    "projectName": "!!PIN_ANY_APP_TYPE_20_9",
+    "planName": "TEST PLAN CK",
+    "perCompletion": 25,
+    "generateURI": true
+  },
+  "locations": [
+    {
+      "qiLocationId": "1519299$$t4Ap0m",
+      "qiParentId": "1519266$$hAhNbC",
+      "name": "AK",
+      "percentageCompelition": 0,
+      "hasLocation": true,
+      "generateURI": true
+    }
+  ],
+  "generateURI": true
+}

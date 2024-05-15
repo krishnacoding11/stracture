@@ -1,0 +1,74 @@
+{
+  "statusList": [
+    {
+      "is_associated": false,
+      "closesOutForm": true,
+      "always_active": false,
+      "userId": 0,
+      "isDeactive": false,
+      "defaultPermissionId": 0,
+      "statusName": "Closed",
+      "statusID": 3,
+      "orgId": "0$$ZX0yDH",
+      "proxyUserId": 0,
+      "isEnableForReviewComment": false,
+      "generateURI": true
+    },
+    {
+      "is_associated": false,
+      "closesOutForm": false,
+      "always_active": false,
+      "userId": 0,
+      "isDeactive": false,
+      "defaultPermissionId": 0,
+      "statusName": "Open",
+      "statusID": 2,
+      "orgId": "0$$ZX0yDH",
+      "proxyUserId": 0,
+      "isEnableForReviewComment": false,
+      "generateURI": true
+    },
+    {
+      "is_associated": false,
+      "closesOutForm": false,
+      "always_active": false,
+      "userId": 0,
+      "isDeactive": false,
+      "defaultPermissionId": 0,
+      "statusName": "Open",
+      "statusID": 1001,
+      "orgId": "0$$ZX0yDH",
+      "proxyUserId": 0,
+      "isEnableForReviewComment": false,
+      "generateURI": true
+    },
+    {
+      "is_associated": false,
+      "closesOutForm": false,
+      "always_active": false,
+      "userId": 0,
+      "isDeactive": false,
+      "defaultPermissionId": 0,
+      "statusName": "Resolved",
+      "statusID": 1002,
+      "orgId": "0$$ZX0yDH",
+      "proxyUserId": 0,
+      "isEnableForReviewComment": false,
+      "generateURI": true
+    },
+    {
+      "is_associated": false,
+      "closesOutForm": false,
+      "always_active": false,
+      "userId": 0,
+      "isDeactive": false,
+      "defaultPermissionId": 0,
+      "statusName": "Verified",
+      "statusID": 1003,
+      "orgId": "0$$ZX0yDH",
+      "proxyUserId": 0,
+      "isEnableForReviewComment": false,
+      "generateURI": true
+    }
+  ]
+}

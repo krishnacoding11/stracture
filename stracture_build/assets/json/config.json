@@ -1,0 +1,42 @@
+{
+  "QA": {
+    "ADODDLE_URL": "https://adoddleqaak.asite.com",
+    "COLLAB_URL": "https://dmsqaak.asite.com",
+    "REPORTING_URL": "https://reportingqa.asite.com",
+    "PORTAL_URL": "https://portalqa.asite.com",
+    "TASK_URL": "https://taskqa.asite.com",
+    "DOWNLOAD_URL": "https://syncqa.asite.com",
+    "OAUTH_URL": "https://oauthqaak.asite.com",
+    "STREAMING_SERVER_URL": "wss://3dviewerqaak.asite.com/"
+  },
+  "development": {
+    "ADODDLE_URL": "https://adoddledev.asite.com",
+    "COLLAB_URL": "https://dmsdev.asite.com",
+    "REPORTING_URL": "https://reportingdev.asite.com",
+    "PORTAL_URL": "https://portaldev.asite.com",
+    "TASK_URL": "https://taskdev.asite.com",
+    "DOWNLOAD_URL": "https://syncdev.asite.com",
+    "OAUTH_URL": "https://oauthdev.asite.com",
+    "STREAMING_SERVER_URL": "wss://3dviewerdev.asite.com/"
+  },
+  "staging": {
+    "ADODDLE_URL": "https://adoddlestg.asite.com",
+    "COLLAB_URL": "https://dmsstg.asite.com",
+    "REPORTING_URL": "https://reportingstg.asite.com",
+    "PORTAL_URL": "https://portalstg.asite.com",
+    "TASK_URL": "https://taskstg.asite.com",
+    "DOWNLOAD_URL": "https://syncstg.asite.com",
+    "OAUTH_URL": "https://oauthstg.asite.com",
+    "STREAMING_SERVER_URL": "wss://3dviewerstg.asite.com/"
+  },
+  "live": {
+    "ADODDLE_URL": "https://adoddle.asite.com",
+    "COLLAB_URL": "https://dms.asite.com",
+    "REPORTING_URL": "https://reporting.asite.com",
+    "PORTAL_URL": "https://www.asite.com",
+    "TASK_URL": "https://task.asite.com",
+    "DOWNLOAD_URL": "https://sync.asite.com",
+    "OAUTH_URL": "https://oauth.asite.com",
+    "STREAMING_SERVER_URL": "wss://3dviewerak.asite.com/"
+  }
+}

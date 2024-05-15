@@ -1,0 +1,69 @@
+{
+  "creationDate": "",
+  "filterName": "Unsaved Filter",
+  "filterQueryVOs": [
+    {
+      "dataType": "Dropdown",
+      "fieldName": "status_id",
+      "id": 385,
+      "indexField": "status_id",
+      "isBlankSearchAllowed": false,
+      "isCustomAttribute": false,
+      "labelName": "Active / Inactive",
+      "operatorId": 1,
+      "logicalOperator": "AND",
+      "popupTo": {
+        "data": [
+          {
+            "dataCenterId": 1,
+            "id": "-1",
+            "imgId": -1,
+            "isActive": true,
+            "isSelected": true,
+            "rangeFilterData": {},
+            "value": "Active Only"
+          }
+        ],
+        "recordBatchSize": "0"
+      },
+      "returnIndexFields": "-1",
+      "sequenceId": 1,
+      "solrCollections": "forms"
+    },
+    {
+      "dataType": "Text",
+      "fieldName": "distribution_list",
+      "id": 390,
+      "indexField": "distribution_list",
+      "isBlankSearchAllowed": false,
+      "isCustomAttribute": false,
+      "labelName": "Recipient",
+      "operatorId": 11,
+      "logicalOperator": "AND",
+      "popupTo": {
+        "data": [
+          {
+            "dataCenterId": 1,
+            "id": "758244",
+            "imgId": -1,
+            "isActive": true,
+            "isSelected": true,
+            "rangeFilterData": {},
+            "value": "Krupal Patel (5345), Asite Solutions"
+          }
+        ],
+        "recordBatchSize": "0"
+      },
+      "returnIndexFields": "distribution_list",
+      "sequenceId": 1,
+      "solrCollections": "users"
+    }
+  ],
+  "id": "-1",
+  "isUnsavedFilter": true,
+  "listingTypeId": "31",
+  "selectedFolderIds": "-1",
+  "selectedProjectIds": "2116416$$gL8daG",
+  "subListingTypeId": "1",
+  "userId": "-1"
+}

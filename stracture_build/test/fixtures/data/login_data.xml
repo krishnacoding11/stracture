@@ -1,0 +1,109 @@
+<usersessionprofile>
+    <isJSessionIdUpdated>false</isJSessionIdUpdated>
+    <tpdOrgID>3</tpdOrgID>
+    <proxyOrgID>3</proxyOrgID>
+    <subscriptionPlanId>5</subscriptionPlanId>
+    <isPasswordReset>false</isPasswordReset>
+    <screenName>mayurraval</screenName>
+    <isActive>false</isActive>
+    <userAccessibleDCIds>1</userAccessibleDCIds>
+    <userAccessibleDCIds>2</userAccessibleDCIds>
+    <userID>808581</userID>
+    <tpdUserName>Mayur Raval (5372)</tpdUserName>
+    <proxyOrgName>Asite Solutions</proxyOrgName>
+    <tpdOrgName>Asite Solutions</tpdOrgName>
+    <proxy_user_id>H4sIAAAAAAAAANsr0/BCYk2l1i595rvOGu6zANtItUsQAAAA</proxy_user_id>
+    <secondaryAuth>false</secondaryAuth>
+    <sessionTimeoutDuration>-2</sessionTimeoutDuration>
+    <currentJSessionID>lICvggSpPUMVThR4VbEoU2viZY3ZvQ0yBfVNT6FB</currentJSessionID>
+    <tpdUserID>808581</tpdUserID>
+    <isProxyUserWorking>false</isProxyUserWorking>
+    <orgID>3</orgID>
+    <dateFormatforLanguage>MMM d, yyyy</dateFormatforLanguage>
+    <firstName>Mayur</firstName>
+    <secondaryEmailAddress/>
+    <user_id>H4sIAAAAAAAAANsr0/BCYk2l1i595rvOGu6zANtItUsQAAAA</user_id>
+    <org_id>H4sIAAAAAAAAALusffY2w54wS91Gi88G4l+/AQAR3Q4gEAAAAA==</org_id>
+    <hUserID>808581$$nOcvLW</hUserID>
+    <userTypeId>1</userTypeId>
+    <lastName>Raval (5372)</lastName>
+    <isAgreedToTermsAndCondition>true</isAgreedToTermsAndCondition>
+    <isShowAnnouncements>false</isShowAnnouncements>
+    <userSessionState>SESSION_ACTIVE</userSessionState>
+    <loginMethodType>1</loginMethodType>
+    <lastLoginDate>Sep 12, 2022 7:59:47 AM</lastLoginDate>
+    <eGRNTimeoutDuration>0</eGRNTimeoutDuration>
+    <userImageName>photo_808581_thumbnail.jpg?v=1651492434000</userImageName>
+    <isMDMDeactivatedUser>false</isMDMDeactivatedUser>
+    <proxyUserName>Mayur Raval (5372)</proxyUserName>
+    <localeVO>
+        <editionId>1</editionId>
+        <_timezone>
+            <dstSavings>0</dstSavings>
+            <offsets>32400000</offsets>
+            <offsets>30472000</offsets>
+            <offsets>30600000</offsets>
+            <offsets>36000000</offsets>
+            <offsets>3600000</offsets>
+            <offsets>34200000</offsets>
+            <rawOffset>32400000</rawOffset>
+            <rawOffsetDiff>0</rawOffsetDiff>
+            <checksum>-1709296987</checksum>
+            <ID>Asia/Seoul</ID>
+            <transitions>-9048018124799999</transitions>
+            <transitions>-7982213005311998</transitions>
+            <transitions>-7497378201600000</transitions>
+            <transitions>-2790236159999933</transitions>
+            <transitions>-2753445888000000</transitions>
+            <transitions>-2681944473599933</transitions>
+            <transitions>-2624982220800000</transitions>
+            <transitions>-2553480806399933</transitions>
+            <transitions>-2496164659200000</transitions>
+            <transitions>-2411923046399933</transitions>
+            <transitions>-2367347097600000</transitions>
+            <transitions>-2040333926399998</transitions>
+            <transitions>-1895229849599931</transitions>
+            <transitions>-1850300006399998</transitions>
+            <transitions>-1760396083199931</transitions>
+            <transitions>-1713342873599998</transitions>
+            <transitions>-1636533043199931</transitions>
+            <transitions>-1587002572799998</transitions>
+            <transitions>-1507715481599931</transitions>
+            <transitions>-1458185011199998</transitions>
+            <transitions>-1378897919999931</transitions>
+            <transitions>-1329367449599998</transitions>
+            <transitions>-1250080358399931</transitions>
+            <transitions>-1200549887999998</transitions>
+            <transitions>-1085165568000000</transitions>
+            <transitions>2242879488000067</transitions>
+            <transitions>2297379225600000</transitions>
+            <transitions>2371697049600067</transitions>
+            <transitions>2426196787200000</transitions>
+            <transitions>8660371046400000</transitions>
+            <willGMTOffsetChange>false</willGMTOffsetChange>
+        </_timezone>
+        <generateURI>true</generateURI>
+        <_locale>en_US</_locale>
+        <_partnerBrandingId>asite</_partnerBrandingId>
+    </localeVO>
+    <email>mayurraval@asite.com</email>
+    <isLoadWidgetAdoddle>false</isLoadWidgetAdoddle>
+    <orgVisibility>2</orgVisibility>
+    <enableSecondaryEmail>false</enableSecondaryEmail>
+    <proxyDemoOrganization>false</proxyDemoOrganization>
+    <lastAccessTime>Sep 12, 2022 8:02:23 AM</lastAccessTime>
+    <isFreeTrialUser>false</isFreeTrialUser>
+    <languageId>en_US</languageId>
+    <proxyUserID>808581</proxyUserID>
+    <userSubscriptionId>1</userSubscriptionId>
+    <demoOrganization>false</demoOrganization>
+    <canAccessAPI>false</canAccessAPI>
+    <generateURI>true</generateURI>
+    <billToOrg>3</billToOrg>
+    <aSessionId>PxP7HZD4R5TILutZRZes4JCcxAx76LHBSQ8F2N0ZZ5E=</aSessionId>
+    <isMultiSessionAllowed>true</isMultiSessionAllowed>
+    <timezoneId>Asia/Seoul</timezoneId>
+    <orgDCId>1</orgDCId>
+    <userAccountType>0</userAccountType>
+    <proxy_org_id>H4sIAAAAAAAAALusffY2w54wS91Gi88G4l+/AQAR3Q4gEAAAAA==</proxy_org_id>
+</usersessionprofile>

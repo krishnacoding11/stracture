@@ -1,0 +1,1811 @@
+{
+  "distData": {
+    "userGroupingTypeList": [
+      {
+        "userGroupingTypeID": 1,
+        "userGroupingTypeName": "Distribution Groups",
+        "generateURI": true
+      },
+      {
+        "userGroupingTypeID": 2,
+        "userGroupingTypeName": "Companies",
+        "generateURI": true
+      }
+    ],
+    "orgList": [
+      {
+        "orgID": 3,
+        "orgName": "Asite Solutions",
+        "hashedOrgId": "3$$zgjw4O",
+        "userCount": 5126,
+        "dataCenterId": 1,
+        "address": "ShivalikBodakdevAhmedabad380053GB",
+        "orgImageName": "companyLogo/3.jpg",
+        "orgVisibility": 0,
+        "countryId": 0,
+        "dynamicVariable": false,
+        "generateURI": true
+      },
+      {
+        "orgID": 5763307,
+        "orgName": "Asite Solutions Ltd",
+        "hashedOrgId": "5763307$$kD3Vbu",
+        "userCount": 94,
+        "dataCenterId": 1,
+        "address": "GB",
+        "orgImageName": "companyLogo/5763307.jpg",
+        "orgVisibility": 0,
+        "countryId": 0,
+        "dynamicVariable": false,
+        "generateURI": true
+      }
+    ],
+    "roleList": [
+      {
+        "name": "Field Administrator",
+        "roleID": "3389434$$nOnX0d",
+        "generateURI": true
+      },
+      {
+        "name": "Field Contractor",
+        "roleID": "3389435$$tIS53H",
+        "generateURI": true
+      },
+      {
+        "name": "Field Inspector",
+        "roleID": "3389436$$fKirrW",
+        "generateURI": true
+      },
+      {
+        "name": "Workspace - Administrator",
+        "roleID": "3389437$$ZCuAxe",
+        "generateURI": true
+      }
+    ],
+    "distributionGroupList": [],
+    "userList": [
+      {
+        "userID": "1161363$$LSP3iZ",
+        "orgID": 3,
+        "projectID": "0$$pG7mTI",
+        "orgName": "Asite Solutions",
+        "userName": "Chandresh Patel",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 1,
+        "emailId": "chandreshpatel@asite.com",
+        "fname": "Chandresh",
+        "lname": "Patel",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_1161363_thumbnail.jpg?v=1673263342000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "folderAccess": 1,
+        "generateURI": true
+      },
+      {
+        "userID": "514806$$q1DQ1R",
+        "orgID": 3,
+        "projectID": "0$$pG7mTI",
+        "orgName": "Asite Solutions",
+        "userName": "Dhaval Vekaria (5226)",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 1,
+        "emailId": "dvekaria@asite.com",
+        "fname": "Dhaval",
+        "lname": "Vekaria (5226)",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_514806_thumbnail.jpg?v=1656996305000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "folderAccess": 1,
+        "generateURI": true
+      },
+      {
+        "userID": "2017529$$uXVuLq",
+        "orgID": 5763307,
+        "projectID": "0$$pG7mTI",
+        "orgName": "Asite Solutions Ltd",
+        "userName": "Mayur Raval m.",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 1,
+        "emailId": "m.raval@asite.com",
+        "fname": "Mayur",
+        "lname": "Raval m.",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_2017529_thumbnail.jpg?v=1688541715000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "folderAccess": 1,
+        "generateURI": true
+      },
+      {
+        "userID": "859155$$0bAcX7",
+        "orgID": 3,
+        "projectID": "0$$pG7mTI",
+        "orgName": "Asite Solutions",
+        "userName": "Saurabh Banethia (5327)",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 1,
+        "emailId": "sbanethia@asite.com",
+        "fname": "Saurabh",
+        "lname": "Banethia (5327)",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_859155_thumbnail.jpg?v=1669201730000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "folderAccess": 1,
+        "generateURI": true
+      },
+      {
+        "userID": "650044$$VlKu16",
+        "orgID": 3,
+        "projectID": "0$$pG7mTI",
+        "orgName": "Asite Solutions",
+        "userName": "savita dangee (5231)",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 1,
+        "emailId": "sdangee@asite.com",
+        "fname": "savita",
+        "lname": "dangee (5231)",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_650044_thumbnail.jpg?v=1522906277000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "folderAccess": 1,
+        "generateURI": true
+      },
+      {
+        "userID": "707447$$fSC8Ez",
+        "orgID": 3,
+        "projectID": "0$$pG7mTI",
+        "orgName": "Asite Solutions",
+        "userName": "Vijay Mavadiya (5336)",
+        "userSubscriptionTypeId": 0,
+        "userStatus": 0,
+        "userTypeId": 1,
+        "emailId": "vmavadiya@asite.com",
+        "fname": "Vijay",
+        "lname": "Mavadiya (5336)",
+        "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_707447_thumbnail.jpg?v=1650517948000",
+        "acessId": 0,
+        "isWSAdmin": false,
+        "isSelected": false,
+        "userStatusOnProject": 0,
+        "inherited": false,
+        "isAutoAcceptanceOn": false,
+        "userSearchVisibility": 0,
+        "folderAccess": 1,
+        "generateURI": true
+      }
+    ],
+    "actionList": [
+      {
+        "actionName": "Assign Status",
+        "actionID": "2$$MV83Z2",
+        "actionNameAbbrev": "Status",
+        "actionAbbreviationKey": "Status",
+        "num_days": 8,
+        "projectId": "0$$pG7mTI",
+        "userId": 0,
+        "revisionId": "0$$yvqjc8",
+        "formId": "0$$ET07ft",
+        "adoddleContextId": 0,
+        "customObjectInstanceId": "0$$mMsIDh",
+        "docId": "0$$h3Agn6",
+        "generateURI": true
+      },
+      {
+        "actionName": "Distribute",
+        "actionID": "6$$RnDq7d",
+        "actionNameAbbrev": "Dist.",
+        "actionAbbreviationKey": "dist",
+        "num_days": 11,
+        "projectId": "0$$pG7mTI",
+        "userId": 0,
+        "revisionId": "0$$yvqjc8",
+        "formId": "0$$ET07ft",
+        "adoddleContextId": 0,
+        "customObjectInstanceId": "0$$mMsIDh",
+        "docId": "0$$h3Agn6",
+        "generateURI": true
+      },
+      {
+        "actionName": "For Acknowledgement",
+        "actionID": "37$$0DxKv7",
+        "actionNameAbbrev": "Ack",
+        "actionAbbreviationKey": "ack",
+        "num_days": 7,
+        "projectId": "0$$pG7mTI",
+        "userId": 0,
+        "revisionId": "0$$yvqjc8",
+        "formId": "0$$ET07ft",
+        "adoddleContextId": 0,
+        "customObjectInstanceId": "0$$mMsIDh",
+        "docId": "0$$h3Agn6",
+        "generateURI": true
+      },
+      {
+        "actionName": "For Action",
+        "actionID": "36$$HqVl1y",
+        "actionNameAbbrev": "Action",
+        "actionAbbreviationKey": "file-action",
+        "num_days": 7,
+        "projectId": "0$$pG7mTI",
+        "userId": 0,
+        "revisionId": "0$$yvqjc8",
+        "formId": "0$$ET07ft",
+        "adoddleContextId": 0,
+        "customObjectInstanceId": "0$$mMsIDh",
+        "docId": "0$$h3Agn6",
+        "generateURI": true
+      },
+      {
+        "actionName": "For Information",
+        "actionID": "7$$xZdQqj",
+        "actionNameAbbrev": "Info",
+        "actionAbbreviationKey": "info",
+        "num_days": 1,
+        "projectId": "0$$pG7mTI",
+        "userId": 0,
+        "revisionId": "0$$yvqjc8",
+        "formId": "0$$ET07ft",
+        "adoddleContextId": 0,
+        "customObjectInstanceId": "0$$mMsIDh",
+        "docId": "0$$h3Agn6",
+        "generateURI": true
+      },
+      {
+        "actionName": "Review Draft",
+        "actionID": "34$$uDjq5F",
+        "actionNameAbbrev": "Draft",
+        "actionAbbreviationKey": "draft",
+        "num_days": 8,
+        "projectId": "0$$pG7mTI",
+        "userId": 0,
+        "revisionId": "0$$yvqjc8",
+        "formId": "0$$ET07ft",
+        "adoddleContextId": 0,
+        "customObjectInstanceId": "0$$mMsIDh",
+        "docId": "0$$h3Agn6",
+        "generateURI": true
+      }
+    ],
+    "groupuserList": [],
+    "privilegeList": [
+      {
+        "userID": "650044$$VlKu16",
+        "privilegeID": 25,
+        "orgID": 3,
+        "generateURI": true
+      },
+      {
+        "userID": "707447$$fSC8Ez",
+        "privilegeID": 25,
+        "orgID": 3,
+        "generateURI": true
+      },
+      {
+        "userID": "859155$$0bAcX7",
+        "privilegeID": 25,
+        "orgID": 3,
+        "generateURI": true
+      },
+      {
+        "userID": "1161363$$LSP3iZ",
+        "privilegeID": 25,
+        "orgID": 3,
+        "generateURI": true
+      },
+      {
+        "userID": "2017529$$uXVuLq",
+        "privilegeID": 25,
+        "orgID": 5763307,
+        "generateURI": true
+      }
+    ],
+    "emailPreferenceList": [
+      {
+        "userId": 514806,
+        "preferenceId": 10,
+        "preferenceName": "Yes",
+        "displayText": "No",
+        "preferenceValue": "Yes",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 11,
+        "preferenceName": "8",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 12,
+        "preferenceName": "9",
+        "displayText": "For Comment",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 13,
+        "preferenceName": "10",
+        "displayText": "For Comment Coordination",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 14,
+        "preferenceName": "11",
+        "displayText": "For Comment Incorp",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 15,
+        "preferenceName": "12",
+        "displayText": "For Distribution",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 16,
+        "preferenceName": "13",
+        "displayText": "For Information",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 17,
+        "preferenceName": "28",
+        "displayText": "For Publishing",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 18,
+        "preferenceName": "14",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 19,
+        "preferenceName": "8",
+        "displayText": "For No Comment",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 20,
+        "preferenceName": "8",
+        "displayText": "For Unread Comments",
+        "preferenceValue": "1",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 21,
+        "preferenceName": "5",
+        "displayText": "Attach Docs",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 22,
+        "preferenceName": "6",
+        "displayText": "Distribute",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 23,
+        "preferenceName": "7",
+        "displayText": "For Information",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 24,
+        "preferenceName": "2",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 25,
+        "preferenceName": "3",
+        "displayText": "Response",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 26,
+        "preferenceName": "4",
+        "displayText": "Release Response",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 30,
+        "preferenceName": "For Check out Document Revision",
+        "displayText": "For Check out Document Revision",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 44,
+        "preferenceName": "35",
+        "displayText": "For Action",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 45,
+        "preferenceName": "36",
+        "displayText": "For Action",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 46,
+        "preferenceName": "37",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 514806,
+        "preferenceId": 47,
+        "preferenceName": "34",
+        "displayText": "Review Draft",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 10,
+        "preferenceName": "Yes",
+        "displayText": "No",
+        "preferenceValue": "Yes",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 11,
+        "preferenceName": "8",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 12,
+        "preferenceName": "9",
+        "displayText": "For Comment",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 13,
+        "preferenceName": "10",
+        "displayText": "For Comment Coordination",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 14,
+        "preferenceName": "11",
+        "displayText": "For Comment Incorp",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 15,
+        "preferenceName": "12",
+        "displayText": "For Distribution",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 16,
+        "preferenceName": "13",
+        "displayText": "For Information",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 17,
+        "preferenceName": "28",
+        "displayText": "For Publishing",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 18,
+        "preferenceName": "14",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 19,
+        "preferenceName": "8",
+        "displayText": "For No Comment",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 20,
+        "preferenceName": "8",
+        "displayText": "For Unread Comments",
+        "preferenceValue": "1",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 21,
+        "preferenceName": "5",
+        "displayText": "Attach Docs",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 22,
+        "preferenceName": "6",
+        "displayText": "Distribute",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 23,
+        "preferenceName": "7",
+        "displayText": "For Information",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 24,
+        "preferenceName": "2",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 25,
+        "preferenceName": "3",
+        "displayText": "Response",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 26,
+        "preferenceName": "4",
+        "displayText": "Release Response",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 30,
+        "preferenceName": "For Check out Document Revision",
+        "displayText": "For Check out Document Revision",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 44,
+        "preferenceName": "35",
+        "displayText": "For Action",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 45,
+        "preferenceName": "36",
+        "displayText": "For Action",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 46,
+        "preferenceName": "37",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 650044,
+        "preferenceId": 47,
+        "preferenceName": "34",
+        "displayText": "Review Draft",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 10,
+        "preferenceName": "Yes",
+        "displayText": "No",
+        "preferenceValue": "Yes",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 11,
+        "preferenceName": "8",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 12,
+        "preferenceName": "9",
+        "displayText": "For Comment",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 13,
+        "preferenceName": "10",
+        "displayText": "For Comment Coordination",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 14,
+        "preferenceName": "11",
+        "displayText": "For Comment Incorp",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 15,
+        "preferenceName": "12",
+        "displayText": "For Distribution",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 16,
+        "preferenceName": "13",
+        "displayText": "For Information",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 17,
+        "preferenceName": "28",
+        "displayText": "For Publishing",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 18,
+        "preferenceName": "14",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 19,
+        "preferenceName": "8",
+        "displayText": "For No Comment",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 20,
+        "preferenceName": "8",
+        "displayText": "For Unread Comments",
+        "preferenceValue": "1",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 21,
+        "preferenceName": "5",
+        "displayText": "Attach Docs",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 22,
+        "preferenceName": "6",
+        "displayText": "Distribute",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 23,
+        "preferenceName": "7",
+        "displayText": "For Information",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 24,
+        "preferenceName": "2",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 25,
+        "preferenceName": "3",
+        "displayText": "Response",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 26,
+        "preferenceName": "4",
+        "displayText": "Release Response",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 30,
+        "preferenceName": "For Check out Document Revision",
+        "displayText": "For Check out Document Revision",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 44,
+        "preferenceName": "35",
+        "displayText": "For Action",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 45,
+        "preferenceName": "36",
+        "displayText": "For Action",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 46,
+        "preferenceName": "37",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 707447,
+        "preferenceId": 47,
+        "preferenceName": "34",
+        "displayText": "Review Draft",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 10,
+        "preferenceName": "Yes",
+        "displayText": "No",
+        "preferenceValue": "Yes",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 11,
+        "preferenceName": "8",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 12,
+        "preferenceName": "9",
+        "displayText": "For Comment",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 13,
+        "preferenceName": "10",
+        "displayText": "For Comment Coordination",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 14,
+        "preferenceName": "11",
+        "displayText": "For Comment Incorp",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 15,
+        "preferenceName": "12",
+        "displayText": "For Distribution",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 16,
+        "preferenceName": "13",
+        "displayText": "For Information",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 17,
+        "preferenceName": "28",
+        "displayText": "For Publishing",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 18,
+        "preferenceName": "14",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 19,
+        "preferenceName": "8",
+        "displayText": "For No Comment",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 20,
+        "preferenceName": "8",
+        "displayText": "For Unread Comments",
+        "preferenceValue": "1",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 21,
+        "preferenceName": "5",
+        "displayText": "Attach Docs",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 22,
+        "preferenceName": "6",
+        "displayText": "Distribute",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 23,
+        "preferenceName": "7",
+        "displayText": "For Information",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 24,
+        "preferenceName": "2",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 25,
+        "preferenceName": "3",
+        "displayText": "Response",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 26,
+        "preferenceName": "4",
+        "displayText": "Release Response",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 30,
+        "preferenceName": "For Check out Document Revision",
+        "displayText": "For Check out Document Revision",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 44,
+        "preferenceName": "35",
+        "displayText": "For Action",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 45,
+        "preferenceName": "36",
+        "displayText": "For Action",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 46,
+        "preferenceName": "37",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 859155,
+        "preferenceId": 47,
+        "preferenceName": "34",
+        "displayText": "Review Draft",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 10,
+        "preferenceName": "Yes",
+        "displayText": "No",
+        "preferenceValue": "Yes",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 11,
+        "preferenceName": "8",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 12,
+        "preferenceName": "9",
+        "displayText": "For Comment",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 13,
+        "preferenceName": "10",
+        "displayText": "For Comment Coordination",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 14,
+        "preferenceName": "11",
+        "displayText": "For Comment Incorp",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 15,
+        "preferenceName": "12",
+        "displayText": "For Distribution",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 16,
+        "preferenceName": "13",
+        "displayText": "For Information",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 17,
+        "preferenceName": "28",
+        "displayText": "For Publishing",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 18,
+        "preferenceName": "14",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 19,
+        "preferenceName": "8",
+        "displayText": "For No Comment",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 20,
+        "preferenceName": "8",
+        "displayText": "For Unread Comments",
+        "preferenceValue": "1",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 21,
+        "preferenceName": "5",
+        "displayText": "Attach Docs",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 22,
+        "preferenceName": "6",
+        "displayText": "Distribute",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 23,
+        "preferenceName": "7",
+        "displayText": "For Information",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 24,
+        "preferenceName": "2",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 25,
+        "preferenceName": "3",
+        "displayText": "Response",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 26,
+        "preferenceName": "4",
+        "displayText": "Release Response",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 30,
+        "preferenceName": "For Check out Document Revision",
+        "displayText": "For Check out Document Revision",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 44,
+        "preferenceName": "35",
+        "displayText": "For Action",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 45,
+        "preferenceName": "36",
+        "displayText": "For Action",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 46,
+        "preferenceName": "37",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 1161363,
+        "preferenceId": 47,
+        "preferenceName": "34",
+        "displayText": "Review Draft",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 10,
+        "preferenceName": "Yes",
+        "displayText": "No",
+        "preferenceValue": "Yes",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 11,
+        "preferenceName": "8",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 12,
+        "preferenceName": "9",
+        "displayText": "For Comment",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 13,
+        "preferenceName": "10",
+        "displayText": "For Comment Coordination",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 14,
+        "preferenceName": "11",
+        "displayText": "For Comment Incorp",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 15,
+        "preferenceName": "12",
+        "displayText": "For Distribution",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 16,
+        "preferenceName": "13",
+        "displayText": "For Information",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 17,
+        "preferenceName": "28",
+        "displayText": "For Publishing",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 18,
+        "preferenceName": "14",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 19,
+        "preferenceName": "8",
+        "displayText": "For No Comment",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 20,
+        "preferenceName": "8",
+        "displayText": "For Unread Comments",
+        "preferenceValue": "1",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 21,
+        "preferenceName": "5",
+        "displayText": "Attach Docs",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 22,
+        "preferenceName": "6",
+        "displayText": "Distribute",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 23,
+        "preferenceName": "7",
+        "displayText": "For Information",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 24,
+        "preferenceName": "2",
+        "displayText": "For Status Change",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 25,
+        "preferenceName": "3",
+        "displayText": "Response",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 26,
+        "preferenceName": "4",
+        "displayText": "Release Response",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 30,
+        "preferenceName": "For Check out Document Revision",
+        "displayText": "For Check out Document Revision",
+        "preferenceValue": "0",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 44,
+        "preferenceName": "35",
+        "displayText": "For Action",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 45,
+        "preferenceName": "36",
+        "displayText": "For Action",
+        "preferenceValue": "11",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 46,
+        "preferenceName": "37",
+        "displayText": "For Acknowledge",
+        "preferenceValue": "01",
+        "generateURI": true
+      },
+      {
+        "userId": 2017529,
+        "preferenceId": 47,
+        "preferenceName": "34",
+        "displayText": "Review Draft",
+        "preferenceValue": "11",
+        "generateURI": true
+      }
+    ],
+    "systemRoleTOList": [
+      {
+        "isDelete": false,
+        "isReadOnly": true,
+        "workspaceRoleTO": {
+          "roleId": "3389434$$nOnX0d",
+          "name": "Field Administrator",
+          "status": 0,
+          "assignedUserCount": 1,
+          "permissionVOList": [
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 5,
+              "orgID": 3,
+              "hashedOrgId": "3$$zgjw4O$$RT98W9",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "Dhaval Vekaria (5226), Asite Solutions",
+              "fname": "Dhaval",
+              "lname": "Vekaria (5226)",
+              "emailId": "dvekaria@asite.com",
+              "orgName": "Asite Solutions",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_514806_thumbnail.jpg?v=1656996305000",
+              "userName": "Dhaval Vekaria (5226)",
+              "id": 514806,
+              "hashedId": "514806$$q1DQ1R",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            }
+          ],
+          "projectSubscriptionType": 0,
+          "projectId": "0$$pG7mTI",
+          "inherited": false,
+          "systemRole": true,
+          "generateURI": true
+        },
+        "generateURI": true
+      },
+      {
+        "isDelete": false,
+        "isReadOnly": true,
+        "workspaceRoleTO": {
+          "roleId": "3389435$$tIS53H",
+          "name": "Field Contractor",
+          "status": 0,
+          "assignedUserCount": 1,
+          "permissionVOList": [],
+          "projectSubscriptionType": 0,
+          "projectId": "0$$pG7mTI",
+          "inherited": false,
+          "systemRole": true,
+          "generateURI": true
+        },
+        "generateURI": true
+      },
+      {
+        "isDelete": false,
+        "isReadOnly": true,
+        "workspaceRoleTO": {
+          "roleId": "3389436$$fKirrW",
+          "name": "Field Inspector",
+          "status": 0,
+          "assignedUserCount": 1,
+          "permissionVOList": [
+            {
+              "userStatus": 0,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 5,
+              "orgID": 5763307,
+              "hashedOrgId": "5763307$$kD3Vbu$$HYZ77U",
+              "pendingAcceptance": true,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "hardik111 Asite, Asite Solutions Ltd",
+              "fname": "hardik111",
+              "lname": "Asite",
+              "emailId": "hardik111@asite.com",
+              "orgName": "Asite Solutions Ltd",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_1906453_thumbnail.jpg?v=1684818268000",
+              "userName": "hardik111 Asite",
+              "id": 1906453,
+              "hashedId": "1906453$$JdIxTz",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            },
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 5,
+              "orgID": 5763307,
+              "hashedOrgId": "5763307$$kD3Vbu$$HYZ77U",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "Mayur Raval m., Asite Solutions Ltd",
+              "fname": "Mayur",
+              "lname": "Raval m.",
+              "emailId": "m.raval@asite.com",
+              "orgName": "Asite Solutions Ltd",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_2017529_thumbnail.jpg?v=1688541715000",
+              "userName": "Mayur Raval m.",
+              "id": 2017529,
+              "hashedId": "2017529$$uXVuLq",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            }
+          ],
+          "projectSubscriptionType": 0,
+          "projectId": "0$$pG7mTI",
+          "inherited": false,
+          "systemRole": true,
+          "generateURI": true
+        },
+        "generateURI": true
+      },
+      {
+        "isDelete": false,
+        "isReadOnly": true,
+        "workspaceRoleTO": {
+          "roleId": "3389437$$ZCuAxe",
+          "name": "Workspace - Administrator",
+          "status": 0,
+          "assignedUserCount": 1,
+          "permissionVOList": [
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 5,
+              "orgID": 3,
+              "hashedOrgId": "3$$zgjw4O$$RT98W9",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "Chandresh Patel, Asite Solutions",
+              "fname": "Chandresh",
+              "lname": "Patel",
+              "emailId": "chandreshpatel@asite.com",
+              "orgName": "Asite Solutions",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_1161363_thumbnail.jpg?v=1673263342000",
+              "userName": "Chandresh Patel",
+              "id": 1161363,
+              "hashedId": "1161363$$LSP3iZ",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            },
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 5,
+              "orgID": 5763307,
+              "hashedOrgId": "5763307$$kD3Vbu$$HYZ77U",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "Mayur Raval m., Asite Solutions Ltd",
+              "fname": "Mayur",
+              "lname": "Raval m.",
+              "emailId": "m.raval@asite.com",
+              "orgName": "Asite Solutions Ltd",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_2017529_thumbnail.jpg?v=1688541715000",
+              "userName": "Mayur Raval m.",
+              "id": 2017529,
+              "hashedId": "2017529$$uXVuLq",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            },
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 5,
+              "orgID": 3,
+              "hashedOrgId": "3$$zgjw4O$$RT98W9",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "Saurabh Banethia (5327), Asite Solutions",
+              "fname": "Saurabh",
+              "lname": "Banethia (5327)",
+              "emailId": "sbanethia@asite.com",
+              "orgName": "Asite Solutions",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_859155_thumbnail.jpg?v=1669201730000",
+              "userName": "Saurabh Banethia (5327)",
+              "id": 859155,
+              "hashedId": "859155$$0bAcX7",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            },
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 2,
+              "orgID": 3,
+              "hashedOrgId": "3$$zgjw4O$$RT98W9",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "savita dangee (5231), Asite Solutions",
+              "fname": "savita",
+              "lname": "dangee (5231)",
+              "emailId": "sdangee@asite.com",
+              "orgName": "Asite Solutions",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_650044_thumbnail.jpg?v=1522906277000",
+              "userName": "savita dangee (5231)",
+              "id": 650044,
+              "hashedId": "650044$$VlKu16",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            },
+            {
+              "userStatus": 1,
+              "userTypeId": 1,
+              "userSubscriptionTypeId": 1,
+              "userSubscriptionPlanId": 2,
+              "orgID": 3,
+              "hashedOrgId": "3$$zgjw4O$$RT98W9",
+              "pendingAcceptance": false,
+              "isAutoAcceptance": false,
+              "permissionTypeId": 0,
+              "name": "Vijay Mavadiya (5336), Asite Solutions",
+              "fname": "Vijay",
+              "lname": "Mavadiya (5336)",
+              "emailId": "vmavadiya@asite.com",
+              "orgName": "Asite Solutions",
+              "userImageName": "https://portalqa.asite.com/profilefiles/member_photos/photo_707447_thumbnail.jpg?v=1650517948000",
+              "userName": "Vijay Mavadiya (5336)",
+              "id": 707447,
+              "hashedId": "707447$$fSC8Ez",
+              "permissionGroupId": 3,
+              "inherited": false,
+              "userInherited": false,
+              "generateURI": true
+            }
+          ],
+          "projectSubscriptionType": 0,
+          "projectId": "0$$pG7mTI",
+          "inherited": false,
+          "systemRole": true,
+          "generateURI": true
+        },
+        "generateURI": true
+      }
+    ],
+    "userPrefMap": {
+      "2017529_28": "01",
+      "2017529_3": "11",
+      "2017529_4": "0",
+      "2017529_5": "01",
+      "2017529_6": "01",
+      "707447_For Check out Document Revision": "0",
+      "2017529_2": "11",
+      "859155_12": "01",
+      "859155_11": "01",
+      "859155_10": "01",
+      "2017529_7": "11",
+      "2017529_8": "1",
+      "859155_14": "11",
+      "2017529_9": "11",
+      "859155_13": "01",
+      "2017529_35": "01",
+      "2017529_34": "11",
+      "2017529_37": "01",
+      "2017529_36": "11",
+      "859155_For Check out Document Revision": "0",
+      "1161363_For Check out Document Revision": "0",
+      "859155_Yes": "Yes",
+      "514806_36": "11",
+      "514806_37": "01",
+      "514806_34": "11",
+      "514806_35": "01",
+      "859155_5": "01",
+      "859155_4": "0",
+      "859155_3": "11",
+      "859155_2": "11",
+      "859155_9": "11",
+      "859155_8": "1",
+      "859155_7": "11",
+      "859155_6": "01",
+      "514806_Yes": "Yes",
+      "650044_9": "11",
+      "650044_8": "1",
+      "650044_7": "11",
+      "650044_6": "01",
+      "650044_For Check out Document Revision": "0",
+      "650044_5": "01",
+      "650044_4": "0",
+      "650044_3": "11",
+      "650044_2": "11",
+      "1161363_28": "01",
+      "650044_10": "01",
+      "514806_14": "11",
+      "514806_12": "01",
+      "514806_13": "01",
+      "2017529_For Check out Document Revision": "0",
+      "514806_10": "01",
+      "514806_11": "01",
+      "650044_Yes": "Yes",
+      "1161363_2": "11",
+      "1161363_Yes": "Yes",
+      "1161363_3": "11",
+      "1161363_4": "0",
+      "1161363_5": "01",
+      "1161363_6": "01",
+      "1161363_7": "11",
+      "1161363_8": "1",
+      "1161363_9": "11",
+      "707447_9": "11",
+      "514806_28": "01",
+      "707447_8": "1",
+      "707447_7": "11",
+      "707447_6": "01",
+      "707447_11": "01",
+      "707447_Yes": "Yes",
+      "707447_12": "01",
+      "707447_10": "01",
+      "650044_14": "11",
+      "707447_5": "01",
+      "650044_13": "01",
+      "707447_4": "0",
+      "650044_12": "01",
+      "707447_3": "11",
+      "650044_11": "01",
+      "707447_2": "11",
+      "1161363_34": "11",
+      "1161363_36": "11",
+      "1161363_35": "01",
+      "707447_13": "01",
+      "707447_14": "11",
+      "1161363_37": "01",
+      "514806_8": "1",
+      "514806_7": "11",
+      "514806_6": "01",
+      "514806_5": "01",
+      "514806_4": "0",
+      "514806_3": "11",
+      "514806_2": "11",
+      "859155_34": "11",
+      "650044_28": "01",
+      "859155_37": "01",
+      "859155_36": "11",
+      "2017529_Yes": "Yes",
+      "859155_35": "01",
+      "707447_28": "01",
+      "2017529_13": "01",
+      "514806_For Check out Document Revision": "0",
+      "2017529_12": "01",
+      "2017529_14": "11",
+      "859155_28": "01",
+      "2017529_11": "01",
+      "2017529_10": "01",
+      "707447_34": "11",
+      "650044_37": "01",
+      "650044_36": "11",
+      "650044_35": "01",
+      "650044_34": "11",
+      "514806_9": "11",
+      "1161363_10": "01",
+      "1161363_12": "01",
+      "1161363_11": "01",
+      "707447_37": "01",
+      "1161363_14": "11",
+      "1161363_13": "01",
+      "707447_35": "01",
+      "707447_36": "11"
+    },
+    "formsOnlyDistGroup": false,
+    "selectedUserGroupingTypeID": 1,
+    "distributionMDB": {
+      "commitType": 1,
+      "distributionType": 1,
+      "parentModuleID": 0,
+      "moduleID": 11076066,
+      "associatedModuleID": 0,
+      "checkFolderUserAccess": false,
+      "clientCommitURL": "Dummy URL",
+      "clientCommitFrame": "assocdoc",
+      "clientAction": "ClientActionFormCreate",
+      "isFolderfromDrawingVO": false,
+      "isLink": false,
+      "isFromLinking": false,
+      "projectID": "2130192$$MqjZY3",
+      "brandingID": -1,
+      "folderID": "-1$$QZjMQB",
+      "is_placeholder": false,
+      "distributerProxyUserID": 2017529,
+      "distributerUserTypeId": 1,
+      "pendingDestributionAction": false,
+      "userWorkspacePrivileges": ",4,5,54,55,56,58,59,63,66,71,72,73,76,86,88,90,91,92,93,94,95,96,97,98,101,103,106,113,123,127,132,133,134,136,138,139,145,146,147,148,149,150,151,154,160,162,170,174,181,,9,10,13,14,15,16,17,18,20,21,22,25,28,30,32,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,60,61,62,67,69,70,74,75,77,78,79,80,81,82,83,84,99,100,102,109,110,111,112,114,115,116,117,118,119,120,121,122,124,125,126,129,130,135,137,143,144,145,155,156,157,159,161,163,166,167,168,172,173,175,179,",
+      "sendNotificationEvent": false
+    },
+    "defaultActionID": "-1$$Qoltyj",
+    "defaultActionDays": -1,
+    "defaultActionOffDays": 0,
+    "selectedRoleID": 0,
+    "collectAllData": true,
+    "isFromBasket": false,
+    "isFromAdoddle": false,
+    "collectDataForMultipleIds": false,
+    "generateURI": true
+  }
+}

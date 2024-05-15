@@ -1,0 +1,44 @@
+[
+  {
+    "projectId": "2130192",
+    "locationId": -1,
+    "downloadSizeVo": {
+      "pdfAndXfdfSize": 1651716,
+      "formTemplateSize": 789029,
+      "totalSize": 104762212,
+      "countOfLocations": 47,
+      "totalFormXmlSize": 4256765,
+      "attachmentsSize": 67896652,
+      "associationsSize": 30957079,
+      "countOfForms": 790
+    }
+  },
+  {
+    "projectId": "2116416",
+    "locationId": -1,
+    "downloadSizeVo": {
+      "pdfAndXfdfSize": 293857629,
+      "formTemplateSize": 2534298,
+      "totalSize": 1585824351856,
+      "countOfLocations": 1004,
+      "totalFormXmlSize": 28249291,
+      "attachmentsSize": 5871163796,
+      "associationsSize": 9664972802,
+      "countOfForms": 4947
+    }
+  },
+  {
+    "projectId": "2116416",
+    "locationId": 12345,
+    "downloadSizeVo": {
+      "pdfAndXfdfSize": 293857629,
+      "formTemplateSize": 2534298,
+      "totalSize": 1585824,
+      "countOfLocations": 1004,
+      "totalFormXmlSize": 28249291,
+      "attachmentsSize": 5871163796,
+      "associationsSize": 9664972802,
+      "countOfForms": 12
+    }
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "recordBatchSize" : 10,
+  "applicationId" : 3,
+  "currentPageNo" : 1,
+  "recordStartFrom" : 10,
+  "action_id" : 705,
+  "collectionType" : 134,
+  "appType" : 1,
+  "filterVOs": [
+    {
+      "id":2538485,
+      "userId":1906453,
+      "filterName":"Unsaved Filte",
+      "listingTypeId":134,
+      "subListingTypeId":1,
+      "isUnsavedFilter":true,
+      "creationDate":"2023-05-01 10:20:08.287",
+      "selectedProjectIds":"2125007$$ERNhZZ"
+    },
+    {
+      "id":14345048,
+      "filterId":2538485,
+      "fieldName":"title",
+      "operatorId":11,
+      "logicalOperator":"null",
+      "sequenceId":1,
+      "returnIndexFields":"null",
+      "dataType":"Text",
+      "solrCollections":"-1",
+      "labelName":"Title",
+      "optionalValues":"null"
+    }
+  ],
+  "data" : [
+    {
+      "id":"tes",
+      "value":"tes",
+      "dataCenterId":0,
+      "isSelected":true,
+      "imgId":-1,
+      "isActive":true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Information Delivery Plan 123456789 Asite</title>
+	<meta http-equiv="Content-Type" content="text/html;"/>
+	<link type="text/css" rel="stylesheet" href="/css/htmlform/qa.css">
+	
+	<script type="text/javascript">
+		(function() {
+			require(['app'], function(app){
+				angular.element(document).ready(function () {
+					app('qa');
+				});
+			});
+		})();
+	</script>
+</head>
+<body>
+	<div style="display:none;">
+		<input type="hidden" id="DS_PRINTEDBY" name="DS_PRINTEDBY" th:value="${DS_PRINTEDBY}" />
+		<input type="hidden" id="DS_PRINTEDON" name="DS_PRINTEDON" th:value="${DS_PRINTEDON}" />
+		<input type="hidden" id="DS_FORMID" name="DS_FORMID" th:value="${DS_FORMID}" />
+		<input type="hidden" id="DS_WORKINGUSERROLE" name="DS_WORKINGUSERROLE" th:value="${DS_WORKINGUSERROLE}" />
+		<input type="hidden" id="DS_PROJECTNAME" name="DS_PROJECTNAME" th:value="${DS_PROJECTNAME}" />
+		<fixedfield>DS_PRINTEDBY,DS_PRINTEDON,DS_FORMID,DS_WORKINGUSERROLE,DS_PROJECTNAME,ORI_FORMTITLE</fixedfield>
+		<sp_fixedfield></sp_fixedfield>
+	</div>
+	
+	<div class="qa-form" ng-controller="FormController">
+		<input type="hidden" class="json_data" th:value="${JSON_DATA}" />
+		<div class="input-container clearfix">
+			<label>Title</label>
+			<div class="input-wrap">
+				<input ng-disabled="readOnly" type="text" name="ORI_FORMTITLE" id="ORI_FORMTITLE" ng-model="data.ORI_FORMTITLE" required />
+			</div>
+		</div>
+		<div class="input-container" ng-repeat="qa in data.questions track by $index">
+			<div class="clearfix">
+				<label>Question {{$index + 1}}.</label>
+				<div class="input-wrap">
+					<span ng-if="$index == 0">What is your name?</span>
+					<span ng-if="$index == 1">What is your Age?</span>
+					<span ng-if="$index == 2">What is your Address?</span>
+				</div>
+			</div>
+			<div class="clearfix">
+				<label>Answer {{$index + 1}}.</label>
+				<div class="input-wrap">
+					<input ng-disabled="readOnly" type="text" name="ans{{$index + 1}}" ng-model="qa.answer" required />
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

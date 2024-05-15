@@ -1,0 +1,180 @@
+class AImageConstants {
+  static String loginbgImagepath = "assets/images/login_bg.png";
+  static String loginbgImagepathPhone = "assets/images/login_bg_phone.png";
+  static String dashboardBg = "assets/images/dashboard_bg_tablet.png";
+  static String asiteLogo = "assets/images/ic_app_logo.png";
+  //static String plan = "assets/images/plan.png";
+  static String plan = "assets/images/ic_plan.png";
+  static String floorPlanBlue = "assets/images/floor_plan_blue.png";
+  static String factCheckAlt = "assets/images/fact_check_alt.png";
+  static String planRed = "assets/images/ic_plan_red.png";
+  static String alertHeader = "assets/images/ic_alert_header.png";
+  static String floorPlan = "assets/images/ic_floor_plan.png";
+  static String viewTaskForms = "assets/images/view_task_forms.png";
+  static String createTaskIcon = "assets/images/create_task_icon.png";
+  static String filterIcon = "assets/images/ic_filter.png";
+  static String appliedFilterIcon = "assets/images/ic_applied_filter.png";
+  static String openFilterIcon = "assets/images/ic_open_filter.png";
+  static String closeFilterIcon = "assets/images/ic_close_filter.png";
+  static String openAppliedFilterIcon = "assets/images/ic_open_applied_filter.png";
+  static String closeAppliedFilterIcon = "assets/images/ic_close_applied_filter.png";
+  static String sortIcon = "assets/images/ic_sort.png";
+  static String ascendingOrderIcon = "assets/images/ic_ascending_order.png";
+  static String descendingOrderIcon = "assets/images/ic_descending_order.png";
+  static String searchIcon = "assets/images/ic_search.png";
+  static String closeSidebarIcon = "assets/images/close_sidebar.png";
+  static String openSidebarIcon = "assets/images/open_sidebar_outline.png";
+  static String tabletSidebarIcon = "assets/images/tablet_sidebar_outline.png";
+  static String userAvatarLogo = "assets/images/user_avatar_logo.png";
+  static String accountHardHat = "assets/images/ic_account_hard_hat.png";
+  static String profileAvatarPlaceholder =
+      "assets/images/ic_profile_avatar.png";
+  static String createSubTask = "assets/images/ic_create_sub_task.png";
+  static String createForm = "assets/images/ic_create_form.png";
+  static String otherTask = "assets/images/ic_task_form.png";
+  static String formType = "assets/images/ic_form_type.png";
+  static String newTaskCount = "assets/images/new_task_count.png";
+  static String taskOverDue = "assets/images/task_over_due.png";
+  static String taskDueCount = "assets/images/task_due_count.png";
+  static String fTypeAudio = "assets/images/ftype_audio.png";
+  static String fTypeVideo = "assets/images/ftype_video.png";
+  static String fTypeCode = "assets/images/ftype_code.png";
+  static String fTypeExcel = "assets/images/ftype_excel.png";
+  static String fTypeImage = "assets/images/ftype_image.png";
+  static String fTypePdf = "assets/images/ftype_pdf.png";
+  static String fTypeWord = "assets/images/ftype_word.png";
+  static String fTypeText = "assets/images/ftype_text.png";
+  static String fTypeZip = "assets/images/ftype_zip.png";
+  static String fTypePowerPoint = "assets/images/ftype_powerpoint.png";
+  static String newTaskCountMobile = "assets/images/new_task_count_mobile.png";
+  static String taskOverDueMobile = "assets/images/task_over_due_mobile.png";
+  static String taskDueCountMobile = "assets/images/task_due_count_mobile.png";
+  static String edit = "assets/images/edit.png";
+  static String undo = "assets/images/undo.png";
+  static String palate = "assets/images/palate.png";
+  static String pdfIcon = "assets/images/pdf_icon.png";
+  static String scissor = "assets/images/scissor.png";
+  static String modelTree = "assets/images/model_tree.png";
+  static String freeHand = "assets/images/tile047.png";
+  static String redLineText = "assets/images/redline-text.png";
+  static String planeX = "assets/images/plane-x.png";
+  static String planeY = "assets/images/plane-y.png";
+  static String planeZ = "assets/images/plane-z.png";
+  static String planeSection = "assets/images/plane-section.png";
+  static String planeHide = "assets/images/plane-hide.png";
+  static String planeReset = "assets/images/plane-reset.png";
+  static String distance = "assets/images/distance.png";
+  static String angle = "assets/images/angle.png";
+  static String area = "assets/images/area-point.png";
+  static String backToQuality = "assets/images/backToQuality.png";
+
+  //toolbar icons
+  static String accountTree = "assets/images/account_tree.png";
+  static String create = "assets/images/create.png";
+  static String cube = "assets/images/cube.png";
+  static String modelOffline = "assets/images/model_offline.png";
+  static String nearMe = "assets/images/near_me.png";
+  static String rotateOrbit = "assets/images/rotate_orbit.png";
+  static String steps = "assets/images/steps.png";
+  static String rulerOutline = "assets/images/ruler_outline.png";
+
+  static String drawLine = "assets/images/draw_line.png";
+  static String fullScreen = "assets/images/fullscreen.png";
+  static String fullScreenExit = "assets/images/fullscreen_exit.png";
+  static String gesture = "assets/images/gesture.png";
+  static String history = "assets/images/history.png";
+  static String home = "assets/images/home.png";
+  static String homeFilled = "assets/images/home_filled.png";
+  static String pictureInPicture = "assets/images/picture_in_picture.png";
+  static String altPictureInPicture =
+      "assets/images/picture_in_picture_alt.png";
+  static String splitHorizontallyAlt =
+      "assets/images/split_horizontally_alt.png";
+  static String splitVerticallyAlt = "assets/images/split_vertically_alt.png";
+  static String editIcon = "assets/images/edit_icon.png";
+  static String arrowLeft = "assets/images/popup_arrow.png";
+  static String cuttingPlane = "assets/images/cutting_plane.png";
+  static String readyToDownload = "assets/images/ready_to_download.png";
+  static String emptyProject = "assets/images/no_project_Illustration.png";
+  static String focus = "assets/images/focus.png";
+  static String isolate = "assets/images/isolate.png";
+  static String opacityCircle = "assets/images/opacity_circle.png";
+  static String palette = "assets/images/palette.png";
+  static String cloudDownload = "assets/images/cloud_download.png";
+
+  static String angelAcute = "assets/images/angle_acute.png";
+  static String architecture = "assets/images/architecture.png";
+
+  static String sliceX = "assets/images/slice_x.png";
+  static String sliceY = "assets/images/slice_y.png";
+  static String sliceZ = "assets/images/slice_z.png";
+  static String showSlice = "assets/images/show_slice.png";
+  static String inverseSlice = "assets/images/inverse_slice.png";
+  static String hideSlice = "assets/images/hide_slices.png";
+
+  static String homeIcon = "assets/images/home_icon.png";
+  static String colorPalate = "assets/images/color_palete.png";
+  static String freeHandMarker = "assets/images/free-hand.png";
+  static String font = "assets/images/font.png";
+  static String refresh = "assets/images/refresh.png";
+  static String cloudDownloadOutlined =
+      "assets/images/cloud_download_outlined.png";
+  static String requestCloud = "assets/images/request_download.png";
+  static String freeHandMarkerMenu = "assets/images/free_hand.png";
+
+  static String cameraControl = "assets/images/camera_control.png";
+  static String threeDIcon = "assets/images/3D.png";
+  static String unionIcon = "assets/images/union.png";
+  static String downloadFile = "assets/images/downloadfile.png";
+  static String editFont = "assets/images/editfont.png";
+  static String homeSideToolBar = "assets/images/homesidetoolbar.png";
+  static String modelOfflineSideToolBar =
+      "assets/images/modelofflinesidetoolbar.png";
+  static String areaSideToolBar = "assets/images/areasidetoolbar.png";
+  static String hideSliceSideToolBar = "assets/images/hideslicesidetoolbar.png";
+  static String paintBucket = "assets/images/paintbucket.png";
+  static String colorPalateIcon = "assets/images/colorPalateIcon.png";
+  static String emptySiteTask = "assets/images/ic_empty_sitetask.png";
+  static String viewObjectDetails = "assets/images/view_object_details.png";
+  static String cubeOutline = "assets/images/cube_outline.png";
+  static String fileDocumentOutline = "assets/images/file_document_outline.png";
+  static String expandIcon = "assets/images/expand_icon.png";
+  static String collapseIcon = "assets/images/collapse_icon.png";
+  static String updateDialogIcon = "assets/images/update_dialog_icon.png";
+  static String fileAssociation = "assets/images/file_association.png";
+  static String localStorage = "assets/images/local_storage.png";
+  static String vector = "assets/images/vector.png";
+
+  static String csvIcon = "assets/images/csv_icon.png";
+  static String bcfIcon = "assets/images/bcf_icon.png";
+  static String jpegIcon = "assets/images/jpeg_icon.png";
+  static String jpgIcon = "assets/images/jpg_icon.png";
+  static String pngIcon = "assets/images/png_icon.png";
+  static String ppsxIcon = "assets/images/ppsx_icon.png";
+  static String pptmIcon = "assets/images/pptm_icon.png";
+  static String pptxIcon = "assets/images/pptx_icon.png";
+  static String rarIcon = "assets/images/rar_icon.png";
+  static String rfaIcon = "assets/images/rfa_icon.png";
+  static String rftIcon = "assets/images/rft_icon.png";
+  static String rteIcon = "assets/images/rte_icon.png";
+  static String rvtIcon = "assets/images/rvt_icon.png";
+  static String vcfIcon = "assets/images/vcf_icon.png";
+  static String ifcIcon = "assets/images/ifc_icon.png";
+  static String xlsIcon = "assets/images/xls_icon.png";
+  static String zipIcon = "assets/images/zip_icon.png";
+  static String userLocation = "assets/images/user_location.png";
+  //new dashboard icons
+  static String createSiteTask = "assets/images/create_site_task.png";
+  static String createSiteForm = "assets/images/create_site_form.png";
+  static String newTasks = "assets/images/new_tasks.png";
+  static String tasksDueToday = "assets/images/tasks_due_today.png";
+  static String tasksDueThisWeek = "assets/images/tasks_due_this_week.png";
+  static String overdueTasks = "assets/images/overdue_tasks.png";
+  static String jumpBackIntoSite = "assets/images/jump_back_into_site.png";
+  static String calibrationFile = "assets/images/calibration_file.png";
+  static String icScanner = "assets/images/ic_scanner.png";
+  static String formOutline = "assets/images/form_outline.png";
+  //filter icon
+  static String closeIcon = "assets/images/close_icon.png";
+  static String filterImage = "assets/images/filter_image.png";
+}
