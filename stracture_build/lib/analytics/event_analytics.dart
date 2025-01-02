@@ -4,7 +4,6 @@ import 'package:field/data/model/user_vo.dart';
 import 'package:field/utils/extensions.dart';
 import 'package:field/utils/store_preference.dart';
 
-
 enum FireBaseScreenName {
   login(0, "Login"),
   twoFA(1, "Two Factor Authentication"),
